@@ -34,7 +34,7 @@ main section div img {
 /*Styling for main or parts of main */
 main {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     grid-gap: 10px;
     margin: 0px 5px;
 }
