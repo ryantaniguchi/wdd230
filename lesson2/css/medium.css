@@ -1,6 +1,11 @@
-@media only screen and (min-width: 34em) {
-    main {
+/* CSS styling that takes place in tablet-sized views */
+@media only screen and (min-width: 400px) {
+    main, footer {
         font-size: 1rem;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
     }
 
     main section:nth-child(3){
@@ -9,12 +14,5 @@
 
     .headertext {
         font-size: 30px;
-}
-    main {
-        grid-template-columns: 1fr 1fr;
     }
-}
-
-#currentyear, #lastmodified {
-    font-size: 16px;
 }

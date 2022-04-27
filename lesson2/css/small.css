@@ -1,18 +1,17 @@
-main {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 10px;
-    font-size: 0.8rem;
-}
-
 /* Styling for multiple sections or the document as a whole */
 * {
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+main, footer {
+    font-size: 0.8rem;
 }
 
 header, footer {
     background-color: #0000FF;
     text-align: center;
+    border-radius: 10px;
 }
 
 /* Styling for sections of the header */
@@ -22,13 +21,44 @@ header {
     justify-content: center;  
     padding: 1rem;
 }
+main section div img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #bbb;
+}
 
 .headertext {
     font-size: 25px;
 }
 
+/*Styling for main or parts of main */
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 10px;
+    margin: 0px 5px;
+}
+
+main section div p, main section div a {
+    padding: 5px;
+}
+
+main section span {
+    border-radius: 10px 10px 0px 0px;
+	display: block;
+	padding: 5px;
+	background-color: #000000;
+	color: #FFFFFF;
+    text-align: center;
+}
+
+/* STyling for section */
 section {
-    background-color: #e5e4e2;
+    background-color: #88d8c0;
+    border-radius: 10px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: end; */
 }
 
 /* Styling for sections of the footer */
@@ -36,12 +66,8 @@ footer {
     padding: .1rem;
 }
 
-#currentyear {
+#footertext {
     color: #FFFFFF;
-}
-
-#lastmodified {
-    color: #FFFF00;
 }
 
 /* Styling for links */
@@ -51,21 +77,3 @@ a:link {
 a:visited {
     color: #551A8B;  
 }
-
-/* Styling for headings */
-h1, h2 {
-    font-family: 'Roboto', sans-serif;
-}
-
-h3 {
-    background-color:#BDEDFF;
-}
-
-/* Styling for links */
-a:link {
-    color: #0000FF;
-  }
-  a:visited {
-    color: #551A8B;  
-  }
-  

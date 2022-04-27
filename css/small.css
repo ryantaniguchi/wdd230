@@ -8,6 +8,7 @@
 header, footer {
   background-color: #0000FF;
   text-align: center;
+  border-radius: 10px;
 }
 
 /* Styling for sections of the header */
@@ -15,7 +16,7 @@ header {
   display: flex;
   color: #FFFFFF;
   justify-content: center;  
-  padding: 1rem; /* Changed from 1.25rem - Week02 */
+  padding: 1rem;
 }
 
 .headertext {
@@ -45,5 +46,5 @@ a:visited {
 
 /* Styling for h1, h2 */
 h1, h2 {
-  font-family: 'Roboto', sans-serif; /* added Week 02 */
+  font-family: 'Roboto', sans-serif;
 }
