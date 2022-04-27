@@ -1,0 +1,49 @@
+/* Renamed from style.css to small.css - Week 02*/
+
+/* Styling for multiple sections or the document as a whole */
+* {
+  box-sizing: border-box;
+}
+
+header, footer {
+  background-color: #0000FF;
+  text-align: center;
+}
+
+/* Styling for sections of the header */
+header {
+  display: flex;
+  color: #FFFFFF;
+  justify-content: center;  
+  padding: 1rem; /* Changed from 1.25rem - Week02 */
+}
+
+.headertext {
+  font-size: 25px;
+}
+
+/* Styling for sections of the footer */
+footer {
+  padding: .1rem;
+}
+
+#currentyear {
+  color: #FFFFFF;
+}
+  
+#lastmodified {
+  color: #FFFF00;
+}
+
+/* Styling for links */
+a:link {
+  color: #0000FF;
+}
+a:visited {
+  color: #551A8B;  
+}
+
+/* Styling for h1, h2 */
+h1, h2 {
+  font-family: 'Roboto', sans-serif; /* added Week 02 */
+}

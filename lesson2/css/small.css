@@ -1,0 +1,71 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 10px;
+    font-size: 0.8rem;
+}
+
+/* Styling for multiple sections or the document as a whole */
+* {
+    box-sizing: border-box;
+}
+
+header, footer {
+    background-color: #0000FF;
+    text-align: center;
+}
+
+/* Styling for sections of the header */
+header {
+    display: flex;
+    color: #FFFFFF;
+    justify-content: center;  
+    padding: 1rem;
+}
+
+.headertext {
+    font-size: 25px;
+}
+
+section {
+    background-color: #e5e4e2;
+}
+
+/* Styling for sections of the footer */
+footer {
+    padding: .1rem;
+}
+
+#currentyear {
+    color: #FFFFFF;
+}
+
+#lastmodified {
+    color: #FFFF00;
+}
+
+/* Styling for links */
+a:link {
+    color: #0000FF;
+}
+a:visited {
+    color: #551A8B;  
+}
+
+/* Styling for headings */
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+    background-color:#BDEDFF;
+}
+
+/* Styling for links */
+a:link {
+    color: #0000FF;
+  }
+  a:visited {
+    color: #551A8B;  
+  }
+  

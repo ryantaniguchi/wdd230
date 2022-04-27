@@ -1,0 +1,17 @@
+/* Styling changes for medium-sized window - Week02 */
+
+@media only screen and (min-width: 32.5em)  {
+    header, nav, main, footer {
+        margin: 1.25rem auto;
+        max-width: 760px;
+    }
+
+    header {
+        padding: 1.25rem;
+    }
+
+    .headertext {
+        font-size: 25px;
+        padding-left: 40px;
+    }      
+}

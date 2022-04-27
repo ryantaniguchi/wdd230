@@ -1,0 +1,20 @@
+@media only screen and (min-width: 34em) {
+    main {
+        font-size: 1rem;
+    }
+
+    main section:nth-child(3){
+        grid-column: span 2;
+    }
+
+    .headertext {
+        font-size: 30px;
+}
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+#currentyear, #lastmodified {
+    font-size: 16px;
+}

@@ -1,0 +1,15 @@
+@media only screen and (min-width: 65em) {
+    header, nav, main, footer {
+        margin: .75rem auto;
+        max-width: 1600px;
+      }      
+
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    main section:nth-child(3){
+        grid-column: span 1;
+    }
+
+}
