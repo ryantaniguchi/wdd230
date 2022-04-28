@@ -52,7 +52,18 @@ main section span {
     text-align: center;
 }
 
-/* STyling for section */
+
+.columnhead {
+    border-radius: 10px 10px 0px 0px;
+	display: block;
+	padding: 5px;
+	background-color: #000000;
+	color: #FFFFFF;
+    text-align: center;
+}
+
+
+/* Styling for section */
 section {
     background-color: #88d8c0;
     border-radius: 10px;
