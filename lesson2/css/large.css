@@ -1,8 +1,8 @@
 /* CSS styling that takes place in large views */
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 60em) {
     header, nav, main, footer {
         margin: .75rem inherit;
-        max-width: 1600px;
+        max-width: 1060px;
       }      
 
     main {

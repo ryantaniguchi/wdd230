@@ -1,5 +1,5 @@
 /* CSS styling that takes place in tablet-sized views */
-@media only screen and (min-width: 450px) {
+@media only screen and (min-width: 37.5em) {
     main, footer {
         font-size: 1rem;
     }
