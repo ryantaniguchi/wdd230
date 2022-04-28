@@ -1,10 +1,8 @@
-/* Renamed from style.css to small.css - Week 02*/
-
 /* Styling for multiple sections or the document as a whole */
 * {
   box-sizing: border-box;
 }
-
+ 
 header, footer {
   background-color: #0000FF;
   text-align: center;
