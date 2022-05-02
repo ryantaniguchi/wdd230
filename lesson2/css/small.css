@@ -1,4 +1,3 @@
-/* Styling for multiple sections or the document as a whole */
 * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
@@ -11,17 +10,16 @@ main, footer {
 header, footer {
     background-color: #0000FF;
     text-align: center;
-    border-radius: 10px;
+    color: #FFFFFF;
 }
 
-/* Styling for sections of the header */
 header {
-    display: flex;
-    color: #FFFFFF;
+    /* display: flex; */
     justify-content: center;  
     padding: 1rem;
 }
-main section div img {
+
+main section img {
     width: 100%;
     height: auto;
     border: 1px solid #bbb;
@@ -31,10 +29,8 @@ main section div img {
     font-size: 25px;
 }
 
-/*Styling for main or parts of main */
 main {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 10px;
     margin: 0px 5px;
 }
@@ -52,7 +48,6 @@ main section span {
     text-align: center;
 }
 
-
 .columnhead {
     border-radius: 10px 10px 0px 0px;
 	display: block;
@@ -62,26 +57,24 @@ main section span {
     text-align: center;
 }
 
+/* Added */
+div.columncontent {
+    margin-left: 20px;
+    padding-bottom: 20px;
+}
 
-/* Styling for section */
 section {
-    background-color: #88d8c0;
+    background-color: #DCDCDC;
     border-radius: 10px;
     /* display: flex;
     flex-direction: column;
     justify-content: end; */
 }
 
-/* Styling for sections of the footer */
 footer {
     padding: .1rem;
 }
 
-#footertext {
-    color: #FFFFFF;
-}
-
-/* Styling for links */
 a:link {
     color: #0000FF;
 }
