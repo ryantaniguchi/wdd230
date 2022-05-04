@@ -1,4 +1,6 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
@@ -9,6 +11,7 @@ header, footer {
     color: #0080ff;
     padding: 1rem;
     justify-content: center;
+    background-color: #000000;
 }
 
 .columns {
@@ -22,19 +25,16 @@ header, footer {
 
 .frankatkins, .jimmy {
     background-color: #228b22;
-}
-
-.colorcolumn {
-    background-color: pink;
-}
-
-.frankatkins, .jimmy, .colorcolumn {
     border-radius: 10px;
 	display: block;
 	padding: 5px;
 	color: #000000;
     text-align: center;
-;
+}
+
+.colorcolumn, .fontcolumn, .audiencecolumn {
+    background-color: pink;
+    border-radius: 10px;
 }
 
 main img {
@@ -46,21 +46,18 @@ nav {
 	background-color: #806517;
 	max-width: 1060px;
 }
+
+
 nav ul {
     list-style-type: none;
 	overflow: hidden;
+    padding: 0;
 }
 nav ul li a {
 	display: block;
 	color: #fff;
 	text-align: center;
 	padding: 0.75rem;
-}
-
-header, footer {
-    background-color: #000000;
-    text-align: center;
-    padding: .1rem;
 }
 
 h1, h2, h3, h4, .montserrat {
@@ -80,7 +77,7 @@ h1, h2, h3, h4, .montserrat {
     color: #806517;
 }
 
-.green {
+.active {
     color: #228b22
 }
 
@@ -90,4 +87,22 @@ h1, h2, h3, h4, .montserrat {
 
 .active {
 	color: #000000;
+}
+
+h3 {
+    border-radius: 10px 10px 0px 0px;
+	display: block;
+	padding: 5px;
+	background-color: #000000;
+	color: #FFFFFF;
+    text-align: center;
+}
+
+h4 {
+    border-radius: 10px 10px 0px 0px;
+	display: block;
+	padding: 5px;
+	background-color: #000000;
+	color: #FFFFFF;
+    text-align: center;
 }

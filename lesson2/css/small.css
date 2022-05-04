@@ -35,18 +35,12 @@ main {
     margin: 0px 5px;
 }
 
-.company, main section div a {
+main section div p, main section div a {
     margin-left: 20px;
+    display: block;
+    padding: 10px;
 }
 
-main section span {
-    border-radius: 10px 10px 0px 0px;
-	display: block;
-	padding: 5px;
-	background-color: #000000;
-	color: #FFFFFF;
-    text-align: center;
-}
 
 h3 {
     border-radius: 10px 10px 0px 0px;
@@ -58,7 +52,6 @@ h3 {
 }
 
 div.columncontent {
-    padding-bottom: 20px;
     background-color: #DCDCDC;
     border-radius: 0 0 10px 10px;
 }
