@@ -1,23 +1,22 @@
 /* CSS styling that takes place in tablet-sized views */
 @media only screen and (min-width: 37.5em) {
-    main, footer {
-        font-size: 1rem;
+
+    header {
+        border-radius: 10px 10px 0 0;
     }
 
-    header, footer {
+    footer {
         border-radius: 10px;
     }
 
-    main {
-        grid-template-columns: 1fr 1fr;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Moved from small */
+    nav {
+        border-radius: 0 0 10px 10px;
     }
 
-    main section:nth-child(3){
-        grid-column: span 2;
+    nav ul { 
+        display: flex; 
     }
-
-    .headertext {
-        font-size: 30px;
-    }
+    nav ul li { 
+        flex: 1 1 auto; 
+    }   
 }

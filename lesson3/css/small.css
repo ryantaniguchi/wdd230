@@ -1,73 +1,53 @@
-/* * {
+* {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
-main, footer {
-    font-size: 0.8rem;
-}
-
-header {
-    justify-content: center;  
+header, footer {
+    display: flex;
+    text-align: center;
+    color: #0080ff;
     padding: 1rem;
+    justify-content: center;
 }
 
-main section img {
-    width: 100%;
-    height: auto;
-    border: 1px solid #bbb;
-}
-
-.headertext {
-    font-size: 25px;
-}
-
-main {
+.columns {
     display: grid;
+    grid-template-columns: auto auto;
     grid-gap: 10px;
     margin: 0px 5px;
-}
-
-main section div p, main section div a {
-    padding: 5px;
-}
-
-main section span {
-    border-radius: 10px 10px 0px 0px;
-	display: block;
-	padding: 5px;
-	background-color: #000000;
-	color: #FFFFFF;
-    text-align: center;
-}
-
-.columnhead {
-    border-radius: 10px 10px 0px 0px;
-	display: block;
-	padding: 5px;
-	background-color: #000000;
-	color: #FFFFFF;
-    text-align: center;
-}
-
-div.columncontent {
-    margin-left: 20px;
-    padding-bottom: 20px;
-}
-
-section {
-    background-color: #DCDCDC;
     border-radius: 10px;
-} */
+    padding: 10px;
+}
+
+.frankatkins, .jimmy {
+    background-color: #228b22;
+}
+
+.colorcolumn {
+    background-color: pink;
+}
+
+.frankatkins, .jimmy, .colorcolumn {
+    border-radius: 10px;
+	display: block;
+	padding: 5px;
+	color: #000000;
+    text-align: center;
+;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+}
 
 nav {
-	background-color: #36454f;
-	margin: 0 auto;
-	max-width: 780px;
-	box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+	background-color: #806517;
+	max-width: 1060px;
 }
 nav ul {
-	list-style-type: none;
+    list-style-type: none;
 	overflow: hidden;
 }
 nav ul li a {
@@ -75,23 +55,39 @@ nav ul li a {
 	color: #fff;
 	text-align: center;
 	padding: 0.75rem;
-	text-decoration: none;
-	font-size: 0.95rem;
-	background: linear-gradient(90deg, transparent, yellow, transparent) top /
-		var(--d, 0) 10px no-repeat;
-	transition: 0.5s;
 }
 
-footer {
-    background-color: #0000FF;
+header, footer {
+    background-color: #000000;
     text-align: center;
-    color: #FFFFFF;
     padding: .1rem;
 }
 
-a:link {
-    color: #0000FF;
+h1, h2, h3, h4, .montserrat {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
-a:visited {
-    color: #551A8B;  
+
+.roboto, .black, .brown, .green, .blue {
+    text-align: center;
+}
+
+.black {
+    color: #000000;
+}
+
+.brown {
+    color: #806517;
+}
+
+.green {
+    color: #228b22
+}
+
+.blue {
+    color:#0080ff
+}
+
+.active {
+	color: #000000;
 }

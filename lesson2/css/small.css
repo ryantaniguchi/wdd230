@@ -35,8 +35,8 @@ main {
     margin: 0px 5px;
 }
 
-main section div p, main section div a {
-    padding: 5px;
+.company, main section div a {
+    margin-left: 20px;
 }
 
 main section span {
@@ -48,7 +48,7 @@ main section span {
     text-align: center;
 }
 
-.columnhead {
+h3 {
     border-radius: 10px 10px 0px 0px;
 	display: block;
 	padding: 5px;
@@ -57,18 +57,10 @@ main section span {
     text-align: center;
 }
 
-/* Added */
 div.columncontent {
-    margin-left: 20px;
     padding-bottom: 20px;
-}
-
-section {
     background-color: #DCDCDC;
-    border-radius: 10px;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: end; */
+    border-radius: 0 0 10px 10px;
 }
 
 footer {
@@ -78,6 +70,7 @@ footer {
 a:link {
     color: #0000FF;
 }
+
 a:visited {
     color: #551A8B;  
 }
