@@ -1,49 +1,71 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+header, nav, main, footer {
+    margin: .75rem auto;
+    max-width: 1060px;
+  }      
+
 header, footer {
-    display: flex;
-    text-align: center;
-    color: #0080ff;
-    padding: 1rem;
-    justify-content: center;
     background-color: #000000;
+    text-align: center;
+    color: #9C9C9C;
+    justify-content: center;
+    padding: 1rem;
+}
+
+section p {
+    padding: 1rem;
 }
 
 .columns {
     display: grid;
-    grid-template-columns: auto auto;
     grid-gap: 10px;
-    margin: 0px 5px;
-    border-radius: 10px;
-    padding: 10px;
 }
 
-.frankatkins, .jimmy {
-    background-color: #228b22;
+div section {
+    background-color: #0D350D;
+}
+
+div section img {
+    border: 1px solid #bbb;
+    display: flex;
+    justify-self: center;
+}
+
+div section p {
+    padding-top: 1rem;
+    color: #FFFFFF;
+}
+
+div section ul {
+    padding: 1.5rem;
+    color: #ffffff;
+}
+
+.colorcolumn, .fontcolumn, .audiencecolumn, .indexcolumn {
+    background-color: #DCDCDC;
     border-radius: 10px;
-	display: block;
-	padding: 5px;
-	color: #000000;
     text-align: center;
 }
 
-.colorcolumn, .fontcolumn, .audiencecolumn {
-    background-color: pink;
-    border-radius: 10px;
-}
-
-main img {
-    width: 100%;
+img {
+    width: 96%;
     height: auto;
+    margin: 1rem auto;
+
 }
 
 nav {
-	background-color: #806517;
+	background-color: #0D350D;
 	max-width: 1060px;
 }
 
@@ -52,6 +74,7 @@ nav ul {
     list-style-type: none;
 	overflow: hidden;
     padding: 0;
+
 }
 nav ul li a {
 	display: block;
@@ -65,44 +88,29 @@ h1, h2, h3, h4, .montserrat {
     text-align: center;
 }
 
-.roboto, .black, .brown, .green, .blue {
-    text-align: center;
-}
-
-.black {
-    color: #000000;
-}
-
-.brown {
-    color: #806517;
-}
-
-.active {
-    color: #228b22
-}
-
-.blue {
-    color:#0080ff
-}
-
-.active {
-	color: #000000;
-}
-
-h3 {
-    border-radius: 10px 10px 0px 0px;
+h3, h4 {
 	display: block;
 	padding: 5px;
 	background-color: #000000;
 	color: #FFFFFF;
-    text-align: center;
 }
 
-h4 {
-    border-radius: 10px 10px 0px 0px;
-	display: block;
-	padding: 5px;
-	background-color: #000000;
-	color: #FFFFFF;
-    text-align: center;
+.green {
+    color: #0D350D
+}
+
+.headertext {
+    color:#9C9C9C;
+    background-color: #000000;
+}
+
+.active {
+	color: #FAC000;
+    background-color: #0D350D;
+}
+
+.menutext {
+	padding: 0.75rem;
+    color: #ffffff;
+    background-color: #0D350D;
 }

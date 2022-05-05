@@ -12,8 +12,16 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    section {
+        border-radius: 10px;
+    }
+
     main section:nth-child(3){
         grid-column: span 2;
+    }
+
+    h3 {
+        border-radius: 10px 10px 0px 0px;
     }
 
     .headertext {

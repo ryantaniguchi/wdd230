@@ -1,63 +1,70 @@
 * {
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-main, footer {
-    font-size: 0.8rem;
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
+
+header, nav, main, footer {
+    margin: .75rem auto;
+    max-width: 1060px;
+}      
 
 header, footer {
     background-color: #0000FF;
     text-align: center;
     color: #FFFFFF;
-}
-
-header {
-    /* display: flex; */
     justify-content: center;  
     padding: 1rem;
 }
 
-main section img {
-    width: 100%;
+main {
+    display: grid;
+    grid-gap: 10px;
+}
+
+section {
+    background-color: #DCDCDC;
+}
+
+section a {
+    padding: .5rem;
+}
+
+section img {
+    width: 96%;
     height: auto;
+    margin: 1rem auto;
     border: 1px solid #bbb;
+    display: flex;
+    justify-self: center;
+}
+
+section p {
+    padding: 1rem;
+}
+
+footer {
+    font-size: 0.8rem;
 }
 
 .headertext {
     font-size: 25px;
 }
 
-main {
-    display: grid;
-    grid-gap: 10px;
-    margin: 0px 5px;
-}
-
-main section div p, main section div a {
-    margin-left: 20px;
-    display: block;
-    padding: 10px;
-}
-
-
 h3 {
-    border-radius: 10px 10px 0px 0px;
-	display: block;
 	padding: 5px;
 	background-color: #000000;
 	color: #FFFFFF;
     text-align: center;
 }
 
-div.columncontent {
-    background-color: #DCDCDC;
-    border-radius: 0 0 10px 10px;
-}
-
-footer {
-    padding: .1rem;
+h4 {
+    padding: .5rem;
 }
 
 a:link {
