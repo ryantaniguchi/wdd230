@@ -9,16 +9,19 @@
         border-radius: 10px;
     }
 
+    .colorcolumn, .fontcolumn, .audiencecolumn, .indexcolumn {
+        border-radius: 10px;
+    }
+
     .columns {
         grid-template-columns: auto auto;
         border-radius: 10px;
-        padding: 10px;
     }
     
     div section {
         border-radius: 10px;
     }
-    
+
 
     nav {
         border-radius: 0 0 10px 10px;

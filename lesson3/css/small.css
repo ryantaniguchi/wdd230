@@ -12,7 +12,7 @@ body {
 header, nav, main, footer {
     margin: .75rem auto;
     max-width: 1060px;
-  }      
+}      
 
 header, footer {
     background-color: #000000;
@@ -29,6 +29,8 @@ section p {
 .columns {
     display: grid;
     grid-gap: 10px;
+    padding-top: 10px;
+
 }
 
 div section {
@@ -53,7 +55,6 @@ div section ul {
 
 .colorcolumn, .fontcolumn, .audiencecolumn, .indexcolumn {
     background-color: #DCDCDC;
-    border-radius: 10px;
     text-align: center;
 }
 
@@ -90,7 +91,7 @@ h1, h2, h3, h4, .montserrat {
 
 h3, h4 {
 	display: block;
-	padding: 5px;
+	padding: 10px;
 	background-color: #000000;
 	color: #FFFFFF;
 }
