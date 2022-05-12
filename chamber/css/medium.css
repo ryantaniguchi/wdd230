@@ -1,7 +1,19 @@
 @media only screen and (min-width: 35.5em) {
+    * {
+        font-size: 1em;
+    }
+    
+    .headings h1 {
+        font-size: 24px;
+    }
+    
     picture {
         width: 90%;
         height: auto;
+    }
+
+    .navigation {
+        justify-content: right;
     }
 
     .boxes {

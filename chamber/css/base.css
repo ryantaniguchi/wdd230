@@ -2,16 +2,15 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-size: .95em;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
 }
 
 header, nav, main, footer {
     margin: .75rem auto;
-    max-width: 1060px;
 }     
 
 header, footer, .navigation a, .date, div section, a:link, a:visited {
@@ -21,7 +20,6 @@ header, footer, .navigation a, .date, div section, a:link, a:visited {
 header, footer {
     background-color: #000000;
     display: grid;
-    /* Tinker with this */
     padding: 5px;
 }
 
@@ -34,13 +32,26 @@ header {
 picture {
     grid-column: 1;
     grid-row: 1;
+    align-self: center;
+}
+
+picture img, footer img {
     width: 100%;
+    height: auto;
+}
+
+a img {
+    width: 25px;
     height: auto;
 }
 
 .headings {
     grid-column: 2 / 3;
     grid-row: 1;
+}
+
+.headings span {
+    font-size: 20px;
 }
 
 .social {
@@ -72,7 +83,7 @@ nav {
 nav {
     margin: 0 auto;
     max-width: 760px;
-    background-color: #0D350D;
+    z-index: 2;
 }
 
 .navigation {
@@ -102,9 +113,16 @@ nav {
     font-weight: 700;
 }
 
-.responsive {
-    position: relvative;
+.responsive, .date, .boxes>section, #spotlight>div {
+    border: 1px solid #FAC000;
+}
+
+.responsive, .date, div section, nav {
     background-color: #0D350D;
+}
+
+.responsive {
+    position: relative;
 }
 
 .responsive li {
@@ -113,15 +131,12 @@ nav {
 
 .date {
     margin: 0.5 rem;
-    border: 1px solid #FAC000;
     padding: 0.75rem;
-    background-color: #0D350D;
 }
 
 .boxes {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 100px;
     gap: 10px;
     padding: 15px;
 }
@@ -131,7 +146,6 @@ nav {
     height: 100px;
     text-align: left;
     padding: 15px;
-    border: 1px solid #FAC000;
 }
 
 #join {
@@ -146,23 +160,21 @@ nav {
 }
 
 #spotlight>div {
-    border: 1px solid #FAC000;
     height: 50px;
+    padding: 10px;
 }
 
 #spotlight>div:nth-child(3) {
     display: none;
 }
 
-div section {
-    background-color: #0D350D;
+div section, .footeraddress {
     font-style: italic;
 }
 
 footer {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 100px;
     gap: 10px;
     padding: 15px;
     text-align: center;
@@ -175,4 +187,8 @@ footer>img {
 #footercopyright {
     border-top: #FAC000 1px solid;
     padding: 5px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
 }
