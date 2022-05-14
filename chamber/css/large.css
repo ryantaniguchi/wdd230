@@ -10,10 +10,15 @@
         height: auto;
     }
 
+    a img {
+        width: 48px;
+        height: auto;
+    }
     nav {
         grid-column: 3;
         grid-row: 1;
     }
+    
     .navigation {
         display: flex;
     }

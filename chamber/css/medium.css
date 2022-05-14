@@ -12,6 +12,12 @@
         height: auto;
     }
 
+    a img {
+        width: 40px;
+        height: auto;
+    }
+    
+
     .navigation {
         justify-content: right;
     }

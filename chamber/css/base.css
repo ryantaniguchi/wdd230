@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
 
 header, nav, main, footer {
@@ -56,7 +57,6 @@ a img {
 
 .headings {
     grid-column: 2 / 3;
-    grid-row: 1;
 }
 
 .headings span {
@@ -65,12 +65,10 @@ a img {
 
 .social {
     grid-column: 4;
-    grid-row: 1;
 }
 
 nav {
     grid-column: 5;
-    grid-row: 1;
     height: 50px;
 
 }
