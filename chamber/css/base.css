@@ -17,25 +17,34 @@ header, footer, .navigation a, .date, div section, a:link, a:visited {
     color: #FFFFFF;
 }
 
-header, footer {
+header {
+    background-color: #000000;
+    display: grid;
+    padding: 5px;
+    align-content: center;
+    align-items: center;
+}
+
+.headings h1 {
+    margin: 0;
+}
+
+footer {
     background-color: #000000;
     display: grid;
     padding: 5px;
 }
 
-header {
-    align-content: center;
-    grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: auto auto;
+.headings {
+    margin-left: 2em;
 }
 
 picture {
-    grid-column: 1;
-    grid-row: 1;
     align-self: center;
 }
 
 picture img, footer img {
+    max-width: 204px;
     width: 100%;
     height: auto;
 }
@@ -113,16 +122,18 @@ nav {
     font-weight: 700;
 }
 
+/* CHANGE COLOR SCHEME TO REMOVE GOLD AND ADD LIGHT GREEN */
 .responsive, .date, .boxes>section, #spotlight>div {
-    border: 1px solid #FAC000;
+    border: 1px solid #3ACF3A;
 }
 
-.responsive, .date, div section, nav {
+.date, div section {
     background-color: #0D350D;
 }
 
 .responsive {
     position: relative;
+    background-color: #000000;
 }
 
 .responsive li {
@@ -183,9 +194,9 @@ footer {
 footer>img {
     margin: 0 auto;
 }
-
+/* CHANGE COLOR SCHEME TO REMOVE GOLD AND ADD LIGHT GREEN */
 #footercopyright {
-    border-top: #FAC000 1px solid;
+    border-top: #3ACF3A 1px solid;
     padding: 5px;
 }
 

@@ -16,6 +16,11 @@
         justify-content: right;
     }
 
+    .responsive {
+        position: relative;
+        width: 100px;
+    }    
+
     .boxes {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 10px;
