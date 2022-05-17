@@ -31,6 +31,10 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 10px;
     }
+
+    .boxes>section {
+        height:100%;
+    }
         
     #hero {
         grid-column: 1 / 4;

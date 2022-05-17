@@ -86,9 +86,12 @@ nav {
 .boxes {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 100px;
     gap: 10px;
     padding: 15px;
+}
+
+.boxes section img {
+    padding: 20px;
 }
 
 nav {
@@ -118,13 +121,11 @@ nav {
     text-decoration: none;
 }
 
-
 .navigation a:hover {
     color: #FAC000;
     font-weight: 700;
 }
 
-/* CHANGE COLOR SCHEME TO REMOVE GOLD AND ADD LIGHT GREEN */
 .responsive, .date, .boxes>section, #spotlight>div {
     border: 1px solid #3ACF3A;
 }
@@ -156,13 +157,62 @@ nav {
 
 .boxes>section {
     width: 100%;
-    height: 100px;
+    height:200px;
     text-align: left;
     padding: 15px;
 }
 
+
+#hero {
+	width: 100%;
+	height: auto;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/blackforestskyline.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    /* LOOK INTO THIS */
+    /* background-size: 90% 90%; */
+
+}
+
+#herojoin {
+    width: 130px;
+    /* position: relative; */
+    /* Look into a better way of doing this */
+	background: #000000;
+    border-radius: 10px;
+	padding: 1rem;
+    margin: 0 auto;
+    margin-top: 20px;
+
+}
+
+
 #join {
     display:none;
+}
+
+#joinbutton {
+    position: relative;
+    /* Look into a better way of doing this */
+	background: #000000;
+    border-radius: 10px;
+	padding: 1rem;
+}
+
+#weather {
+    height: 100%;
+}
+
+#weatherboxes {
+    text-align: right;
+}
+
+.weatherimg {
+    margin-right: 100px;
+    left: 0px;
 }
 
 #spotlight {
@@ -170,19 +220,24 @@ nav {
     grid-template-columns: 1fr;
     grid-gap: 5px;
     height: 100%;
+    text-align: center;
 }
 
 #spotlight>div {
-    height: 50px;
     padding: 10px;
+}
+
+#spotlight>div>img {
+    border-bottom: #3ACF3A 1px solid;
 }
 
 #spotlight>div:nth-child(3) {
     display: none;
 }
 
-div section, .footeraddress {
-    font-style: italic;
+div section h3, div section p {
+    text-align: center;
+    z-index: 2;
 }
 
 footer {
@@ -203,4 +258,8 @@ footer>img {
 
 h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+    margin: 30px;
 }
