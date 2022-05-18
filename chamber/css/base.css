@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: .95em;
 }
 
 body {
@@ -14,18 +13,18 @@ header, nav, main, footer {
     margin: .75rem auto;
 }  
 
-header, .navigation a, .responsive, a:link, a:visited {
+header {
     color: #9C9C9C;
 }
 
-footer, .date, div section {
+footer, .date, main section, .navigation a, .responsive, a:link, a:visited {
     color: #FFFFFF;
 }
 
 header {
     background-color: #000000;
     display: grid;
-    padding: 5px;
+    padding: .5rem;
     align-content: center;
     align-items: center;
 }
@@ -37,7 +36,7 @@ header {
 footer {
     background-color: #000000;
     display: grid;
-    padding: 5px;
+    padding: .5rem;
 }
 
 .headings {
@@ -64,7 +63,7 @@ a img {
 }
 
 .headings span {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .social {
@@ -83,15 +82,15 @@ nav {
     text-align: center;
 }
 
-.boxes {
+main {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 10px;
-    padding: 15px;
+    gap: .75rem;
+    padding: 0.75rem;
 }
 
-.boxes section img {
-    padding: 20px;
+main>section {
+    padding: 0.5rem;
 }
 
 nav {
@@ -126,11 +125,11 @@ nav {
     font-weight: 700;
 }
 
-.responsive, .date, .boxes>section, #spotlight>div {
+.responsive, .date, main>section, #spotlight>div {
     border: 1px solid #3ACF3A;
 }
 
-.date, div section {
+.date, main section {
     background-color: #0D350D;
 }
 
@@ -148,44 +147,25 @@ nav {
     padding: 0.75rem;
 }
 
-.boxes {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-    padding: 15px;
-}
-
-.boxes>section {
-    width: 100%;
-    height:200px;
-    text-align: left;
-    padding: 15px;
-}
-
-
 #hero {
 	width: 100%;
 	height: auto;
     display: flex;
     flex-direction: column;
-    background-image: url("../images/blackforestskyline.jpg");
+    background-image: url("../images/denverskyline.jpg");
     background-size:cover;
     background-repeat: no-repeat;
     justify-content: center;
-    /* LOOK INTO THIS */
-    /* background-size: 90% 90%; */
-
 }
 
 #herojoin {
     width: 130px;
-    /* position: relative; */
-    /* Look into a better way of doing this */
 	background: #000000;
     border-radius: 10px;
+    text-align: center;
 	padding: 1rem;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 1.3rem;
 
 }
 
@@ -202,29 +182,34 @@ nav {
 	padding: 1rem;
 }
 
-#weather {
-    height: 100%;
-}
 
 #weatherboxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     text-align: right;
 }
 
-.weatherimg {
-    margin-right: 100px;
-    left: 0px;
+.weathertext {
+    font-size: 2rem;
+    border-bottom: #3ACF3A 1px solid;
+    margin: 1rem;
+
+}
+
+.temperaturetext {
+    font-size: 3rem;
 }
 
 #spotlight {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 5px;
+    gap: .3rem;
     height: 100%;
     text-align: center;
 }
 
 #spotlight>div {
-    padding: 10px;
+    padding: .5rem;
 }
 
 #spotlight>div>img {
@@ -235,7 +220,7 @@ nav {
     display: none;
 }
 
-div section h3, div section p {
+main section h3, main section p {
     text-align: center;
     z-index: 2;
 }
@@ -243,8 +228,8 @@ div section h3, div section p {
 footer {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 10px;
-    padding: 15px;
+    gap: .75rem;
+    padding: 1rem;
     text-align: center;
 }
 
@@ -253,7 +238,7 @@ footer>img {
 }
 #footercopyright {
     border-top: #3ACF3A 1px solid;
-    padding: 5px;
+    padding: .5rem;
 }
 
 h1, h2, h3, h4 {
@@ -261,5 +246,9 @@ h1, h2, h3, h4 {
 }
 
 h3 {
-    margin: 30px;
+    margin: 2rem;
+}
+
+.twocol {
+    grid-column: 1/3;
 }

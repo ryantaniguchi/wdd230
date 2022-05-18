@@ -1,8 +1,11 @@
 @media only screen and (min-width: 70em) {
 
+    body {
+        font-size: 1.5rem;
+    }
 
     .headings h1 {
-        font-size: 30px;
+        font-size: 2rem;
     }
 
     picture {
@@ -57,13 +60,11 @@
 
     #spotlight>div {
         height: 100%;
-        padding: 10px;
     }
     
     
     #weather {
-        grid-column: 1/2;
-        grid-row: 2/3;
+        font-size: 1.75rem;
     }
         
     #join {
@@ -79,8 +80,4 @@
     #spotlight>div:nth-child(3) {
         display: block;
     }    
-
-    #footercopyright {
-        padding: 5px;
-    }
 }

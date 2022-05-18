@@ -1,10 +1,10 @@
 @media only screen and (min-width: 35.5em) {
-    * {
-        font-size: 1em;
+    body {
+        font-size: 1.25rem;
     }
     
     .headings h1 {
-        font-size: 24px;
+        font-size: 1.75rem;
     }
     
     picture {
@@ -27,18 +27,12 @@
         width: 100px;
     }    
 
-    .boxes {
+    main {
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 10px;
-    }
-
-    .boxes>section {
-        height:100%;
     }
         
     #hero {
         grid-column: 1 / 4;
-        grid-row: 1;
     }
 
     #news {
@@ -66,8 +60,6 @@
 
     footer {
         grid-template-columns: 150px 1fr 1fr;
-        gap: 10px;
-        padding: 15px;
     }
 
     #footercopyright {
