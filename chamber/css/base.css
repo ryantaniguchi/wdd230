@@ -152,7 +152,7 @@ nav {
 	height: auto;
     display: flex;
     flex-direction: column;
-    background-image: url("../images/denverskyline.jpg");
+    background-image: url("../images/herobackground.jpg");
     background-size:cover;
     background-repeat: no-repeat;
     justify-content: center;
