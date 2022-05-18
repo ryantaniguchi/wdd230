@@ -7,26 +7,28 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    color: #FFFFFF;
 }
 
 header, nav, main, footer {
     margin: .75rem auto;
 }  
 
-header {
-    color: #9C9C9C;
-}
-
-footer, .date, main section, .navigation a, .responsive, a:link, a:visited {
+.navigation a, .responsive, a:link, a:visited {
     color: #FFFFFF;
+    text-decoration: none;
 }
 
 header {
     background-color: #000000;
     display: grid;
-    padding: .5rem;
+    padding: 1rem;
     align-content: center;
     align-items: center;
+}
+
+.headings span {
+    font-size: 1.25rem;
 }
 
 .headings h1 {
@@ -36,7 +38,7 @@ header {
 footer {
     background-color: #000000;
     display: grid;
-    padding: .5rem;
+    padding: 1rem;
 }
 
 .headings {
@@ -58,20 +60,12 @@ a img {
     height: auto;
 }
 
-.headings {
-    grid-column: 2 / 3;
-}
-
-.headings span {
-    font-size: 1.25rem;
-}
-
 .social {
     grid-column: 4;
 }
 
 nav {
-    grid-column: 5;
+    grid-column: 1;
     height: 50px;
 
 }
@@ -86,11 +80,16 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     gap: .75rem;
-    padding: 0.75rem;
+    padding: 1rem;
 }
 
 main>section {
-    padding: 0.5rem;
+    padding: 1rem;
+}
+
+#event p a {
+    text-decoration: underline;
+    text-align: center;
 }
 
 nav {
@@ -115,7 +114,7 @@ nav {
 
 .navigation a {
     display: block;
-    padding: 0.75rem;
+    padding: 1rem;
     text-align: center;
     text-decoration: none;
 }
@@ -144,7 +143,7 @@ nav {
 
 .date {
     margin: 0.5 rem;
-    padding: 0.75rem;
+    padding: 1rem;
 }
 
 #hero {
@@ -209,7 +208,7 @@ nav {
 }
 
 #spotlight>div {
-    padding: .5rem;
+    padding: 1rem;
 }
 
 #spotlight>div>img {
@@ -238,7 +237,7 @@ footer>img {
 }
 #footercopyright {
     border-top: #3ACF3A 1px solid;
-    padding: .5rem;
+    padding: 1rem;
 }
 
 h1, h2, h3, h4 {

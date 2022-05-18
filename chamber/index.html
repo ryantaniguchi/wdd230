@@ -1,8 +1,5 @@
 <!-- Things to work on:
-Resize boxes
-Weather box needs to have images and text that is adjustable based on size
-Position buttons
-Spotlights -->
+Pig should be close to text -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -23,6 +20,16 @@ Spotlights -->
 </head>
 <body>
     <header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
         <picture>
             <img src="images/pig.png" alt="Black Forest Logo" width="204" height="132">
         </picture>
@@ -34,16 +41,6 @@ Spotlights -->
             <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook link" width="48" height="48"></a>
             <a href="https://linkedin.com"><img src="images/linkedin.png" alt="Linkedin link" width="48" height="48"></a>
         </div>
-        <nav>
-            <ul class="navigation">
-                <li><a href="#" onclick="toggleMenu()">&#9776;</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Discover</a></li>
-                <li><a href="#">Directory</a></li>
-                <li><a href="#">Join</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
         <h2 class="date"></h2>
     </header>
 
@@ -54,7 +51,7 @@ Spotlights -->
         </section>
         <section id="event">
             <h3>Black Forest Farmers' Market 2022</h3>
-            <p>Join us every Saturday at 9:00 a.m. in the Holsteiner Katenschinken Shopping Center parking lot. <a href="https://www.5280.com/2022/05/what-you-need-to-know-about-the-2022-farmers-market-season/">more info ...</a></p>    
+            <p>Join us every Saturday at 9:00 a.m. in the Holsteiner Katenschinken Shopping Center parking lot. <a href="https://www.5280.com/2022/05/what-you-need-to-know-about-the-2022-farmers-market-season/">More info ...</a></p>    
         </section>
         <section id="weather">
             <h3>Weather Summary</h3>
@@ -107,8 +104,7 @@ Spotlights -->
     <footer>
         <img src="images/pig.png" alt="Black Forest Logo" width="204" height="132">
         <div class="footeraddress">      
-            <h3>Black Forest</h3>
-            <p>Chamber of Commerce</p>
+            <h3>Black Forest Chamber of Commerce</h3>
             <p>1445 Market St., Black Forest, CO 80202</p>
         </div>
         <div class="footercontact">
