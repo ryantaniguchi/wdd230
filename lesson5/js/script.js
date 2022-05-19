@@ -5,16 +5,18 @@ const input = document.querySelector('input');
 const button = document.querySelector('button');
 const list = document.querySelector('ul');
 
+// In the function block for adding a chapter, make sure the input is not blank
+const closebtn = document.querySelector('.closebtn');
+
 // Create an click event listener for the Add Chapter button using addEventListener and an anonymous function.  
 button.addEventListener('click', addFunction);
 
 function addFunction() {
 	let response = input.value;
 
-    // In the function block for adding a chapter, make sure the input is not blank
 	if (response == "") {
-		alert("No input detected. Please make sure you are adding a chapter.");
-        return false;
+        var alert = document.getElementById("alert");
+		alert.style.display = "block";
 	} else {
         // Create an li element
 		const listElement = document.createElement('li');
@@ -46,3 +48,9 @@ function addFunction() {
 	input.value = "";
     input.focus();
 };
+
+// In the function block for adding a chapter, make sure the input is not blank
+closebtn.addEventListener('click', closeFunction);
+function closeFunction() {
+    this.parentElement.style.display='none';
+}
