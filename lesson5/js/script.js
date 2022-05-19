@@ -6,7 +6,7 @@ const button = document.querySelector('button');
 const list = document.querySelector('ul');
 
 // In the function block for adding a chapter, make sure the input is not blank
-const closebtn = document.querySelector('.closebtn');
+const dismiss = document.querySelector('.dismiss');
 
 // Create an click event listener for the Add Chapter button using addEventListener and an anonymous function.  
 button.addEventListener('click', addFunction);
@@ -15,8 +15,8 @@ function addFunction() {
 	let response = input.value;
 
 	if (response == "") {
-        var alert = document.getElementById("alert");
-		alert.style.display = "block";
+        var notice = document.getElementById("notice");
+		notice.style.display = "block";
 	} else {
         // Create an li element
 		const listElement = document.createElement('li');
@@ -50,7 +50,7 @@ function addFunction() {
 };
 
 // In the function block for adding a chapter, make sure the input is not blank
-closebtn.addEventListener('click', closeFunction);
+dismiss.addEventListener('click', closeFunction);
 function closeFunction() {
     this.parentElement.style.display='none';
 }

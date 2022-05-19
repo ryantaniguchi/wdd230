@@ -63,22 +63,15 @@ li {
 	margin-bottom: 0.5rem;
 }
 
-#alert {
-	padding: 20px;
-	background-color: #f44336;
+#notice {
+	padding: 1rem;
+	background-color: #0000ff;
 	color: white;
 	display: none;
 }
 
-	.closebtn {
-margin-left: 15px;
-color: white;
-font-weight: bold;
-float: right;
-font-size: 22px;
-line-height: 20px;
-cursor: pointer;
-transition: 0.3s;
+.dismiss {
+	cursor: default;
 }
 
 @media only screen and (min-width: 32.5em) {
