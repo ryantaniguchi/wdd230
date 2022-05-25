@@ -11,7 +11,7 @@ body {
 }
 
 #meetandgreet {
-    align-self: center;
+    text-align: center;
     width: 100%;
     background-color: #0D350D;
     border: 1px solid #3ACF3A;
@@ -19,9 +19,9 @@ body {
     padding: 1rem;
 }
 
-header, nav, main, footer {
-    margin: .75rem auto;
-}  
+.dismiss {
+	cursor: default;
+}
 
 .navigation a, .responsive, a:link, a:visited {
     color: #FFFFFF;
@@ -65,7 +65,7 @@ picture img, footer img {
 }
 
 a img {
-    width: 25px;
+    width: 35px;
     height: auto;
 }
 
@@ -186,6 +186,7 @@ nav {
     padding: .5rem;
     border-radius: 10px;
     position: absolute;
+    right: 7rem;
 }
 
 #herojoin {
@@ -200,7 +201,7 @@ nav {
     margin-top: 1.3rem; */
     position: absolute;
     bottom: 31px;
-    right: 94px;
+    right: 12rem;
 }
 
 

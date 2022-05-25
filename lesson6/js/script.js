@@ -19,6 +19,12 @@ if(day == 1 || day == 2){
     meetandgreet.style.display = "block";
 }
 
+const dismiss = document.querySelector('.dismiss');
+dismiss.addEventListener('click', closeFunction);
+function closeFunction() {
+    this.parentElement.style.display='none';
+}
+
 
 // Footer content
 const options = {year: "numeric"}
