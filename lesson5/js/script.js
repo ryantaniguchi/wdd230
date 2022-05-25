@@ -1,5 +1,3 @@
-// Ask Bro. Blazzard about security concerns around InnerHTML
-
 // Create three variables that hold references to the input, button, and list elements using const.
 const input = document.querySelector('input');
 const button = document.querySelector('button');

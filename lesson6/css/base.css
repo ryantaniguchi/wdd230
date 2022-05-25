@@ -55,13 +55,13 @@ picture {
 }
 
 picture img, footer img {
-    /* max-width: 204px; */
     width: 100%;
     height: auto;
 }
 
 .logo img {
     min-width: 7em;
+    max-width: 204px;
 }
 
 a img {
