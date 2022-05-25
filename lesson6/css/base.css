@@ -165,6 +165,7 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    position: relative;
     /* display: flex;
     flex-direction: column; */
     /* background-image: url("../images/wdd230-org - small.jpg"); */
