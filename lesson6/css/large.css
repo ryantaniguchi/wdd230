@@ -44,8 +44,13 @@
     }
 
     #herojoin {
-        right: 6rem;
+        right: 8rem;
     }    
+
+    .herotextoverlay {
+        right: 2rem;
+    }
+
 
     #event {
         grid-column: 1/2;
