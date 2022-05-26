@@ -40,15 +40,14 @@
         grid-column: 2/3;
         grid-row: 1/3;
         grid-template-columns: 1fr;
-        /* background-image: url("../images/wdd230-org - large.jpg"); */
     }
 
     #herojoin {
-        right: 8rem;
+        right: 160px;
     }    
 
     .herotextoverlay {
-        right: 2rem;
+        right: 70px;
     }
 
 
@@ -75,11 +74,15 @@
     #join {
         grid-column: 1/2;
         grid-row: 3/4;
+        background-image: url("../images/join_large.jpg");
+
     }
 
     #news {
         grid-column: 2/3;
         grid-row: 3/4;
+        background-image: url("../images/news_large.jpg");
+
     }
 
     #spotlight>div:nth-child(3) {

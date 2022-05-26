@@ -32,26 +32,23 @@
 
     #hero {
         grid-column: 1 / 4;
-        /* background-image: url("../images/wdd230-org.jpg"); */
     }
 
     #herojoin {
-        bottom: 2rem;
-        right: 24rem;
+        bottom: 30px;
+        right: 350px;
     }
 
     .herotextoverlay {
-        /* margin: 0 auto;
-        margin-top: 25px; */
-        /* height: 50px;
-        grid-column: 1/3; */
-        right: 18rem;
+        top: 10px;
+        right: 250px;
     }
     
 
     #news {
         grid-column: 1 / 4;
         grid-row: 2;
+        background-image: url("../images/news_medium.jpg");
     }
 
     #spotlight {
@@ -64,6 +61,7 @@
         display: block;
         grid-column: 1 / 4;
         grid-row: 4;
+        background-image: url("../images/join_medium.jpg");
     }
 
     #event {
