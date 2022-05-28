@@ -98,6 +98,10 @@ main>section {
 
 #event {
     background-image: url("../images/market.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #event p, #event h3 {
@@ -201,7 +205,10 @@ nav {
 
 #news {
     background-image: url("../images/news_small.jpg");
-    padding: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #join {

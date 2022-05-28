@@ -83,6 +83,7 @@
     #news {
         grid-column: 2/3;
         grid-row: 3/4;
+        height: 700px;
         background-image: url("../images/news_large.jpg");
 
     }
