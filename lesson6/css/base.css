@@ -97,7 +97,7 @@ main>section {
 }
 
 #event {
-    background-image: url("../images/market.jpg");
+    background-image: url("../images/market.webp");
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -204,7 +204,6 @@ nav {
 }
 
 #news {
-    background-image: url("../images/news_small.jpg");
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -221,10 +220,6 @@ nav {
 	background: #000000;
     border-radius: 10px;
 	padding: 1rem;
-}
-
-#weather {
-    background-image: url("../images/weatherbackground.jpg");
 }
 
 #weatherboxes {

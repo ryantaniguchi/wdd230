@@ -50,8 +50,7 @@
     #news {
         grid-column: 1 / 4;
         grid-row: 2;
-        height: 300px;
-        background-image: url("../images/news_medium.jpg");
+        height: 100%;
     }
 
     #spotlight {
@@ -64,7 +63,6 @@
         display: block;
         grid-column: 1 / 4;
         grid-row: 4;
-        background-image: url("../images/join_medium.jpg");
         display: flex;
         flex-direction: column;
         align-items: center;
