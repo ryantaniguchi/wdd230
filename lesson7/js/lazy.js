@@ -7,6 +7,7 @@ const imgOptions = {
     rootMargin: "0px 0px 50px 0px"
 };
 
+// Moves the path from data-src to src, then removes data-src since it isn't needed
 const loadImages = (image) => {
     image.setAttribute('src', image.getAttribute('data-src'));
     image.onload = () => {image.removeAttribute('data-src');};
