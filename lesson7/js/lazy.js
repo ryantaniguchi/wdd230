@@ -1,4 +1,4 @@
-// get all imgs with data-src attribute
+// Selects all imgs with data-src attribute
 const imagesToLoad = document.querySelectorAll("img[data-src]");
 
 // Optional paramters being set for the intersectionalObserver
@@ -14,11 +14,14 @@ const loadImages = (image) => {
 
 // first check to see if Intersection Observer is supported
 if('IntersectionObserver' in window) {
-    const imgObserver = new IntersectionObserver((items, observer) => {
+    // Creates an imgObserver
+    const imgObserver = new IntersectionObserver((items, imgObserver) => {
         items.forEach((item) => {
+            // If the item is intersecting, load the images
             if(item.isIntersecting) {
                 loadImages(item.target);
-                observer.unobserve(item.target)
+                // Once the image is loaded, stop observing it.
+                imgObserver.unobserve(item.target)
             }
         })
     }, imgOptions);
