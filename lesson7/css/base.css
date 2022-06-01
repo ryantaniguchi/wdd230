@@ -295,3 +295,39 @@ h3 {
 hr {
     border: 1px solid #3ACF3A;
 }
+
+/* Discover */
+.discoverpictures {
+    grid-column: 2/3;
+    background-color: #0D350D;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr;    
+}
+
+.discoverpictures picture {
+    justify-content: center;
+    padding: 2em;
+}
+
+.discoverpictures picture img {
+    border: 3px solid #3ACF3A;
+    background: #fff;
+}
+
+.discoverpictures picture img:hover {
+    border: 3px solid #FAC000;
+}
+
+.discoverpictures picture p {
+    padding: 1em;
+}
+
+img[data-src] {
+	filter: blur(0.5em);
+}
+
+img{
+	filter: blur(0);
+	transition: filter 1s;
+}

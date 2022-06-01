@@ -1,7 +1,7 @@
-<!-- Future considerations:
-Create border around background images
-Maybe have text be a bit wider?
-Maybe make spotlights be background images and bigger?
+ <!-- Future considerations:
+    Create border around background images
+    Maybe have text be a bit wider?
+    Maybe make spotlights be background images and bigger?
  -->
 
  <!DOCTYPE html>
@@ -48,24 +48,34 @@ Maybe make spotlights be background images and bigger?
      </header>
      <div id="meetandgreet"><a href="https://denverchamber.org/join/">🤝🏼Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</a><span class="dismiss">❌</span></div> 
      <main>
-         <picture>
-            Test1
-         </picture>
-         <picture>
-            Test2
-        </picture>
-        <picture>
-            Test3
-        </picture>
-        <picture>
-            Test4
-        </picture>
-        <picture>
-            Test5
-        </picture>
-        <picture>
-            Test6
-        </picture>
+         <div class="discoverpictures">
+            <picture>
+                <img src="images/lazyload/placeholder.webp" data-src="images/discover/artwork.jpg" alt="Cowboy Statue">  
+                <p>The Colorado Kid was commissioned in 1907 to commemorate Black Forest's rich cowboy history, including famous names such as Butch Cassidy and the Sundance Kid who once called 
+                    Black Forest home.</p>
+            </picture>
+            <picture>
+                <img src="images/lazyload/placeholder.webp" data-src="images/discover/business.jpg" alt="Black Forest's business center">  
+                <p>Black Forest has a strong commercial sector, and is home to many of Colorado's Fortune 500 companies. 43% of Black Forest University graduates finish school with a degree in 
+                    Business or a related field.</p>
+            </picture>
+            <picture>
+                <img src="images/lazyload/placeholder.webp" data-src="images/discover/festival.jpg" alt="Black Forest Days festival">  
+                <p>Come join us everyon May 13th for Black Forest Days, an annual celebration commemorating Black Forest's rich history. There will be food, games, and appearances from celebrities
+                    and musicians.</p>
+            </picture>
+            <picture>
+                <img src="images/lazyload/placeholder.webp" data-src="images/discover/historic.jpg" alt="Black Forest's historic city center">  
+                <p>Visit Black Forest's original City Center, a historic part of town that has been in use since the town's founding in 1853. One popular site is the Ursine Academy, which was founded in 1872 to 
+                    serve the learning needs of the community's youth. The tradition of education has continued into the current day, with a full 68% of Black Forest adults having some form of higher education.
+                </p>
+            </picture>
+            <picture>
+                <img src="images/lazyload/placeholder.webp" data-src="images/discover/park.jpg" alt="The Jamon Iberico De Bellota Park"> 
+                <p>Black Forest is home to a wide range of beautiful parks, including hte Jamon Iberico de Bellota Park in upper Black Forest. With an average population growth of 2%, Black Forest has plenty of 
+                    resources catering to the needs of our young citizens. 
+            </picture>    
+         </div>
      </main>
  
      <footer>
@@ -82,11 +92,13 @@ Maybe make spotlights be background images and bigger?
              <a href="https://maps.google.com"><img src="images/googlemaps.png" alt="Location link" width="100" height="100"><span>Location Map</span></a>
          </div>
          <div id="footercopyright">
-             <p id="footertext"></p>        
+             <p id="footertext"></p>     
+             <p id="lastVisit"></p>
          </div>
      </footer>
  
      <script src="js/script.js"></script>
-     <script src="js/windchill.js"></script>            
+     <script src="js/lazy.js"></script>    
+     <script src="js/lastvisit.js"></script>          
  </body>
  </html>
