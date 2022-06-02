@@ -93,26 +93,14 @@
     }
 
     /* Discover */
-    .populationstat {
+    .stat {
         grid-column: 1/3;
     }
 
-    .statone {
-        grid-column: 1/3;
-        grid-row: 1;
-    }
-
-    .stattwo {
-        grid-column: 1/3;
-    }
-
-    .statthree {
-        grid-column: 1/3;
-    }
 
     .discover {
         grid-column: 3/4;
-        grid-row: 1/4;
+        grid-row: 1/5;
     }
 
 }
