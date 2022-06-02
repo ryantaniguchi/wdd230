@@ -40,10 +40,6 @@ header {
     font-size: 1.25rem;
 }
 
-.headings h1 {
-    margin: 0;
-}
-
 footer {
     background-color: #000000;
     display: grid;
@@ -124,7 +120,6 @@ nav {
 .navigation {
     list-style: none;
     text-align: center;
-    padding: 0;
 }
 
 .navigation li:first-child {
@@ -151,7 +146,7 @@ nav {
     border: 1px solid #3ACF3A;
 }
 
-.date, main section {
+.date, main>section {
     background-color: #0D350D;
 }
 
@@ -297,34 +292,37 @@ hr {
 }
 
 /* Discover */
-.discoverpictures {
-    grid-column: 2/3;
-    background-color: #0D350D;
-    padding: 1em;
+.statone {
+    position: relative;
+}
+
+.discover {
+    padding: 1rem;
     display: grid;
     grid-template-columns: 1fr;    
 }
 
-.discoverpictures picture {
+.discover picture {
     justify-content: center;
-    padding: 2em;
+    background-color: #0D350D;
+    padding: 2rem;
 }
 
-.discoverpictures picture img {
+.discover picture img {
     border: 3px solid #3ACF3A;
     background: #fff;
 }
 
-.discoverpictures picture img:hover {
+.discover picture img:hover {
     border: 3px solid #FAC000;
 }
 
-.discoverpictures picture p {
-    padding: 1em;
+.discover picture p {
+    padding: 1rem;
 }
 
 img[data-src] {
-	filter: blur(0.5em);
+	filter: blur(0.5rem);
 }
 
 img{
