@@ -88,5 +88,12 @@
         display: block;
     }    
 
+    /* Discover */
+    
+
+    .discover picture img:hover {
+        border: 3px solid #FAC000;
+    }
+
 
 }

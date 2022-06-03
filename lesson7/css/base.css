@@ -315,10 +315,6 @@ hr {
     border: 3px solid #3ACF3A;
 }
 
-.discover picture img:hover {
-    border: 3px solid #FAC000;
-}
-
 .discover picture p {
     padding: 1rem;
 }
