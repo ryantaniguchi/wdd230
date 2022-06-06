@@ -1,5 +1,6 @@
 body {
     font-family: 'Ubuntu', sans-serif;
+    text-align: center;
 }
 
 .greenbackground {
@@ -28,7 +29,6 @@ table{
 th, td{
     font-size: 2rem;
     padding: 1rem;
-    text-align: center;
 }
 
 .tealbackground {
