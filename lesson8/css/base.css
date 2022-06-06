@@ -185,6 +185,13 @@ nav {
     grid-row: 1/3;
 }
 
+.herotextoverlay {
+    position: absolute;
+    right: 150px;
+    left: 150px;
+}
+
+
 #herojoin {
 	background: #000000;
     border-radius: 10px;
