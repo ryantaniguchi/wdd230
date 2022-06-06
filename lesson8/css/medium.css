@@ -1,0 +1,115 @@
+@media only screen and (min-width: 60em) {
+    body {
+        font-size: 1.25rem;
+    }
+    
+    .headings h1 {
+        font-size: 1.75rem;
+    }
+    
+    picture {
+        height: auto;
+    }
+
+    a img {
+        width: 40px;
+        height: auto;
+    }
+    
+
+    .navigation {
+        justify-content: right;
+    }
+
+    .responsive {
+        position: relative;
+        width: 100px;
+    }    
+
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #hero {
+        grid-column: 1 / 4;
+    }
+
+    #herojoin {
+        bottom: 30px;
+        right: 200px;
+        left: 200px;
+    }
+
+    .herotextoverlay {
+        top: 10px;
+        right: 300px;
+        left: 300px;
+    }
+    
+
+    #news {
+        grid-column: 1 / 4;
+        grid-row: 2;
+        height: 100%;
+    }
+
+    #spotlight {
+        grid-column: 1 / 4;
+        grid-row: 3;
+        grid-template-columns: 1fr 1fr;
+    }
+        
+    #join {
+        display: block;
+        grid-column: 1 / 4;
+        grid-row: 4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #join p {
+        bottom: 10px;
+    }
+
+    #event {
+        grid-column: 1 / 3;
+        grid-row: 5;
+        display: flex;
+    }
+
+    footer {
+        grid-template-columns: 150px 1fr 1fr;
+    }
+
+    .footeraddress {
+        text-align: left;
+    }
+
+    #footercopyright {
+        grid-column: 1 / 4;
+        grid-row: 2;
+    }
+
+    /* Discover */
+    .stat {
+        grid-column: 1/3;
+    }
+
+
+    .discover {
+        grid-column: 3/4;
+        grid-row: 1/5;
+    }
+
+    /* Join */
+    form {
+        grid-column: 1/6;
+    }
+
+    /* Thanks */
+    .thanks {
+        grid-column: 1/6;
+    }    
+}

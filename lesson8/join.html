@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Black Forest Chamber of Commerce</title>
+    <meta name="description" content="Join the Black Forest Chamber of Commerce, and interact with dozens of other business owners throughout beautiful Black Forest.">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="../lesson7/discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <picture class="logo">
+            <img src="images/pig.webp" alt="Black Forest Logo" width="204" height="132">
+        </picture>
+        <section class="headings">
+            <h1>Black Forest</h1>
+            <span>Chamber of Commerce</span>
+        </section>
+        <div class="social">
+            <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook link" width="48" height="48"></a>
+            <a href="https://linkedin.com"><img src="images/linkedin.png" alt="Linkedin link" width="48" height="48"></a>
+        </div>
+        <h2 class="date">N/A</h2>
+    </header>
+
+    <div id="meetandgreet"><a href="https://denverchamber.org/join/">🤝🏼Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</a><span class="dismiss">❌</span></div> 
+    
+    <main>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label class="top">First Name* <input type="text" name="fname" required></label>
+                <label class="top">Last Name* <input type="text" name="lname" required></label>
+                <label class="top">Title (Please include at least 7 characters. Letters, spaces, and hyphens only, please) <input type="text" pattern="[A-Za-z -]{7,}" name="title"></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Membership Level</legend>
+                <label class="sbs"><input type="radio" name="audience" value="beginner">NP Membership</label>
+                <span>Become an associate member of the Black River Chamber of Commerce at no cost.</span>
+                <label class="sbs"><input type="radio" name="audience" value="intermediate">Bronze Membership</label>
+                <span>Join the Bronze Membership level of the Chamber of Commerce for $20/month. This grants you access 
+                    to view recorded and live meetings of the Black Forest Chamber of Commerce, access to newsletters, 
+                    and event discounts.</span>
+                <label class="sbs"><input type="radio" name="audience" value="advanced">Silver Membership</label>
+                <span>Join the Silver Membership level of the Chamber of Commerce for $50/month. Beyond Bronze Member perks,
+                    this grants you access to special trainings and seminars. Additional discounts and special offers are 
+                    also available.</span>
+                <label class="sbs"><input type="radio" name="audience" value="advanced">Gold Membership</label>
+                <span>Join the Gold Membership level of the Chamber of Commerce for $100/month. Beyond Silver Member perks,
+                    Gold Members are granted voting rights in Chamber of Commerce decisions and featured on the Black Forest 
+                    Chamber of Commerce website and resources.</span>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Describe Your Business</legend>
+                <textarea name="description" rows="5"></textarea>
+            </fieldset>
+    
+            <input type="submit" value="Apply for Membership" class="submitBtn">
+    
+        </form>
+    </main>
+
+    <footer>
+        <picture class="logo">
+            <img src="images/pig.webp" alt="Black Forest Logo" width="204" height="132">            
+        </picture>
+        <div class="footeraddress">      
+            <h3>Black Forest Chamber of Commerce</h3>
+            <p>1445 Market St., Black Forest, CO 80202</p>
+        </div>
+        <div class="footercontact">
+            <a href="info@blackforestchamber.org">info@blackforestchamber.org</a>
+            <p>303-534-8500</p>
+            <a href="https://maps.google.com"><img src="images/googlemaps.png" alt="Location link" width="100" height="100"><span>Location Map</span></a>
+        </div>
+        <div id="footercopyright">
+            <p id="footertext"></p>     
+            <p id="lastVisit"></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/lazy.js"></script>    
+    <script src="js/lastvisit.js"></script>          
+</body>
+</html>
