@@ -406,3 +406,8 @@ textarea {
     padding: 2rem;
     text-align: center;
 }    
+
+.thanks img {
+    max-width: 500px;
+    padding: 1rem;
+}
