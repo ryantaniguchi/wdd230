@@ -20,6 +20,7 @@ table{
     /* box-shadow: 5px 5px 5px #999999; */
     margin-left: auto;
     margin-right: auto;
+    
   }
 
 th, td{
@@ -28,7 +29,7 @@ th, td{
     text-align: center;
 }
 
-thead th, tr:nth-child(4) td:nth-child(3){
+.tealbackground {
     background-color: #3F7D8F;
     color: #FFFFFF;
 }
