@@ -5,11 +5,13 @@ body {
 .greenbackground {
     background-color: #00a877;
     color: #FFFFFF;
+    font-weight: bolder;
 }
 
 caption {
     padding: 1rem;
-    font-size: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
     /* box-shadow: 5px 0 5px #999999; */
 
 }
@@ -44,4 +46,8 @@ tr:nth-child(even){
 
 tfoot td{
     font-size: .75rem;
+}
+
+.italics {
+    font-style: italic;
 }
