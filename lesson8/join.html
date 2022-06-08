@@ -46,11 +46,11 @@
         <form method="get" action="thankyou.html">
             <fieldset>
                 <legend>Applicant Information</legend>
-                <label class="top">First Name* <input type="text" name="fname" required></label>
-                <label class="top">Last Name* <input type="text" name="lname" required></label>
-                <label class="top">Title (Please include at least 7 characters. Letters, spaces, and hyphens only, please) <input type="text" pattern="[A-Za-z -]{7,}" name="title"></label>
+                <label class="top">First Name* <input type="text" name="fname" placeholder="Jane" required></label>
+                <label class="top">Last Name* <input type="text" name="lname" placeholder="Smith" required></label>
+                <label class="top">Title <input type="text" placeholder="Letters, spaces, and hyphens only" pattern="[A-Za-z -]{7,}" name="title"></label>
                 <label class="top">Email* <input type="email" name="email" placeholder="user@email.com" required></label>
-                <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label class="top">Phone* <input type="tel" name="phone" placeholder="983-555-5555" required></label>
             </fieldset>
             <fieldset>
                 <legend>Membership Level</legend>
@@ -68,13 +68,11 @@
                 <span>Join the Gold Membership level of the Chamber of Commerce for $200/month. Beyond Silver Member perks,
                     Gold Members are granted voting rights in Chamber of Commerce decisions and featured on the Black Forest 
                     Chamber of Commerce website and resources.</span>
-                <!-- Add JavaScript to add this value -->
                 <input type="hidden" id="submitdate" name="submitdate">
             </fieldset>
-    
             <fieldset>
-                <label class="businessdescription">
                 <legend>Describe Your Business</legend>
+                <label class="businessdescription">
                 <textarea name="description" rows="5"></textarea>
                 </label>
             </fieldset>

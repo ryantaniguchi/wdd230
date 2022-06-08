@@ -1,6 +1,3 @@
-const formtimestamp = document.querySelector("#submitdate");
-const now = new Date();
-const currentdate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
+const submitdate = document.querySelector("#submitdate");
 
-// Current date
-formtimestamp.innerHTML = `${currentdate}`;
+submitdate.value = now;
