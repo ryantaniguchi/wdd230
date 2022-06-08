@@ -49,7 +49,7 @@
                 <label class="top">First Name* <input type="text" name="fname" required></label>
                 <label class="top">Last Name* <input type="text" name="lname" required></label>
                 <label class="top">Title (Please include at least 7 characters. Letters, spaces, and hyphens only, please) <input type="text" pattern="[A-Za-z -]{7,}" name="title"></label>
-                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="user@email.com" required></label>
                 <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
             </fieldset>
             <fieldset>
@@ -57,22 +57,26 @@
                 <label class="sbs"><input type="radio" name="audience" value="beginner">NP Membership</label>
                 <span>Become an associate member of the Black River Chamber of Commerce at no cost.</span>
                 <label class="sbs"><input type="radio" name="audience" value="intermediate">Bronze Membership</label>
-                <span>Join the Bronze Membership level of the Chamber of Commerce for $20/month. This grants you access 
+                <span>Join the Bronze Membership level of the Chamber of Commerce for $50/month. This grants you access 
                     to view recorded and live meetings of the Black Forest Chamber of Commerce, access to newsletters, 
                     and event discounts.</span>
                 <label class="sbs"><input type="radio" name="audience" value="advanced">Silver Membership</label>
-                <span>Join the Silver Membership level of the Chamber of Commerce for $50/month. Beyond Bronze Member perks,
+                <span>Join the Silver Membership level of the Chamber of Commerce for $100/month. Beyond Bronze Member perks,
                     this grants you access to special trainings and seminars. Additional discounts and special offers are 
                     also available.</span>
                 <label class="sbs"><input type="radio" name="audience" value="advanced">Gold Membership</label>
-                <span>Join the Gold Membership level of the Chamber of Commerce for $100/month. Beyond Silver Member perks,
+                <span>Join the Gold Membership level of the Chamber of Commerce for $200/month. Beyond Silver Member perks,
                     Gold Members are granted voting rights in Chamber of Commerce decisions and featured on the Black Forest 
                     Chamber of Commerce website and resources.</span>
+                <!-- Add JavaScript to add this value -->
+                <input type="hidden" id="submitdate" name="submitdate">
             </fieldset>
     
             <fieldset>
+                <label class="businessdescription">
                 <legend>Describe Your Business</legend>
                 <textarea name="description" rows="5"></textarea>
+                </label>
             </fieldset>
     
             <input type="submit" value="Apply for Membership" class="submitBtn">
