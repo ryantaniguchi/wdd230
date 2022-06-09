@@ -108,6 +108,14 @@
         grid-column: 1/6;
     }
 
+    
+    .formgrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+
     /* Thanks */
     .thanks {
         grid-column: 1/6;
