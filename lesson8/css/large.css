@@ -24,6 +24,7 @@
     
     .navigation {
         display: flex;
+        width: auto;
     }
 
     .navigation li:first-child {

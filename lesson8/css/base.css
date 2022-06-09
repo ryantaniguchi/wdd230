@@ -127,6 +127,7 @@ nav {
 .navigation {
     list-style: none;
     text-align: center;
+    width: 100px;
 }
 
 .navigation li:first-child {
@@ -147,6 +148,10 @@ nav {
 .navigation a:hover {
     color: #FAC000;
     font-weight: 700;
+}
+
+#hamburgermenu {
+    font-size: 2rem;
 }
 
 .responsive, main>section {
@@ -396,7 +401,7 @@ form input.submitBtn {
 }
 
 form label.top input:required {
-    border-left: red solid 6px;
+    border-left: #ff0000 solid 6px;
 }
 
 form label.top input:required:valid {
@@ -405,6 +410,10 @@ form label.top input:required:valid {
 
 textarea {
     width: 95%;
+}
+
+.required {
+    color: #ff0000;
 }
 
 /* Thanks */

@@ -19,11 +19,12 @@
 
     .navigation {
         justify-content: right;
+        width: 125px;
+
     }
 
     .responsive {
         position: relative;
-        width: 100px;
     }    
 
     main {
