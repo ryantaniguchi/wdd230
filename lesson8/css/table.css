@@ -11,16 +11,16 @@ body {
 caption {
     padding: 1rem;
     font-size: 3rem;
-    /* box-shadow: 5px 5px 5px #999999; */
 
 }
 
 table{
     max-width: 40rem;
     margin: 0 auto;
-    /* box-shadow: 5px 5px 5px #999999; */
+    box-shadow: 10px 10px 10px #999999;
     width: 50%;
     text-align: center;
+    border: 1px solid #00a877;
     
   }
 

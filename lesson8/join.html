@@ -51,30 +51,35 @@
                 <label class="top">Title <input type="text" placeholder="Letters, spaces, and hyphens only" pattern="[A-Za-z -]{7,}" name="title"></label>
                 <label class="top">Email<span class="required">*</span> <input type="email" name="email" placeholder="user@email.com" required></label>
                 <label class="top">Phone<span class="required">*</span> <input type="tel" name="phone" placeholder="983-555-5555" required></label>
+                <label class="top">Business Name<span class="required">*</span> <input type="text" name="bname" placeholder="Black Forest Chamber of Commerce" required></label>
             </fieldset>
-            <fieldset>
-                <legend>Membership Level</legend>
-                <label class="sbs"><input type="radio" name="audience" value="np">Non-Profit Membership</label>
-                <span>Become an associate member of the Black River Chamber of Commerce at no cost.</span>
-                <label class="sbs"><input type="radio" name="audience" value="bronze">Bronze Membership</label>
-                <span>Join the Bronze Membership level of the Chamber of Commerce for $50/month. This grants you access 
-                    to view recorded and live meetings of the Black Forest Chamber of Commerce, access to newsletters, 
-                    and event discounts.</span>
-                <label class="sbs"><input type="radio" name="audience" value="silver">Silver Membership</label>
-                <span>Join the Silver Membership level of the Chamber of Commerce for $100/month. Beyond Bronze Member perks,
-                    this grants you access to special trainings and seminars. Additional discounts and special offers are 
-                    also available.</span>
-                <label class="sbs"><input type="radio" name="audience" value="gold">Gold Membership</label>
-                <span>Join the Gold Membership level of the Chamber of Commerce for $200/month. Beyond Silver Member perks,
-                    Gold Members are granted voting rights in Chamber of Commerce decisions and featured on the Black Forest 
-                    Chamber of Commerce website and resources.</span>
-                <label class="hidden"><input type="hidden" id="submitdate" name="submitdate"></label>
-            </fieldset>
+
             <fieldset>
                 <legend>Describe Your Business</legend>
                 <label class="businessdescription">
                 <textarea name="description" rows="5"></textarea>
                 </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Membership Level</legend>
+                <div class="formgrid largetext">
+                    <label class="sbs"><input type="radio" name="audience" value="np">Non-Profit Membership</label>
+                    <span>Become an associate member of the Black River Chamber of Commerce at no cost.</span>
+                    <label class="sbs"><input type="radio" name="audience" value="bronze">Bronze Membership</label>
+                    <span>Join the Bronze Membership level of the Chamber of Commerce for $50/month. This grants you access 
+                        to view recorded and live meetings of the Black Forest Chamber of Commerce, access to newsletters, 
+                        and event discounts.</span>
+                    <label class="sbs"><input type="radio" name="audience" value="silver">Silver Membership</label>
+                    <span>Join the Silver Membership level of the Chamber of Commerce for $100/month. Beyond Bronze Member perks,
+                        this grants you access to special trainings and seminars. Additional discounts and special offers are 
+                        also available.</span>
+                    <label class="sbs"><input type="radio" name="audience" value="gold">Gold Membership</label>
+                    <span>Join the Gold Membership level of the Chamber of Commerce for $200/month. Beyond Silver Member perks,
+                        Gold Members are granted voting rights in Chamber of Commerce decisions and featured on the Black Forest 
+                        Chamber of Commerce website and resources.</span>
+                    </div>
+                <label class="hidden"><input type="hidden" id="submitdate" name="submitdate"></label>
             </fieldset>
 
             <fieldset>
