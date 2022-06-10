@@ -365,34 +365,36 @@ form span {
 
 form label.top, form div {
     display: block;
-    padding-top: 1rem;
+    padding-bottom: 1rem;
     color: #FFFFFF;
     font-size: .8rem;
 }
 
-form label.top input, form label.top select {
-    -webkit-appearance: none;
-    display: block;
-    font-size: 1rem;
+form label.top input, form label.top select, textarea {
     border: solid 1px #FFFFFF;
-    border-radius: 4px;
-    padding: .75rem;
-    color: #ffffff;
+    color: #FFFFFF;
+    background-color: #0D350D;
     width: 100%;
+    font-size: 1rem;
+    padding: .75rem;
+    display: block;
+    border-radius: 4px;
+}
+
+form label.top input, form label.top select {
     max-width: 50rem;
-    background-color: rgba(0,0,0,0.1);
 }
 
 form label.sbs {
     display: block;
     padding: .75rem 0;
-    color: #ffffff;
+    color: #FFFFFF;
 }
 
 form input.submitBtn {
     border: none;
     background-color: #000000;
-    color: white;
+    color: #FFFFFF;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
     margin: 0 0 2rem 2%;
@@ -406,10 +408,6 @@ form label.top input:required {
 
 form label.top input:required:valid {
     border-left: #3ACF3A solid 6px;
-}
-
-textarea {
-    width: 95%;
 }
 
 .required {
