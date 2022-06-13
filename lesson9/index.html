@@ -1,0 +1,145 @@
+<!-- Future considerations:
+Create border around background images
+Maybe have text be a bit wider?
+Maybe make spotlights be background images and bigger?
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Black Forest Chamber of Commerce</title>
+     <meta name="description" content="Come and join us at the Chamber of Commerce for the Black Forest community.">
+     <link rel="shortcut icon" href="../images/favicon.ico">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">    
+     <link rel="stylesheet" href="../css/normalize.css">
+     <link rel="stylesheet" href="css/base.css">
+     <link rel="stylesheet" href="css/medium.css">
+     <link rel="stylesheet" href="css/large.css">
+ </head>
+
+ <body>
+
+     <header>
+         <nav>
+             <ul class="navigation">
+                <li><a id="hamburgermenu" href="#" onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="../lesson9/discover.html">Discover</a></li>
+                <li><a href="../lesson9/directory.html">Directory</a></li>
+                <li><a href="../lesson9/join.html">Join</a></li>
+                <li><a href="#">Contact</a></li>
+             </ul>
+         </nav>
+         <picture class="logo">
+             <img src="images/pig.webp" alt="Black Forest Logo" width="204" height="132">
+         </picture>
+         <section class="headings">
+             <h1>Black Forest<br><span>Chamber of Commerce</span></h1>
+         </section>
+         <div class="social">
+             <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook link" width="48" height="48"></a>
+             <a href="https://linkedin.com"><img src="images/linkedin.png" alt="Linkedin link" width="48" height="48"></a>
+         </div>
+         <h2 class="date greenborder">N/A</h2>
+     </header>
+
+     <div id="meetandgreet"><a href="https://denverchamber.org/join/">🤝🏼Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</a><span class="dismiss">❌</span></div> 
+
+     <main>
+         <section id="hero">
+            <picture class="heroimage twocol">
+                <source srcset="images/wdd230_large.webp" media="(min-width: 90em)">
+                <source srcset="images/wdd230_medium.webp" media="(min-width: 60em)">
+                <img src="images/wdd230_small.webp" alt="Assigned image for WDD230 W06" width="1500" height="766">
+            </picture>
+            <h3 class="herotextoverlay">Welcome to Black Forest</h3>
+             <span id="herojoin"><a href="https://denverchamber.org/join/">Join the Chamber</a></span>
+         </section>
+         <section id="event">
+             <h3 class="blackbackground">Black Forest Farmers' Market 2022</h3>
+             <p class="blackbackground">Join us every Saturday at 9:00 a.m. in the Holsteiner Katenschinken Shopping Center parking lot. <a href="https://www.5280.com/2022/05/what-you-need-to-know-about-the-2022-farmers-market-season/">More info ...</a></p>    
+         </section>
+         
+         <section id="weather">
+             <h3>Weather Summary</h3>
+             <div id="weatherboxes">
+                 <picture>
+                     <img class="weatherimg" src="images/weather.webp" alt="Black Forest Weather Report" width="120" height="103">
+                 </picture>
+                 <p class="temperaturetext"><span class="temperature">33</span>° F</p>
+                 <div class="weathertext twocol">
+                     <span>Partly Cloudy</span>
+                     <hr>
+                 </div>
+                 <p>Wind Speed: </p>
+                 <p><span class="windspeed">4.0</span> mph</p>
+                 <p>Wind Chill: </p>
+                 <p class="windchill">N/A</p>
+             </div>
+         </section>
+         <section id="news">
+             <h3>News Release</h3>
+             <img src="images/news.webp" alt="Assigned image for WDD230 W06" width="500" height="484">
+             
+             <p>Gov. Caro Porcina will meet with the Black Forest Chamber of Commerce to discuss recent legislation on July 28, 2022.</p>
+         </section>
+         <section id="join">
+             <h3 id="joinbutton"><a href="https://denverchamber.org/join/">Join us!</a></h3>
+             <img src="images/join.webp" alt="Assigned image for WDD230 W06">
+             <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
+         </section>
+         <section id="spotlight">
+             <div class="greenborder">
+                 <h3>Black Forest Meat Market</h3>
+                 <img src="images/spotlight1.webp" alt="Pork Belly" width="300" height="250">
+                 <p><a href="https://denvermeatmarket.com">"Serving meat and specialty foods throughout Black Forest"</a></p>
+                 <hr>
+                 <p>303-696-6146</p>
+                 <a href="info@bfmeats.com">info@bfmeats.com</a>
+             </div>
+             <div class="greenborder">
+                <h3>Enchanted Glade Books</h3>
+                 <img src="images/spotlight2.webp" alt="Forest Book" width="300" height="250">
+                 <p class="spotlightlink"><a href="https://thebookies.com">"The Black Forest bookstore for readers of all ages!"</a></p>
+                 <hr>
+                 <p>303-759-1117</p>
+                 <a href="info@enchantedgladebooks.com">info@enchantedgladebooks.com</a>
+             </div>
+             <div class="greenborder">
+                <h3>Pigs in a Blanket</h3>
+                 <img src="images/spotlight3.webp" alt="Barbeque food" width="300" height="250">
+                 <p class="spotlightlink"><a href="https://www.denversmok.com">"The best smoked foods in town!"</a></p>
+                 <hr>
+                 <p>720-452-2487</p>
+                 <a href="support@pigsandablanket.com">support@pigsandablanket.com</a>
+             </div>
+         </section>
+     </main>
+ 
+     <footer>
+         <picture class="logo">
+             <img src="images/pig.webp" alt="Black Forest Logo" width="204" height="132">            
+         </picture>
+         <div class="footeraddress">      
+             <h3>Black Forest Chamber of Commerce</h3>
+             <p>1445 Market St., Black Forest, CO 80202</p>
+         </div>
+         <div class="footercontact">
+             <a href="info@blackforestchamber.org">info@blackforestchamber.org</a>
+             <p>303-534-8500</p>
+             <a href="https://maps.google.com"><img src="images/googlemaps.png" alt="Location link" width="100" height="100"><span>Location Map</span></a>
+         </div>
+         <div id="footercopyright">
+             <p id="footertext"></p>        
+         </div>
+     </footer>
+ 
+     <script src="js/script.js"></script>
+     <script src="js/windchill.js"></script>       
+          
+ </body>
+ </html>

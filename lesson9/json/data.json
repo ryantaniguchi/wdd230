@@ -1,0 +1,77 @@
+{
+    "affiliates": [
+        {
+            "name": "Enchanted Glade Books",
+            "phone": "303-759-1117",
+            "email": "info@enchantedgladebooks.com",
+            "website": "enchantedgladebooks.com",
+            "image": "images/spotlight2.webp",
+            "membership": "gold"
+        },
+        {
+            "name": "Black Forest Meat Market",
+            "phone": "303-696-6146",
+            "email": "info@bfmeats.com",
+            "website": "bfmeats.com",
+            "image": "images/spotlight1.webp",
+            "membership": "gold"
+        },
+        {
+            "name": "Pigs in a Blanket",
+            "phone": "720-452-2487",
+            "email": "support@pigsandablanket.com",
+            "website": "pigsandablanket.com",
+            "image": "images/spotlight3.webp",
+            "membership": "gold"
+        },
+        {
+            "name": "Black Forest Construction",
+            "phone": "720-482-1824",
+            "email": "support@bfconstruct.com",
+            "website": "bfconstruction.com",
+            "image": "images/silver1.jpg",
+            "membership": "silver"
+        },
+        {
+            "name": "Porcine Electric",
+            "phone": "720-533-2822",
+            "email": "info@porcelectric.com",
+            "website": "porcinelectric.com",
+            "image": "images/silver2.jpg",
+            "membership": "silver"
+        },
+        {
+            "name": "Hampton Market",
+            "phone": "303-921-2520",
+            "email": "support@hamarket.com",
+            "website": "hamarket.com",
+            "image": "images/silver3.jpg",
+            "membership": "silver"
+        },
+        {
+            "name": "Forrest Law",
+            "phone": "303-421-5821",
+            "email": "support@forrestlaw.com",
+            "website": "forrestlaw.com",
+            "image": "images/bronze1.jpg",
+            "membership": "bronze"
+        },
+        {
+            "name": "Glendon Tax Consultants",
+            "phone": "303-972-3523",
+            "email": "info@glendontaxes.com",
+            "website": "glendontaxes.com",
+            "image": "images/bronze2.jpg",
+            "membership": "bronze"
+        },
+        {
+            "name": "Black Forest Thrift Store",
+            "phone": "303-922-2152",
+            "email": "help@bfthrift.com",
+            "website": "bfthrift.com",
+            "image": "images/np1.jpg",
+            "membership": "np"
+        }
+
+    ]
+}
