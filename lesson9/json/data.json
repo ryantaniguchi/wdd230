@@ -6,7 +6,7 @@
             "email": "info@enchantedgladebooks.com",
             "website": "enchantedgladebooks.com",
             "image": "images/spotlight2.webp",
-            "membership": "gold"
+            "membership": "Gold"
         },
         {
             "name": "Black Forest Meat Market",
@@ -14,7 +14,7 @@
             "email": "info@bfmeats.com",
             "website": "bfmeats.com",
             "image": "images/spotlight1.webp",
-            "membership": "gold"
+            "membership": "Gold"
         },
         {
             "name": "Pigs in a Blanket",
@@ -22,7 +22,7 @@
             "email": "support@pigsandablanket.com",
             "website": "pigsandablanket.com",
             "image": "images/spotlight3.webp",
-            "membership": "gold"
+            "membership": "Gold"
         },
         {
             "name": "Black Forest Construction",
@@ -30,7 +30,7 @@
             "email": "support@bfconstruct.com",
             "website": "bfconstruction.com",
             "image": "images/silver1.jpg",
-            "membership": "silver"
+            "membership": "Silver"
         },
         {
             "name": "Porcine Electric",
@@ -38,7 +38,7 @@
             "email": "info@porcelectric.com",
             "website": "porcinelectric.com",
             "image": "images/silver2.jpg",
-            "membership": "silver"
+            "membership": "Silver"
         },
         {
             "name": "Hampton Market",
@@ -46,7 +46,7 @@
             "email": "support@hamarket.com",
             "website": "hamarket.com",
             "image": "images/silver3.jpg",
-            "membership": "silver"
+            "membership": "Silver"
         },
         {
             "name": "Forrest Law",
@@ -54,7 +54,7 @@
             "email": "support@forrestlaw.com",
             "website": "forrestlaw.com",
             "image": "images/bronze1.jpg",
-            "membership": "bronze"
+            "membership": "Bronze"
         },
         {
             "name": "Glendon Tax Consultants",
@@ -62,7 +62,7 @@
             "email": "info@glendontaxes.com",
             "website": "glendontaxes.com",
             "image": "images/bronze2.jpg",
-            "membership": "bronze"
+            "membership": "Bronze"
         },
         {
             "name": "Black Forest Thrift Store",
@@ -70,7 +70,7 @@
             "email": "help@bfthrift.com",
             "website": "bfthrift.com",
             "image": "images/np1.jpg",
-            "membership": "np"
+            "membership": "NP"
         }
 
     ]

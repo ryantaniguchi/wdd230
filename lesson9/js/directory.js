@@ -35,6 +35,7 @@ function displayAffiliates(affiliate) {
   image.setAttribute('loading', 'lazy');
 
   // Add/append the section(card) with the h2 element
+  card.classList.add('card')
   card.appendChild(h2);
   card.appendChild(image);
   card.appendChild(phone);
