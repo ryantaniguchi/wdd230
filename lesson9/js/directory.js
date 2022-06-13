@@ -1,4 +1,4 @@
-const requestURL = '../json/data.json';
+const requestURL = 'https://ryantaniguchi.github.io/wdd230/lesson9/json/data.json';
 const cards = document.querySelector('.cards');
 
 fetch(requestURL)
@@ -30,7 +30,7 @@ function displayAffiliates(affiliate) {
   membership.textContent = `${affiliate.membership} Member`;
 
   // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
-  image.setAttribute('src', affiliate.imageurl);
+  image.setAttribute('src', affiliate.image);
   image.setAttribute('alt', `Company logo of ${affiliate.name}, Black Forest Chamber of Commerce Affiliiate`);
   image.setAttribute('loading', 'lazy');
 
