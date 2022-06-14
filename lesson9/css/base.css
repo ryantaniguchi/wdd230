@@ -371,9 +371,8 @@ form label.top, form div {
 }
 
 form label.top input, form label.top select, textarea {
-    border: solid 1px #FFFFFF;
-    color: #FFFFFF;
-    background-color: #0D350D;
+    color: #000000;
+    background-color: #FFFFFF;
     width: 100%;
     font-size: 1rem;
     padding: .75rem;
@@ -411,7 +410,7 @@ form label.top input:required:valid {
 }
 
 .required {
-    color: #ff0000;
+    color: #3ACF3A;
 }
 
 /* Thanks */
@@ -438,11 +437,15 @@ form label.top input:required:valid {
     flex-direction: column;
     align-items: center;
     background-color: #0D350D;
-    margin: 2px;
+    margin: 5px;
     border: 3px solid #000000;
 }
 
-img{
+.card h2 {
+    text-align: center;
+}
+
+.card img{
     max-width: 200px;
     box-shadow: 5px 10px 18px #000000;
     margin: 1rem;
