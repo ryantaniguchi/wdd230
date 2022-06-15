@@ -14,6 +14,8 @@ h1, h2, footer {
 h1, footer {
     margin: 2rem 0;
     padding: 10px;
+    background-color: #C5BADB;
+    border: 3px solid #000000;
 }
 
 h2 {
