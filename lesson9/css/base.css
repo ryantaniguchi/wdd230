@@ -344,6 +344,7 @@ img{
 form {
     background-color: #0D350D;
     padding: 2rem;
+    margin: 0 auto;
 }
 
 form fieldset {
@@ -443,6 +444,7 @@ form label.top input:required:valid {
 
 .card h2 {
     text-align: center;
+    padding: 1rem;
 }
 
 .card img{
