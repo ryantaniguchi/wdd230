@@ -320,7 +320,10 @@ hr {
 .discover picture {
     justify-content: center;
     background-color: #0D350D;
-    padding: 2rem;
+}
+
+.discover p {
+    padding-bottom: 3rem;
 }
 
 .discover picture img {
@@ -419,6 +422,8 @@ form label.top input:required:valid {
     background-color: #0D350D;
     padding: 2rem;
     text-align: center;
+    max-width: 50rem;
+    margin: 0 auto;
 }    
 
 .thanks img {
@@ -439,7 +444,6 @@ form label.top input:required:valid {
     align-items: center;
     background-color: #0D350D;
     margin: 5px;
-    border: 3px solid #000000;
 }
 
 .card h2 {

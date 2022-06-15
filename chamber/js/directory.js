@@ -1,4 +1,6 @@
 const requestURL = 'https://ryantaniguchi.github.io/wdd230/lesson9/json/data.json';
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
 const cards = document.querySelector('.cards');
 
 fetch(requestURL)

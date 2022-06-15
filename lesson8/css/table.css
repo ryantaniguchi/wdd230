@@ -3,7 +3,7 @@ body {
 }
 
 .greenbackground {
-    background-color: #00a877;
+    background-color: #003824;
     color: #FFFFFF;
     font-weight: bolder;
 }
@@ -20,7 +20,7 @@ table{
     box-shadow: 10px 10px 10px #999999;
     width: 50%;
     text-align: center;
-    border: 1px solid #00a877;
+    border: 1px solid #003824;
     
   }
 
