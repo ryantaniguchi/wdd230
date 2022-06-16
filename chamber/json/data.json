@@ -29,7 +29,7 @@
             "phone": "720-482-1824",
             "email": "support@bfconstruct.com",
             "website": "bfconstruction.com",
-            "image": "images/silver1.webp",
+            "image": "images/silver1.jpg",
             "membership": "Silver"
         },
         {
@@ -37,7 +37,7 @@
             "phone": "720-533-2822",
             "email": "info@porcelectric.com",
             "website": "porcinelectric.com",
-            "image": "images/silver2.webp",
+            "image": "images/silver2.jpg",
             "membership": "Silver"
         },
         {
@@ -45,7 +45,7 @@
             "phone": "303-921-2520",
             "email": "support@hamarket.com",
             "website": "hamarket.com",
-            "image": "images/silver3.webp",
+            "image": "images/silver3.jpg",
             "membership": "Silver"
         },
         {
@@ -69,7 +69,7 @@
             "phone": "303-922-2152",
             "email": "help@bfthrift.com",
             "website": "bfthrift.com",
-            "image": "images/np1.webp",
+            "image": "images/np1.jpg",
             "membership": "NP"
         }
 
