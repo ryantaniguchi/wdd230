@@ -433,14 +433,17 @@ form label.top input:required:valid {
 }
 
 /* Directory */
+
 .gridbuttons {
     grid-column: 2/3;
     text-align: center;
 }
 
-.gridbuttons h2 {
+#directoryheader {
+    grid-column: 1/4;
+    text-align: center;
     background-color: #000000;
-    padding: 1rem;
+    padding: .5rem;
     border-radius: 10px;
     margin: 1rem;
 }
