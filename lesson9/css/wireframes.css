@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    text-align: center;
+    align-items: center;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 95%;
+    background-color: aliceblue;
+    padding: 1rem;
+}
+
+h2 {
+    padding: 1rem;
+}

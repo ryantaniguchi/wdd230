@@ -29,7 +29,7 @@
             "phone": "720-482-1824",
             "email": "support@bfconstruct.com",
             "website": "bfconstruction.com",
-            "image": "images/silver1.jpg",
+            "image": "images/silver1.webp",
             "membership": "Silver"
         },
         {
@@ -37,7 +37,7 @@
             "phone": "720-533-2822",
             "email": "info@porcelectric.com",
             "website": "porcinelectric.com",
-            "image": "images/silver2.jpg",
+            "image": "images/silver2.webp",
             "membership": "Silver"
         },
         {
@@ -45,7 +45,7 @@
             "phone": "303-921-2520",
             "email": "support@hamarket.com",
             "website": "hamarket.com",
-            "image": "images/silver3.jpg",
+            "image": "images/silver3.webp",
             "membership": "Silver"
         },
         {
@@ -53,7 +53,7 @@
             "phone": "303-421-5821",
             "email": "support@forrestlaw.com",
             "website": "forrestlaw.com",
-            "image": "images/bronze1.jpg",
+            "image": "images/bronze1.webp",
             "membership": "Bronze"
         },
         {
@@ -61,7 +61,7 @@
             "phone": "303-972-3523",
             "email": "info@glendontaxes.com",
             "website": "glendontaxes.com",
-            "image": "images/bronze2.jpg",
+            "image": "images/bronze2.webp",
             "membership": "Bronze"
         },
         {
@@ -69,7 +69,7 @@
             "phone": "303-922-2152",
             "email": "help@bfthrift.com",
             "website": "bfthrift.com",
-            "image": "images/np1.jpg",
+            "image": "images/np1.webp",
             "membership": "NP"
         }
 

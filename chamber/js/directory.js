@@ -1,7 +1,5 @@
 const requestURL = 'https://ryantaniguchi.github.io/wdd230/lesson9/json/data.json';
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
-const cards = document.querySelector('.cards');
+const cards = document.querySelector(".cards");
 
 fetch(requestURL)
   .then(function (response) {
@@ -17,15 +15,14 @@ fetch(requestURL)
 function displayAffiliates(affiliate) {
   // Create elements to add to the document
   let card = document.createElement('section');
-  let h2 = document.createElement('h2');
+  let h3 = document.createElement('h3');
   let phone = document.createElement('p');
   let email = document.createElement('p');
   let website = document.createElement('p');
   let image = document.createElement('img');
   let membership = document.createElement('p');
 
-  // Change the textContent property of the h2 element to contain the prophet's full name
-  h2.textContent = `${affiliate.name}`;
+  h3.textContent = `${affiliate.name}`;
   phone.textContent = `Phone: ${affiliate.phone}`;
   email.textContent = `Email: ${affiliate.email}`;
   website.textContent = `Website: ${affiliate.website}`;
@@ -36,10 +33,9 @@ function displayAffiliates(affiliate) {
   image.setAttribute('alt', `Company logo of ${affiliate.name}, Black Forest Chamber of Commerce Affiliiate`);
   image.setAttribute('loading', 'lazy');
 
-  // Add/append the section(card) with the h2 element
   card.classList.add('card')
   card.classList.add('greenborder')
-  card.appendChild(h2);
+  card.appendChild(h3);
   card.appendChild(image);
   card.appendChild(phone);
   card.appendChild(email);
@@ -47,6 +43,18 @@ function displayAffiliates(affiliate) {
   card.appendChild(membership);
 
   // Add/append the existing HTML div with the cards class with the section(card)
-  document.querySelector('div.cards').appendChild(card);
+  document.querySelector('article.cards').appendChild(card);
 }
-  
+
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+
+gridbutton.addEventListener("click", () => {
+	cards.classList.add("grids");
+	cards.classList.remove("lists");
+});
+
+listbutton.addEventListener("click", () => {
+	cards.classList.add("lists");
+	cards.classList.remove("grids");
+});
