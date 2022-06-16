@@ -434,8 +434,15 @@ form label.top input:required:valid {
 
 /* Directory */
 .gridbuttons {
-    grid-column: 2;
+    grid-column: 2/3;
     text-align: center;
+}
+
+.gridbuttons h2 {
+    background-color: #000000;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem;
 }
 
 .cards {
