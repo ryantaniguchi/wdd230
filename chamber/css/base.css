@@ -439,6 +439,11 @@ form label.top input:required:valid {
     text-align: center;
 }
 
+.gridbuttons button {
+    padding: .5rem;
+    margin: 1rem;
+}
+
 #directoryheader {
     grid-column: 1/4;
     text-align: center;
