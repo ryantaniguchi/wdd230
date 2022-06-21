@@ -58,6 +58,7 @@ picture img, footer img {
 .logo img {
     min-width: 7em;
     max-width: 204px;
+    padding: 1rem;
 }
 
 a img {
@@ -145,7 +146,7 @@ nav {
     text-decoration: none;
 }
 
-.navigation a:hover {
+a:hover {
     color: #FAC000;
     font-weight: 700;
 }
@@ -231,13 +232,16 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: right;
+    font-size: 2rem;
 }
 
 .weathertext {
-    font-size: 2rem;
     border-bottom: #3ACF3A 1px solid;
     margin: 1rem;
+}
 
+#weatherboxes p {
+    font-size: 2rem;
 }
 
 .temperaturetext {
@@ -365,7 +369,7 @@ form legend {
 }
 
 form span {
-    color: #3ACF3A;
+    color: #FFFFFF;
 }
 
 form label.top, form div {
@@ -437,11 +441,24 @@ form label.top input:required:valid {
 .gridbuttons {
     grid-column: 2/3;
     text-align: center;
+    background-color: #0D350D;
+    border-radius: 10px;
 }
 
 .gridbuttons button {
     padding: .5rem;
     margin: 1rem;
+}
+
+.directorybuttons {
+    background-color: #000000;
+    color: white;
+    border-radius: 10px;
+}
+
+.directorybuttons:hover {
+    color: #FAC000;  
+    font-weight: 700;  
 }
 
 #directoryheader {

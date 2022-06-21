@@ -1,12 +1,11 @@
 <!-- CHANGES:
-    Remove non-image and source info from pictures
     Use pictures and source info
+    Fix large view footer colliding with picture
 -->
 
 <!-- Future considerations:
 Create border around background images
 Maybe have text be a bit wider?
-Maybe make spotlights be background images and bigger?
  -->
 
  <!DOCTYPE html>
@@ -72,16 +71,16 @@ Maybe make spotlights be background images and bigger?
          <section id="weather">
              <h3>Weather Summary</h3>
              <div id="weatherboxes">
-                 <picture>
-                     <img class="weatherimg" src="images/weather.webp" alt="Black Forest Weather Report" width="120" height="103">
-                 </picture>
-                 <p class="temperaturetext"><span class="temperature">33</span>° F</p>
-                 <div class="weathertext twocol">
-                     <span>Partly Cloudy</span>
+                <figure>
+                    <img src="" alt="" id="weather-icon"/>
+                </figure>            
+                <p class="temperaturetext"><span class="temperature"><span id="current-temp"></span></span>° F</p>
+                <div class="weathertext twocol">
+                    <figcaption></figcaption>
                      <hr>
                  </div>
                  <p>Wind Speed: </p>
-                 <p><span class="windspeed">4.0</span> mph</p>
+                 <p><span class="windspeed"><span id="speed"></span></span> mph</p>
                  <p>Wind Chill: </p>
                  <p class="windchill">N/A</p>
              </div>
@@ -139,12 +138,14 @@ Maybe make spotlights be background images and bigger?
              <a href="https://maps.google.com"><img src="images/googlemaps.png" alt="Location link" width="100" height="100"><span>Location Map</span></a>
          </div>
          <div id="footercopyright">
-             <p id="footertext"></p>        
+             <p id="footertext"></p>
+             <p>Weather service provided by <a href="https://openweathermap.org">OpenWeatherMap</a></p>     
          </div>
      </footer>
  
      <script src="js/script.js"></script>
-     <script src="js/windchill.js"></script>       
+     <script src="js/windchill.js"></script>
+     <script src="js/weatherapi.js"></script>       
           
  </body>
  </html>
