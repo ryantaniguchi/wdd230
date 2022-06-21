@@ -1,6 +1,9 @@
 <!-- CHANGES:
+    padding on directory buttons
     Use pictures and source info
-    Fix large view footer colliding with picture
+    headings - create more padding - FIXED?
+    Make hamburger menu go away if you click away (event listener)
+    Make hamburger menu transparent background so can still see content
 -->
 
 <!-- Future considerations:
@@ -27,8 +30,8 @@ Maybe have text be a bit wider?
 
  <body>
 
-     <header>
-         <nav>
+    <header class="blackbackground">
+        <nav>
              <ul class="navigation">
                 <li><a id="hamburgermenu" href="#" onclick="toggleMenu()">&#9776;</a></li>
                 <li><a href="#">Home</a></li>
@@ -48,10 +51,10 @@ Maybe have text be a bit wider?
              <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook link" width="48" height="48"></a>
              <a href="https://linkedin.com"><img src="images/linkedin.png" alt="Linkedin link" width="48" height="48"></a>
          </div>
-         <h2 class="date greenborder">N/A</h2>
+         <h2 class="date greenborder greenbackground">N/A</h2>
      </header>
 
-     <div id="meetandgreet"><a href="https://denverchamber.org/join/">🤝🏼Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</a><span class="dismiss">❌</span></div> 
+     <div class="greenbackground greenborder" id="meetandgreet"><a href="https://denverchamber.org/join/">🤝🏼Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</a><span class="dismiss">❌</span></div> 
 
      <main>
          <section id="hero">
@@ -71,16 +74,16 @@ Maybe have text be a bit wider?
          <section id="weather">
              <h3>Weather Summary</h3>
              <div id="weatherboxes">
-                <figure>
+                <figure id="temperatureicon">
                     <img src="" alt="" id="weather-icon"/>
                 </figure>            
-                <p class="temperaturetext"><span class="temperature"><span id="current-temp"></span></span>° F</p>
+                <p class="temperaturetext"><span id="current-temp"></span>° F</p>
                 <div class="weathertext twocol">
                     <figcaption></figcaption>
                      <hr>
                  </div>
                  <p>Wind Speed: </p>
-                 <p><span class="windspeed"><span id="speed"></span></span> mph</p>
+                 <p class="windspeed"><span id="speed"></span> mph</p>
                  <p>Wind Chill: </p>
                  <p class="windchill">N/A</p>
              </div>
@@ -124,7 +127,7 @@ Maybe have text be a bit wider?
          </section>
      </main>
  
-     <footer>
+     <footer class="blackbackground">
          <picture class="logo">
              <img src="images/pig.webp" alt="Black Forest Logo" width="204" height="132">            
          </picture>
@@ -139,12 +142,14 @@ Maybe have text be a bit wider?
          </div>
          <div id="footercopyright">
              <p id="footertext"></p>
+             <p id="lastVisit"></p>
              <p>Weather service provided by <a href="https://openweathermap.org">OpenWeatherMap</a></p>     
          </div>
      </footer>
  
      <script src="js/script.js"></script>
      <script src="js/windchill.js"></script>
+     <script src="js/lastvisit.js"></script>          
      <script src="js/weatherapi.js"></script>       
           
  </body>
