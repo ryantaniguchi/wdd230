@@ -93,9 +93,4 @@
     #spotlight>div:nth-child(3) {
         display: block;
     }    
-
-    /* Discover */
-    .discover picture img:hover {
-        border: 3px solid #FAC000;
-    }
 }

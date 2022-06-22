@@ -121,6 +121,11 @@
         font-size: 1.5rem;
     }
 
+    /* Discover */
+    .discover img:hover {
+        border: 3px solid #FAC000;
+    }
+
     /* Thanks */
     .thanks {
         grid-column: 1/6;
