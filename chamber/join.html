@@ -19,7 +19,7 @@
     <header class="blackbackground">
         <nav>
             <ul class="navigation">
-                <li><a id="hamburgermenu" href="#" onclick="toggleMenu()">&#9776;</a></li>
+                <li><a class="tworemfont" href="#" onclick="toggleMenu()">&#9776;</a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
@@ -44,7 +44,7 @@
     
     <main>
         <form class="greenborder greenbackground" method="get" action="thankyou.html">
-            <fieldset class="formgrid">
+            <fieldset class="formgrid greenborder">
                 <legend>Applicant Information</legend>
                 <label class="top">First Name<span class="required">*</span> <input type="text" name="fname" placeholder="Jane" required></label>
                 <label class="top">Last Name<span class="required">*</span> <input type="text" name="lname" placeholder="Smith" required></label>
@@ -54,14 +54,14 @@
                 <label class="top">Business Name<span class="required">*</span> <input type="text" name="bname" placeholder="Black Forest Chamber of Commerce" required></label>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="greenborder">
                 <legend>Describe Your Business</legend>
                 <label class="businessdescription">
                 <textarea name="description" rows="5"></textarea>
                 </label>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="greenborder">
                 <legend>Membership Level</legend>
                 <div class="formgrid largetext">
                     <label class="sbs"><input type="radio" name="audience" value="np"> Non-Profit Membership</label>
@@ -82,7 +82,7 @@
                 <label class="hidden"><input type="hidden" id="submitdate" name="submitdate"></label>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="greenborder">
                 <legend>Confirm and Apply</legend>
                 <label class="sbs"><input type="checkbox" id="agreemail" name="agreemail"> I would like to receive emails related to the Black Forest Chamber of Commerce.</label>
                 <label class="sbs"><input type="checkbox" id="agreeconditions" name="agreeconditions" required> I have read and agree to the conditions of membership for the Black Forest Chamber of Commerce.<span class="required">*</span></label>

@@ -1,5 +1,5 @@
 // Windchill function
-const t = parseFloat(document.querySelector(".temperature").innerHTML);
+const t = parseFloat(document.querySelector("#current-temp").innerHTML);
 const s = parseFloat(document.querySelector(".windspeed").innerHTML);
 const windchill = document.querySelector(".windchill");
 
