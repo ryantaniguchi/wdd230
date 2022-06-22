@@ -114,9 +114,11 @@ main>section {
     font-size: 2rem;
 }
 
+.hide {
+    display: none;
+}
 
-
-#event p, #event h3 {
+.roundedborders {
     border-radius: 10px;
 }
 
@@ -139,29 +141,22 @@ nav {
     display: block;
 }
 
-.navigation li {
-	display: none;
-}
-
 .navigation a {
     display: block;
     padding: 1rem;
     text-decoration: none;
 }
 
-a:hover, .directorybuttons:hover, input:hover {
+a:hover, button:hover, input:hover {
     color: #FAC000;
     font-weight: 700;
-}
-
-.responsive, main>section {
-    border: 3px solid #3ACF3A;
 }
 
 
 .responsive {
     position: relative;
     background-color: #000000;
+    border: 3px solid #3ACF3A;
 }
 
 .responsive li {
@@ -252,10 +247,6 @@ a:hover, .directorybuttons:hover, input:hover {
 
 #spotlight>div {
     padding: 1rem;
-}
-
-#spotlight>div:nth-child(3) {
-    display: none;
 }
 
 #spotlight div span {
@@ -349,10 +340,6 @@ form legend {
     padding: 0 .5rem;
 }
 
-form span {
-    color: #FFFFFF;
-}
-
 form label.top, form div {
     display: block;
     padding-bottom: 1rem;
@@ -423,10 +410,6 @@ form label.top input:required:valid {
 .gridbuttons button {
     padding: .75rem;
     margin: 1rem;
-}
-
-.directorybuttons {
-    border-radius: 10px;
 }
 
 #directoryheader {
