@@ -31,7 +31,6 @@ function  displayResults(weatherData) {
     const t = weatherData.main.temp.toFixed(0);
     const s = weatherData.wind.speed;
 
-
     if ((t <= 50) && (s >= 3)) {
         const f = 35.74 + (0.6215 * t) - (35.775 * Math.pow(s, 0.16)) + (0.4275 * t * Math.pow(s, 0.16));
         windchill.textContent = f.toFixed(1) + "°F";
