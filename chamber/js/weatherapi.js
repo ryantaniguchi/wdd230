@@ -2,6 +2,7 @@
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const windSpeed = document.querySelector('#speed');
+const windchill = document.querySelector(".windchill");
 const captionDesc = document.querySelector('figcaption');
 
 const latitude = 39.7392
@@ -27,8 +28,17 @@ async function apiFetch(apiURL) {
 }
 
 function  displayResults(weatherData) {
-    currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
-    windSpeed.innerHTML = `${weatherData.wind.speed}`;
+    const t = weatherData.main.temp.toFixed(0);
+    const s = weatherData.wind.speed;
+
+
+    if ((t <= 50) && (s >= 3)) {
+        const f = 35.74 + (0.6215 * t) - (35.775 * Math.pow(s, 0.16)) + (0.4275 * t * Math.pow(s, 0.16));
+        windchill.textContent = f.toFixed(1) + "°F";
+    }    
+
+    currentTemp.innerHTML = `<strong>${t}</strong>`;
+    windSpeed.innerHTML = s;
 
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     const desc = weatherData.weather[0].description;
@@ -36,5 +46,7 @@ function  displayResults(weatherData) {
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = desc;
+
 }
+
 
