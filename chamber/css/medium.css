@@ -1,5 +1,5 @@
 @media only screen and (min-width: 60em) {
-    body {
+    h3, p {
         font-size: 1.25rem;
     }
     
@@ -13,7 +13,6 @@
 
     a img {
         width: 40px;
-        height: auto;
     }
     
 
