@@ -17,7 +17,6 @@ async function apiFetch(apiURL) {
     const response = await fetch(apiURL);
     if (response.ok) {
       const data = await response.json();
-      console.log(data); // this is for testing the call
       displayResults(data);
     } else {
         throw Error(await response.text());
@@ -40,12 +39,19 @@ function  displayResults(weatherData) {
     windSpeed.innerHTML = s;
 
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
-    const desc = weatherData.weather[0].description;
+    const desc = toTitleCase(weatherData.weather[0].description);
 
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = desc;
 
 }
+
+function toTitleCase(str) {
+  return str.toLowerCase().split(' ').map(function (word) {
+    return (word.charAt(0).toUpperCase() + word.slice(1));
+  }).join(' ');
+}
+
 
 

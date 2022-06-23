@@ -28,7 +28,6 @@ body {
 
 header {
     display: grid;
-    padding: 1rem;
     justify-content: center;
     align-items: center;
 }
@@ -102,8 +101,8 @@ main>section {
     padding: 1rem;
 }
 
-.greenborder {
-    border: 3px solid #3ACF3A;
+.coloredborder {
+    border: 3px solid rgba(0,0,0,.4);
 }
 
 .greenbackground {
@@ -156,7 +155,7 @@ a:hover, button:hover, input:hover {
 .responsive {
     position: relative;
     background-color: #000000;
-    border: 3px solid #3ACF3A;
+    border: 3px solid rgba(0,0,0,.4);
 }
 
 .responsive li {
@@ -212,7 +211,6 @@ a:hover, button:hover, input:hover {
 
 #joinbutton, #join p, #news h3, #news p {
     position: relative;
-    /* Look into a better way of doing this */
 	background: #000000;
     border-radius: 10px;
 	padding: 1rem;
@@ -226,7 +224,7 @@ a:hover, button:hover, input:hover {
 }
 
 .weathertext {
-    border-bottom: #3ACF3A 1px solid;
+    border-bottom: rgba(0,0,0,.4) 1px solid;
     margin: 1rem;
 }
 
@@ -263,6 +261,7 @@ footer {
 footer>img {
     margin: 0 auto;
 }
+
 #footercopyright {
     border-top: #3ACF3A 1px solid;
     padding: 1rem;
