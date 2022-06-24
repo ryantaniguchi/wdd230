@@ -65,6 +65,10 @@ a img {
     grid-column: 4;
 }
 
+.social a {
+    padding: .2rem;
+}
+
 nav {
     grid-column: 1;
     height: 50px;
@@ -80,7 +84,7 @@ nav {
 
 main {
     display: grid;
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
     gap: .75rem;
     padding: 1rem;
 }
@@ -165,13 +169,13 @@ a:hover, button:hover, input:hover {
 }
 
 #hero {
-	width: 100%;
-	height: auto;
+	/* width: 100%;
+	height: auto; */
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; */
     position: relative;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .heroimage {
@@ -208,7 +212,7 @@ a:hover, button:hover, input:hover {
 
 #weatherboxes {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
     text-align: right;
     font-size: 2rem;
 }
@@ -220,15 +224,18 @@ a:hover, button:hover, input:hover {
 
 .temperaturetext {
     font-size: 3rem;
+    text-align: center;
+    margin: auto 0;
+
 }
 
-#temperatureicon img {
+/* #temperatureicon img {
     width: 150px;
-}
+} */
 
 #spotlight {
     display: grid;
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
     gap: .3rem;
     height: 100%;
 }
@@ -238,12 +245,12 @@ a:hover, button:hover, input:hover {
 }
 
 #spotlight div span {
-    border-bottom: #3ACF3A;
+    border-bottom: rgba(0,0,0,.4) ;
 }
 
 footer {
     display: grid;
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
     gap: .75rem;
     padding: 1rem;
 }
@@ -253,7 +260,7 @@ footer>img {
 }
 
 #footercopyright {
-    border-top: #3ACF3A 1px solid;
+    border-top: #0D350D 3px solid;
     padding: 1rem;
 }
 
@@ -283,7 +290,7 @@ h3 {
 .discover {
     padding: 1rem;
     display: grid;
-    grid-template-columns: 1fr;    
+    /* grid-template-columns: 1fr;     */
 }
 
 .discover picture {

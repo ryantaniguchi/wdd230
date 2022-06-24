@@ -38,7 +38,7 @@ function  displayResults(weatherData) {
     currentTemp.innerHTML = `<strong>${t}</strong>`;
     windSpeed.innerHTML = s;
 
-    const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+    const iconsrc = `./images/weather/${weatherData.weather[0].icon}.png`;
     const desc = toTitleCase(weatherData.weather[0].description);
 
     weatherIcon.setAttribute('src', iconsrc);

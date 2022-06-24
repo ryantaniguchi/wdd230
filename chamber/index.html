@@ -1,6 +1,9 @@
 <!-- CHANGES:
-    Set Active on Menu
     Check any Errors you are getting
+    Header and footer aren't taking up full space in mobile view
+    Are there issues with too much info on footer?
+    Are there issues with header squishing into logo?
+    Set Active on Menu
     Use pictures and source info
 -->
 
@@ -59,9 +62,9 @@
      <main>
          <section class="greenbackground coloredborder" id="hero">
             <picture class="heroimage twocol">
-                <source srcset="images/hero_large.jpg" media="(min-width: 90em)">
-                <source srcset="images/hero_medium.jpg" media="(min-width: 60em)">
-                <img src="images/hero_small.jpg" alt="Overview Shot of Beautiful Black Forest" width="1400" height="853">
+                <source srcset="images/hero_large.webp" media="(min-width: 90em)">
+                <source srcset="images/hero_medium.webp" media="(min-width: 60em)">
+                <img src="images/hero_small.webp" alt="Overview Shot of Beautiful Black Forest" width="1400" height="853">
             </picture>
             <h3 class="herotextoverlay">Welcome to Black Forest</h3>
              <span id="herojoin"><a href="join.html">Join the Chamber</a></span>
@@ -75,9 +78,9 @@
              <h3>Weather Summary</h3>
              <div id="weatherboxes">
                 <figure id="temperatureicon">
-                    <img src="https://openweathermap.org" alt="Weather Icon" id="weather-icon">
+                    <img src="https://openweathermap.org" alt="Weather Icon" id="weather-icon" width="256" height="256">
                 </figure>            
-                <p class="temperaturetext tworemfont"><span id="current-temp"></span>° F</p>
+                <p class="temperaturetext"><span id="current-temp"></span>° F</p>
                 <figure class="weathertext twocol">
                     <figcaption></figcaption>
                 </figure>
@@ -95,7 +98,7 @@
          </section>
          <section class="greenbackground coloredborder" id="join">
              <h3 id="joinbutton"><a href="join.html">Join us!</a></h3>
-             <img src="images/join.webp" alt="Business Owner Shaking Hands with CoC Rep">
+             <img src="images/join.webp" alt="Business Owner Shaking Hands with CoC Rep" width="450" height="300">
              <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
          </section>
          <section class="greenbackground coloredborder" id="spotlight">
