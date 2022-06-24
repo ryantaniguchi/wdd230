@@ -92,15 +92,15 @@ h1, h2, h3, h4, .montserrat {
     text-align: center;
 }
 
-h3, h4 {
+h2, h3, h4 {
 	display: block;
 	padding: 10px;
 	background-color: #000000;
 	color: #FFFFFF;
 }
 
-.green {
-    color: #0D350D
+.greenbackground {
+    background-color: #0D350D
 }
 
 .headertext {
@@ -110,7 +110,6 @@ h3, h4 {
 
 .active {
 	color: #FAC000;
-    background-color: #0D350D;
 }
 
 .menutext {

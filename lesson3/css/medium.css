@@ -34,6 +34,7 @@
         flex: 1 1 auto; 
     }   
 }
-h3, h4 {
+
+h2, h3, h4 {
     border-radius: 10px 10px 0 0;
 }
