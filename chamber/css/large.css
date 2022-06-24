@@ -72,7 +72,6 @@
         height: 100%;
     }
     
-    
     #weather {
         font-size: 1.75rem;
     }
@@ -91,4 +90,8 @@
     #spotlight>div:nth-child(3) {
         display: block;
     }    
+
+    .active {
+        color: #8F8FFF;
+    }
 }
