@@ -214,7 +214,7 @@ a:hover, button:hover, input:hover {
 }
 
 .weathertext {
-    border-bottom: rgba(0,0,0,.4) 1px solid;
+    border-bottom: rgba(0,0,0,.4) 3px solid;
     margin: 1rem;
 }
 
