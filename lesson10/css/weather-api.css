@@ -34,6 +34,6 @@
     color: #FFFFFF;
   }
 
-  a:link {
+  a:link, a:visited {
     color: #E5BB52;
   }
