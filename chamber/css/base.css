@@ -48,13 +48,10 @@ picture {
 img {
     max-width: 90%;
     height: auto;
-    margin: 1rem;
 }
 
 .logo img {
-    min-width: 10em;
-    max-width: 204px;
-    padding: 1rem;
+    min-width: 7em;
 }
 
 a img {
@@ -68,6 +65,7 @@ a img {
 
 .social a {
     padding: .2rem;
+    margin: 1rem;
 }
 
 nav {
@@ -77,8 +75,7 @@ nav {
 }
 
 .date {
-    grid-column: 1 / 6;
-    grid-row: 2;
+    grid-column: 1 / 5;
     margin: 0.5rem;
     padding: 1rem;
 }
@@ -91,6 +88,10 @@ main {
 
 main>section {
     padding: 1rem;
+}
+
+section>p {
+    padding: .5rem;
 }
 
 #event {
@@ -115,10 +116,6 @@ main>section {
     background-color: #0D350D
 }
 
-.tworemfont {
-    font-size: 2rem;
-}
-
 .hide, .lists .card img {
     display: none;
 }
@@ -141,7 +138,6 @@ nav {
     width: 100px;
     z-index: 1;
     position: relative;
-    right: 1rem;
 }
 
 .navigation li:first-child {
@@ -150,20 +146,28 @@ nav {
 
 .navigation a {
     display: block;
-    padding: 1rem;
     text-decoration: none;
+    text-align: center;
 }
 
-a:hover, button:hover, input:hover {
+a:hover, button:hover, input:hover, textarea:hover {
     color: #FAC000;
     font-weight: 700;
 }
 
+a:hover, button:hover {
+    color: #FAC000;
+}
 
 .responsive {
     position: relative;
     background-color: #000000;
     border: 3px solid rgba(0,0,0,.4);
+    opacity: 0.8;
+}
+
+.responsive a {
+    padding-top: 1rem;
 }
 
 .responsive li {
@@ -208,7 +212,7 @@ a:hover, button:hover, input:hover {
 #weatherboxes {
     display: grid;
     text-align: right;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .weathertext {
@@ -217,7 +221,7 @@ a:hover, button:hover, input:hover {
 }
 
 .temperaturetext {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     text-align: center;
     margin: auto 0;
 
@@ -226,7 +230,6 @@ a:hover, button:hover, input:hover {
 #spotlight {
     display: grid;
     gap: .3rem;
-    height: 100%;
 }
 
 #spotlight>div {
@@ -270,6 +273,15 @@ h3 {
 .italics {
     font-style: italic;
 }
+
+.transparent {
+    opacity: 0.8;
+}
+
+/* 
+.active {
+    background-color: #3ACF3A;
+} */
 
 /* Discover */
 .stat {
