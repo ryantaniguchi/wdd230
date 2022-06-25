@@ -45,13 +45,14 @@ picture {
     align-self: center;
 }
 
-picture img, footer img {
-    width: 100%;
+img {
+    max-width: 90%;
     height: auto;
+    margin: 1rem;
 }
 
 .logo img {
-    min-width: 7em;
+    min-width: 10em;
     max-width: 204px;
     padding: 1rem;
 }
@@ -62,7 +63,7 @@ a img {
 }
 
 .social {
-    grid-column: 4;
+    z-index: 2;
 }
 
 .social a {
@@ -70,7 +71,7 @@ a img {
 }
 
 nav {
-    grid-column: 1;
+    grid-column: 4;
     height: 50px;
 
 }
@@ -84,7 +85,6 @@ nav {
 
 main {
     display: grid;
-    /* grid-template-columns: 1fr; */
     gap: .75rem;
     padding: 1rem;
 }
@@ -134,12 +134,14 @@ main>section {
 nav {
     margin: 0 auto;
     max-width: 760px;
-    z-index: 2;
 }
 
 .navigation {
     list-style: none;
     width: 100px;
+    z-index: 1;
+    position: relative;
+    right: 1rem;
 }
 
 .navigation li:first-child {
@@ -169,13 +171,8 @@ a:hover, button:hover, input:hover {
 }
 
 #hero {
-	/* width: 100%;
-	height: auto; */
     display: grid;
-    /* grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr; */
     position: relative;
-    /* justify-content: center; */
 }
 
 .heroimage {
@@ -184,8 +181,7 @@ a:hover, button:hover, input:hover {
 
 .herotextoverlay {
     position: absolute;
-    right: 150px;
-    left: 150px;
+    justify-self: center;
 }
 
 
@@ -195,8 +191,7 @@ a:hover, button:hover, input:hover {
 	padding: 1rem;
     position: absolute;
     bottom: 31px;
-    right: 200px;
-    left: 200px;
+    justify-self: center;
 }
 
 #news {
@@ -212,7 +207,6 @@ a:hover, button:hover, input:hover {
 
 #weatherboxes {
     display: grid;
-    /* grid-template-columns: 1fr 1fr; */
     text-align: right;
     font-size: 2rem;
 }
@@ -229,13 +223,8 @@ a:hover, button:hover, input:hover {
 
 }
 
-/* #temperatureicon img {
-    width: 150px;
-} */
-
 #spotlight {
     display: grid;
-    /* grid-template-columns: 1fr; */
     gap: .3rem;
     height: 100%;
 }
@@ -250,7 +239,6 @@ a:hover, button:hover, input:hover {
 
 footer {
     display: grid;
-    /* grid-template-columns: 1fr; */
     gap: .75rem;
     padding: 1rem;
 }
@@ -290,7 +278,6 @@ h3 {
 .discover {
     padding: 1rem;
     display: grid;
-    /* grid-template-columns: 1fr;     */
 }
 
 .discover picture {
@@ -387,11 +374,6 @@ form label.top input:required:valid {
     max-width: 50rem;
     margin: 0 auto;
 }    
-
-.thanks img {
-    max-width: 500px;
-    padding: 1rem;
-}
 
 /* Directory */
 
