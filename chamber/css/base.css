@@ -396,6 +396,8 @@ form label.top input:required:valid {
 .gridbuttons {
     grid-column: 2/3;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .gridbuttons button {
