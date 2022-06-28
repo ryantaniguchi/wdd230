@@ -64,7 +64,7 @@
         grid-template-columns: 1fr;
     }
 
-    #spotlight>div {
+    #spotlight>section {
         height: 100%;
     }
         
@@ -79,7 +79,7 @@
 
     }
 
-    #spotlight>div:nth-child(3) {
+    #spotlight>section:nth-child(3) {
         display: block;
     }    
 

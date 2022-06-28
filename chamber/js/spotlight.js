@@ -52,7 +52,6 @@ function displayAffiliates(data) {
     image.setAttribute('alt', `Company logo of ${affiliate.name}, Black Forest Chamber of Commerce Affiliiate`);
     image.setAttribute('loading', 'lazy');
 
-    card.classList.add('card')
     card.classList.add('coloredborder')
     card.appendChild(h3);
     card.appendChild(image);
@@ -62,7 +61,7 @@ function displayAffiliates(data) {
     card.appendChild(membership);
 
     // Add/append the existing HTML div with the cards class with the section(card)
-    document.querySelector('section.cards').appendChild(card);
+    document.querySelector('section#spotlight').appendChild(card);
 });
 }
 getAffiliates()

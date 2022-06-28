@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     color: #FFFFFF;
     text-align: center;
 }
@@ -48,7 +48,7 @@ picture {
 img {
     max-width: 90%;
     height: auto;
-    padding: .5rem;
+    margin: .5rem;
 }
 
 .logo img {
@@ -230,13 +230,18 @@ a:hover, button:hover {
 #spotlight {
     display: grid;
     gap: .3rem;
+    grid-template-columns: 1fr;
 }
 
-#spotlight>div {
+#spotlight>section {
     padding: 1rem;
 }
 
-#spotlight div span {
+#spotlight>section:nth-child(3) {
+    display: none;
+}
+
+#spotlight section span {
     border-bottom: rgba(0,0,0,.4) ;
 }
 
@@ -280,6 +285,14 @@ h3 {
 
 .transparent {
     opacity: 0.8;
+}
+
+li>a {
+    font-size: 1.5rem;
+}
+
+.tworemfont {
+    font-size: 2rem;
 }
 
 /* 
