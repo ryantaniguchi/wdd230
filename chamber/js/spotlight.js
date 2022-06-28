@@ -14,7 +14,6 @@ async function getAffiliates() {
 
 function randomSelect(data) {
   const randomindex = Math.floor(Math.random()*data.length)
-  console.log(randomindex)
   const spotlights = data[randomindex]
   // Removes the selected item so it is not selected twice
   data.splice(randomindex, 1)
