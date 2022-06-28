@@ -48,6 +48,7 @@ picture {
 img {
     max-width: 90%;
     height: auto;
+    padding: .5rem;
 }
 
 .logo img {
@@ -124,7 +125,7 @@ section>p {
     border-radius: 10px;
 }
 
-#event p a {
+.underline a {
     text-decoration: underline;
 }
 
@@ -151,7 +152,6 @@ nav {
 }
 
 a:hover, button:hover, input:hover, textarea:hover {
-    color: #FAC000;
     font-weight: 700;
 }
 
@@ -266,6 +266,10 @@ h3 {
     padding: 1rem;
 }
 
+.leftalign {
+    text-align: left;
+}
+
 .twocol {
     grid-column: 1/3;
 }
@@ -324,7 +328,7 @@ form {
     margin: 0 auto;
 }
 
-form fieldset {
+fieldset {
     margin: 1rem;
     border-radius: 10px;
     padding: .5rem 2%;
@@ -372,11 +376,11 @@ form input.submitBtn {
     max-width: 20rem;
 }
 
-form label.top input:required {
+form label.top input:required, textarea:required, select:required {
     border-left: #ff0000 solid 6px;
 }
 
-form label.top input:required:valid {
+form label.top input:required:valid, textarea:valid, select:valid {
     border-left: #3ACF3A solid 6px;
 }
 
@@ -449,4 +453,16 @@ form label.top input:required:valid {
 
 .lists h3, .lists p {
     font-size: 1rem;
+}
+
+/* Contact */
+
+.contactjoin p {
+    padding: 1rem;
+    text-align: left;
+}
+
+.formaddress p {
+    padding: 0;
+    text-align: center;
 }

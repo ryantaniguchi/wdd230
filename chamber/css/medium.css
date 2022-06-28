@@ -85,7 +85,7 @@
     }
 
     /* Join */
-    form {
+    .joinform {
         grid-column: 1/6;
         max-width: 60rem;
     }
@@ -107,4 +107,16 @@
     .thanks {
         grid-column: 1/6;
     }    
+
+    /* Contact */
+
+    .contactjoin {
+        grid-column: 1/4;
+        padding: 1rem;
+        border: bl;
+    }
+
+   .contactform {
+        grid-column: 4;
+    }
 }

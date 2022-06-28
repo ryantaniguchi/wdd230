@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join the Black Forest Chamber of Commerce</title>
-    <meta name="description" content="Join the Black Forest Chamber of Commerce, and interact with dozens of other business owners throughout beautiful Black Forest.">
+    <title>Contact the Black Forest Chamber of Commerce</title>
+    <meta name="description" content="Reach out to the Black Forest Chamber of Commerce with any questions or comments you might have.">
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,8 +21,8 @@
             <img src="images/pig.webp" alt="Black Forest Logo" width="204" height="132">
         </picture>
         <section class="headings">
-            <h1>Black Forest<br><span>Chamber of Commerce</span></h1>
-        </section>
+           <h1>Black Forest<br><span>Chamber of Commerce</span></h1>
+       </section>
         <div class="social">
             <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook link" width="48" height="48"></a>
             <a href="https://linkedin.com"><img src="images/linkedin.png" alt="Linkedin link" width="48" height="48"></a>
@@ -33,62 +33,60 @@
                 <li class="hide"><a href="index.html">Home</a></li>
                 <li class="hide"><a href="discover.html">Discover</a></li>
                 <li class="hide"><a href="directory.html">Directory</a></li>
-                <li class="hide"><a href="#">Join</a></li>
-                <li class="hide"><a href="contact.html">Contact</a></li>
+                <li class="hide"><a href="join.html">Join</a></li>
+                <li class="hide"><a href="#">Contact</a></li>
             </ul>
-        </nav>
+         </nav> 
         <h2 class="date coloredborder greenbackground">N/A</h2>
     </header>
 
     <div class="greenbackground coloredborder" id="meetandgreet"><a href="contact.html">🤝🏼Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</a><span class="dismiss">❌</span></div> 
     
     <main>
-        <form class="coloredborder greenbackground joinform" method="get" action="thankyou.html">
+        <div class="greenbackground contactjoin">
+            <h3>Contacting the Black Forest Chamber of Commerce</h3>
+            <p class="underline">If you are interested in joining the Black Forest Chamber of Commerce, please click <a href="join.html">here</a> or email us at 
+                <a href="info@blackforestchamber.org">info@blackforestchamber.org</a>.</p>
+
+            <p class="underline">If you have questions about sponsorship opportunities, please contact: <a href="sponsorship@bfchamber.com">sponsorship@bfchamber.com</a></p>
+            <p class="underline">For questions related to media, please contact: <a href="media@bfchamber.com">media@bfchamber.com</a></p>
+            <img src="images/lazyload/placeholder2.webp" data-src="images/join.webp" alt="Business Owner Shaking Hands with CoC Rep" width="450" height="300">
+            <div class="formaddress">
+                <p>Black Forest Chamber of Commerce</p>
+                <p>1445 Market St.</p>
+                <p>Black Forest, CO 80202</p>
+                <p>303-534-8500</p>    
+            </div>
+        </div>
+
+        <form class="coloredborder greenbackground contactform" method="get" action="thankyou.html">
+            <p>For general questions and comments, please use the following form: </p>
             <fieldset class="formgrid coloredborder">
-                <legend>Applicant Information</legend>
+                <legend>Contact us</legend>
                 <label class="top">First Name<span class="required">*</span> <input type="text" name="fname" placeholder="Jane" required></label>
                 <label class="top">Last Name<span class="required">*</span> <input type="text" name="lname" placeholder="Smith" required></label>
-                <label class="top">Title <input type="text" placeholder="Letters, spaces, and hyphens only" pattern="[A-Za-z -]{7,}" name="title"></label>
                 <label class="top">Email<span class="required">*</span> <input type="email" name="email" placeholder="user@email.com" required></label>
                 <label class="top">Phone<span class="required">*</span> <input type="tel" name="phone" placeholder="983-555-5555" required></label>
-                <label class="top">Business Name<span class="required">*</span> <input type="text" name="bname" placeholder="Black Forest Chamber of Commerce" required></label>
             </fieldset>
 
             <fieldset class="coloredborder">
-                <legend>Describe Your Business</legend>
+                <legend>How Can We Help?<span class="required">*</span></legend>
                 <label class="businessdescription">
-                <textarea name="description" rows="5" placeholder="Describe your business here"></textarea>
+                <textarea name="description" rows="5" placeholder="State your comments or questions here" required></textarea>
                 </label>
             </fieldset>
 
             <fieldset class="coloredborder">
-                <legend>Membership Level</legend>
-                <div class="formgrid largetext">
-                    <label class="sbs"><input type="radio" name="audience" value="np"> Non-Profit Membership</label>
-                    <span class="italics">Become an associate member of the Black River Chamber of Commerce at no cost.</span>
-                    <label class="sbs"><input type="radio" name="audience" value="bronze"> Bronze Membership</label>
-                    <span class="italics">Join the Bronze Membership level of the Chamber of Commerce for $50/month. This grants you access 
-                        to view recorded and live meetings of the Black Forest Chamber of Commerce, access to newsletters, 
-                        and event discounts.</span>
-                    <label class="sbs"><input type="radio" name="audience" value="silver"> Silver Membership</label>
-                    <span class="italics">Join the Silver Membership level of the Chamber of Commerce for $100/month. Beyond Bronze Member perks,
-                        this grants you access to special trainings and seminars. Additional discounts and special offers are 
-                        also available.</span>
-                    <label class="sbs"><input type="radio" name="audience" value="gold"> Gold Membership</label>
-                    <span class="italics">Join the Gold Membership level of the Chamber of Commerce for $200/month. Beyond Silver Member perks,
-                        Gold Members are granted voting rights in Chamber of Commerce decisions and featured on the Black Forest 
-                        Chamber of Commerce website and resources.</span>
-                    </div>
+                <legend>Are you a Member of the Black Forest Chamber of Commerce?<span class="required">*</span></legend>
+                <div class="leftalign largetext">
+                    <label class="sbs"><input type="radio" name="audience" value="yes"> Yes - I belong to a member organization</label>
+                    <label class="sbs"><input type="radio" name="audience" value="no"> No - I don't belong to a member organization</label>
+                    <label class="sbs"><input type="radio" name="audience" value="unknown"> Not Sure - I don't know if I belong to a member organization</label>
+                </div>
                 <label class="hidden"><input type="hidden" id="submitdate" name="submitdate"></label>
             </fieldset>
-
-            <fieldset class="coloredborder">
-                <legend>Confirm and Apply</legend>
-                <label class="sbs"><input type="checkbox" id="agreemail" name="agreemail"> I would like to receive emails related to the Black Forest Chamber of Commerce.</label>
-                <label class="sbs"><input type="checkbox" id="agreeconditions" name="agreeconditions" required> I have read and agree to the conditions of membership for the Black Forest Chamber of Commerce.<span class="required">*</span></label>
-            </fieldset>
     
-            <input type="submit" value="Apply for Membership" class="submitBtn blackbackground">
+            <input type="submit" value="Submit Your Comments" class="submitBtn blackbackground">
     
         </form>
     </main>
@@ -108,12 +106,12 @@
         </div>
         <div id="footercopyright">
             <p id="footertext"></p>     
-            <p id="lastVisit"></p>
         </div>
     </footer>
 
     <script src="js/script.js"></script>
     <script src="js/join.js"></script>          
-    <script src="js/lastvisit.js"></script>          
+    <script src="js/lazy.js"></script>    
+    <script src="js/directory.js"></script>          
 </body>
 </html>
