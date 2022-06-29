@@ -23,9 +23,9 @@ function displayAffiliates(data) {
     let membership = document.createElement('p');
 
     h3.textContent = `${affiliate.name}`;
-    phone.textContent = `Phone: ${affiliate.phone}`;
-    email.textContent = `Email: ${affiliate.email}`;
-    website.textContent = `Website: ${affiliate.website}`;
+    phone.textContent = `${affiliate.phone}`;
+    email.textContent = `${affiliate.email}`;
+    website.textContent = `${affiliate.website}`;
     membership.textContent = `${affiliate.membership} Member`;
 
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).

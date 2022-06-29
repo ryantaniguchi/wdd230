@@ -32,7 +32,7 @@ header {
     align-items: center;
 }
 
-.headings span {
+.headings span, footer span {
     font-size: 1.25rem;
     display: block;
 } 
@@ -81,7 +81,7 @@ nav {
     padding: 1rem;
 }
 
-main {
+.maingrid {
     display: grid;
     gap: .75rem;
     padding: 1rem;
@@ -185,13 +185,13 @@ a:hover, button:hover {
 
 .herotextoverlay {
     position: absolute;
+    top: 10px;
     justify-self: center;
 }
 
 
 #herojoin {
 	background: #000000;
-    border-radius: 10px;
 	padding: 1rem;
     position: absolute;
     bottom: 31px;
@@ -249,6 +249,7 @@ footer {
     display: grid;
     gap: .75rem;
     padding: 1rem;
+    text-align: center;
 }
 
 footer>img {
@@ -343,7 +344,6 @@ form {
 
 fieldset {
     margin: 1rem;
-    border-radius: 10px;
     padding: .5rem 2%;
 }
 
@@ -417,7 +417,6 @@ form label.top input:required:valid, textarea:valid, select:valid {
 
 .gridbuttons {
     grid-column: 2/3;
-    border-radius: 10px;
     display: flex;
     justify-content: center;
 }
@@ -430,7 +429,6 @@ form label.top input:required:valid, textarea:valid, select:valid {
 #directoryheader {
     grid-column: 1/4;
     padding: .5rem;
-    border-radius: 10px;
     margin: 1rem;
 }
 
