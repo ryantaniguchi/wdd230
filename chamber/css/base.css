@@ -34,6 +34,7 @@ header {
 
 .headings span {
     font-size: 1.25rem;
+    display: block;
 }
 
 footer {
@@ -57,7 +58,6 @@ img {
 
 a img {
     width: 35px;
-    height: auto;
 }
 
 .social {
@@ -110,7 +110,7 @@ section>p {
 }
 
 .coloredborder {
-    border: 3px solid rgba(0,0,0,.4);
+    border: 1px solid rgba(0,0,0,.4);
 }
 
 .greenbackground {
@@ -162,7 +162,7 @@ a:hover, button:hover {
 .responsive {
     position: relative;
     background-color: #000000;
-    border: 3px solid rgba(0,0,0,.4);
+    border: 1px solid rgba(0,0,0,.4);
     opacity: 0.8;
 }
 
@@ -216,7 +216,7 @@ a:hover, button:hover {
 }
 
 .weathertext {
-    border-bottom: rgba(0,0,0,.4) 3px solid;
+    border-bottom: rgba(0,0,0,.4) 1px solid;
     margin: 1rem;
 }
 
@@ -256,7 +256,7 @@ footer>img {
 }
 
 #footercopyright {
-    border-top: #0D350D 3px solid;
+    border-top: #0D350D 1px solid;
     padding: 1rem;
 }
 
@@ -395,6 +395,11 @@ form label.top input:required, textarea:required, select:required {
 
 form label.top input:required:valid, textarea:valid, select:valid {
     border-left: #3ACF3A solid 6px;
+}
+
+.big {
+    width: 1.05rem;
+    height: 1.05rem;
 }
 
 .required {

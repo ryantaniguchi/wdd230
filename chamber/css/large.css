@@ -28,12 +28,9 @@
         width: auto;
     }
 
-    
-
     .navigation li {
         padding: 5px;
     }
-
 
     .navigation li:first-child {
         display: none;
