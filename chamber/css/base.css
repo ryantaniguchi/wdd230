@@ -353,7 +353,7 @@ form legend {
     padding: 0 .5rem;
 }
 
-form label.top, form div {
+form label.top {
     display: block;
     padding-bottom: 1rem;
     color: #FFFFFF;

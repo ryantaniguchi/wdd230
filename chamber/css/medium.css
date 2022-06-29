@@ -109,10 +109,9 @@
     .contactjoin {
         grid-column: 1/4;
         padding: 1rem;
-        border: bl;
     }
 
    .contactform {
-        grid-column: 4;
+        grid-column: 5;
     }
 }
