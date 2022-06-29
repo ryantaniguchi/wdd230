@@ -1,9 +1,5 @@
 @media only screen and (min-width: 35em) {
- 
-    header, main, footer {
-        max-width: 1600px;
-        margin: 0 auto;
-    }
+
 
     header {
         display: grid;
@@ -75,16 +71,8 @@
         display: flex;
     }
 
-    footer {
-        grid-template-columns: 150px 1fr 1fr;
-    }
-
-    .footeraddress {
-        text-align: left;
-    }
-
     #footercopyright {
-        grid-column: 1 / 4;
+        grid-column: 1 / 3;
         grid-row: 2;
     }
 

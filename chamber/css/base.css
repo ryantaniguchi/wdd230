@@ -4,6 +4,12 @@
     padding: 0;
 }
 
+ 
+header, main, footer {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
@@ -26,7 +32,7 @@ body {
     text-decoration: none;
 }
 
-.headings {
+.headings, .footerinfo {
     display: flex;
     text-align: left;
     align-items: center;
@@ -36,13 +42,6 @@ body {
     font-size: 1rem;
     display: block;
 } 
-
-footer {
-    display: grid;
-    padding: 1rem;
-    max-width: 1600px;
-    margin: 0 auto;
-}
 
 picture {
     align-self: center;
@@ -134,8 +133,6 @@ nav {
 
 .navigation {
     list-style: none;
-    /* width: 100px; */
-    /* position: relative; */
 }
 
 .navigation li:first-child {
@@ -157,7 +154,6 @@ a:hover, button:hover {
 }
 
 .responsive {
-    position: relative;
     background-color: #000000;
     border: 1px solid rgba(0,0,0,.4);
     opacity: 0.8;
@@ -247,7 +243,6 @@ footer {
     display: grid;
     gap: .75rem;
     padding: 1rem;
-    text-align: center;
 }
 
 footer>img {
