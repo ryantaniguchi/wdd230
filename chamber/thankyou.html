@@ -1,75 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thanks for joining the Chamber of Commerce</title>
-    <meta name="description" content="Thank you for joining the Black Forest Chamber of Commerce, and interacting with other business owners throughout beautiful Black Forest.">
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/medium.css">
-    <link rel="stylesheet" href="css/large.css">
-
-</head>
-<body>
+    <meta
+      name="description"
+      content="Thank you for joining the Black Forest Chamber of Commerce, and interacting with other business owners throughout beautiful Black Forest."
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body>
     <header class="blackbackground">
+      <section class="headings">
         <picture class="logo">
-            <img src="images/pig.webp" alt="Black Forest Logo" width="204" height="132">
+          <img
+            src="images/pig.webp"
+            alt="Black Forest Logo"
+            width="204"
+            height="132"
+          />
         </picture>
-        <section class="headings">
-            <h1>Black Forest<span>Chamber of Commerce</span></h1>
-        </section>
-        <div class="social">
-            <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook link" width="48" height="48"></a>
-            <a href="https://linkedin.com"><img src="images/linkedin.png" alt="Linkedin link" width="48" height="48"></a>
-        </div>
-        <nav>
-            <ul class="navigation">
-                <li class="hide"><a class="tworemfont" href="#" onclick="toggleMenu()">&#9776;</a></li>
-                <li class="hide"><a href="index.html">Home</a></li>
-                <li class="hide"><a href="discover.html">Discover</a></li>
-                <li class="hide"><a href="directory.html">Directory</a></li>
-                <li class="hide"><a href="join.html">Join</a></li>
-                <li class="hide"><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <span class="date coloredborder greenbackground tworemfont">N/A</span>
+        <h1>Black Forest<span>Chamber of Commerce</span></h1>
+      </section>
+      <div class="social">
+        <a href="https://facebook.com"
+          ><img
+            src="images/facebook.png"
+            alt="Facebook link"
+            width="48"
+            height="48"
+        /></a>
+        <a href="https://linkedin.com"
+          ><img
+            src="images/linkedin.png"
+            alt="Linkedin link"
+            width="48"
+            height="48"
+        /></a>
+      </div>
+      <nav>
+        <ul class="navigation">
+          <li class="hide">
+            <a class="tworemfont" href="#" onclick="toggleMenu()">&#9776;</a>
+          </li>
+          <li class="hide"><a href="index.html">Home</a></li>
+          <li class="hide"><a href="discover.html">Discover</a></li>
+          <li class="hide"><a href="directory.html">Directory</a></li>
+          <li class="hide"><a href="join.html">Join</a></li>
+          <li class="hide"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <span class="date coloredborder greenbackground">N/A</span>
     </header>
 
-    <div class="greenbackground coloredborder" id="meetandgreet"><a href="contact.html">🤝🏼Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</a><span class="dismiss">❌</span></div> 
-    
-    <main class="maingrid">
-        <div class="thanks coloredborder greenbackground">
-            <h2>Thank you for your submission.</h2>
-            <img src="images/thanks.jpg" alt="Black Forest Logo" width="500" height="333">
-            <p>A friendly agent will contact you shortly with additional information.</p>
-        </div>
+    <div class="greenbackground coloredborder" id="meetandgreet">
+      <a href="contact.html"
+        >🤝🏼Come join us for the chamber meet and greet Wednesday at 7:00
+        p.m.</a
+      ><span class="dismiss">❌</span>
+    </div>
+
+    <main>
+      <div class="thanks coloredborder greenbackground">
+        <h2>Thank you for your submission.</h2>
+        <img
+          src="images/thanks.jpg"
+          alt="Black Forest Logo"
+          width="500"
+          height="333"
+        />
+        <p>
+          A friendly agent will contact you shortly with additional information.
+        </p>
+      </div>
     </main>
 
     <footer class="blackbackground">
-        <picture class="logo">
-            <img src="images/pig.webp" alt="Black Forest Logo" width="204" height="132">            
-        </picture>
-        <div class="footeraddress">      
-            <h3>Black Forest Chamber of Commerce<span>1445 Market St., Black Forest, CO 80202</span></h3>
-        </div>
-        <div class="footercontact">
-            <a href="info@blackforestchamber.org">info@blackforestchamber.org</a>
-            <p>303-534-8500</p>
-            <a href="https://maps.google.com"><img src="images/googlemaps.png" alt="Location link" width="100" height="100"><span>Location Map</span></a>
-        </div>
-        <div id="footercopyright">
-            <p id="footertext"></p>     
-            <p id="lastVisit"></p>
-        </div>
+      <picture class="logo">
+        <img
+          src="images/pig.webp"
+          alt="Black Forest Logo"
+          width="204"
+          height="132"
+        />
+      </picture>
+      <div class="footeraddress">
+        <h3>
+          Black Forest Chamber of Commerce<span
+            >1445 Market St., Black Forest, CO 80202</span
+          >
+        </h3>
+      </div>
+      <div class="footercontact">
+        <a href="info@blackforestchamber.org">info@blackforestchamber.org</a>
+        <p>303-534-8500</p>
+        <a href="https://maps.google.com"
+          ><img
+            src="images/googlemaps.png"
+            alt="Location link"
+            width="100"
+            height="100"
+          /><span>Location Map</span></a
+        >
+      </div>
+      <div id="footercopyright">
+        <p id="footertext"></p>
+        <p id="lastVisit"></p>
+      </div>
     </footer>
 
     <script src="js/script.js"></script>
-    <script src="js/lazy.js"></script>    
-    <script src="js/lastvisit.js"></script>          
-</body>
+    <script src="js/lazy.js"></script>
+    <script src="js/lastvisit.js"></script>
+  </body>
 </html>

@@ -12,121 +12,208 @@
     Make hamburger menu go away if you click away (event listener)
  -->
 
- <!DOCTYPE html>
- <html lang="en">
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Black Forest Chamber of Commerce</title>
-     <meta name="description" content="Come and join us at the Chamber of Commerce for the Black Forest community.">
-     <link rel="shortcut icon" href="images/favicon.ico">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">    
-     <link rel="stylesheet" href="css/normalize.css">
-     <link rel="stylesheet" href="css/base.css">
-     <link rel="stylesheet" href="css/medium.css">
-     <link rel="stylesheet" href="css/large.css">
- </head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black Forest Chamber of Commerce</title>
+    <meta
+      name="description"
+      content="Come and join us at the Chamber of Commerce for the Black Forest community."
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
 
- <body>
-
+  <body>
     <header class="blackbackground">
-         <picture class="logo">
-             <img src="images/pig.webp" alt="Black Forest Logo" width="204" height="132">
-         </picture>
-         <section class="headings">
-            <h1>Black Forest<span>Chamber of Commerce</span></h1>
-        </section>
-         <div class="social">
-             <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook link" width="48" height="48"></a>
-             <a href="https://linkedin.com"><img src="images/linkedin.png" alt="Linkedin link" width="48" height="48"></a>
-         </div>
-         <nav>
-            <ul class="navigation">
-               <li class="hide"><a class="tworemfont hide" href="#" onclick="toggleMenu()">&#9776;</a></li>
-               <li class="hide active"><a href="#">Home</a></li>
-               <li class="hide"><a href="discover.html">Discover</a></li>
-               <li class="hide"><a href="directory.html">Directory</a></li>
-               <li class="hide"><a href="join.html">Join</a></li>
-               <li class="hide"><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <span class="date coloredborder greenbackground tworemfont">N/A</span>
-     </header>
+      <section class="headings">
+        <picture class="logo">
+          <img
+            src="images/pig.webp"
+            alt="Black Forest Logo"
+            width="204"
+            height="132"
+          />
+        </picture>
+        <h1>Black Forest<span>Chamber of Commerce</span></h1>
+      </section>
+      <div class="social">
+        <a href="https://facebook.com"
+          ><img
+            src="images/facebook.png"
+            alt="Facebook link"
+            width="48"
+            height="48"
+        /></a>
+        <a href="https://linkedin.com"
+          ><img
+            src="images/linkedin.png"
+            alt="Linkedin link"
+            width="48"
+            height="48"
+        /></a>
+      </div>
+      <nav>
+        <ul class="navigation">
+          <li class="hide">
+            <a class="tworemfont" href="#" onclick="toggleMenu()">&#9776;</a>
+          </li>
+          <li class="hide"><a href="#">Home</a></li>
+          <li class="hide"><a href="discover.html">Discover</a></li>
+          <li class="hide"><a href="directory.html">Directory</a></li>
+          <li class="hide"><a href="join.html">Join</a></li>
+          <li class="hide"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <span class="date coloredborder greenbackground">N/A</span>
+    </header>
 
-     <div class="greenbackground coloredborder" id="meetandgreet"><a href="contact.html">🤝🏼Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</a><span class="dismiss">❌</span></div> 
+    <div class="greenbackground coloredborder" id="meetandgreet">
+      <a href="contact.html"
+        >🤝🏼Come join us for the chamber meet and greet Wednesday at 7:00
+        p.m.</a
+      ><span class="dismiss">❌</span>
+    </div>
 
-     <main class="maingrid">
-         <section class="greenbackground coloredborder" id="hero">
-            <picture class="heroimage twocol">
-                <source srcset="images/hero_large.webp" media="(min-width: 60em)">
-                <source srcset="images/hero_medium.webp" media="(min-width: 35em)">
-                <img src="images/hero_small.webp" alt="Overview Shot of Beautiful Black Forest" width="1400" height="853">
-            </picture>
-            <h2 class="herotextoverlay blackbackground roundedborders">Welcome to Black Forest</h2>
-             <span class="roundedborders" id="herojoin"><a href="join.html">Join the Chamber</a></span>
-         </section>
-         <section class="greenbackground coloredborder" id="event">
-             <h3 class="blackbackground roundedborders">Black Forest Farmers' Market 2022</h3>
-             <p class="blackbackground roundedborders">Join us every Saturday at 9:00 a.m. in the Holsteiner Katenschinken Shopping Center parking lot. <a href="https://www.5280.com/2022/05/what-you-need-to-know-about-the-2022-farmers-market-season/">More info ...</a></p>    
-         </section>
-         
-         <section class="greenbackground coloredborder" id="weather">
-             <h3>Weather Summary</h3>
-             <div id="weatherboxes">
-                <figure id="temperatureicon">
-                    <img src="https://openweathermap.org" alt="Weather Icon" id="weather-icon" width="256" height="256">
-                </figure>            
-                <p class="temperaturetext"><span id="current-temp"></span>° F</p>
-                <figure class="weathertext twocol">
-                    <figcaption></figcaption>
-                </figure>
-                 <p class="temperaturetext">Wind Speed: </p>
-                 <p class="windspeed temperaturetext"> <span id="speed"></span> mph</p>
-                 <p class="temperaturetext">Wind Chill: </p>
-                 <p class="windchill temperaturetext">N/A</p>
-             </div>
-         </section>
-         <section class="greenbackground coloredborder" id="news">
-             <h3>News Release</h3>
-             <img src="images/lazyload/placeholder.webp" data-src="images/news.webp" alt="Black Forest City Hall" width="500" height="484">
-             <p>Gov. Caro Porcina will meet with the Black Forest Chamber of Commerce to discuss recent legislation on July 28, 2022.</p>
-         </section>
-         <section class="greenbackground coloredborder" id="join">
-             <h3 id="joinbutton"><a href="join.html">Join us!</a></h3>
-             <img src="images/lazyload/placeholder2.webp" data-src="images/join.webp" alt="Business Owner Shaking Hands with CoC Rep" width="450" height="300">
-             <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
-         </section>
-         <section class="greenbackground coloredborder" id="spotlight"></section>
-     </main>
- 
-     <footer class="blackbackground">
-         <picture class="logo">
-             <img src="images/pig.webp" alt="Black Forest Logo" width="204" height="132">            
-         </picture>
-         <div class="footeraddress">      
-             <h3>Black Forest Chamber of Commerce<span>1445 Market St., Black Forest, CO 80202</span></h3>
-             
-         </div>
-         <div class="footercontact">
-             <a href="info@blackforestchamber.org">info@blackforestchamber.org</a>
-             <p>303-534-8500</p>
-             <a href="https://maps.google.com"><img src="images/googlemaps.png" alt="Location link" width="100" height="100"><span>Location Map</span></a>
-         </div>
-         <div id="footercopyright">
-             <p id="footertext"></p>
-             <p id="lastVisit"></p>
-             <p>Weather service provided by <a href="https://openweathermap.org">OpenWeatherMap</a></p>     
-         </div>
-     </footer>
- 
-     <script src="js/script.js"></script>
-     <script src="js/lastvisit.js"></script> 
-     <script src="js/lazy.js"></script>    
-     <script src="js/weatherapi.js"></script>   
-     <script src="js/spotlight.js"></script>   
+    <main class="maingrid">
+      <section class="greenbackground coloredborder" id="hero">
+        <picture class="heroimage twocol">
+          <source srcset="images/hero_large.webp" media="(min-width: 60em)" />
+          <source srcset="images/hero_medium.webp" media="(min-width: 35em)" />
+          <img
+            src="images/hero_small.webp"
+            alt="Overview Shot of Beautiful Black Forest"
+            width="1400"
+            height="853"
+          />
+        </picture>
+        <h2 class="herotextoverlay blackbackground roundedborders">
+          Welcome to Black Forest
+        </h2>
+        <span class="roundedborders" id="herojoin"
+          ><a href="join.html">Join the Chamber</a></span
+        >
+      </section>
+      <section class="greenbackground coloredborder" id="event">
+        <h3 class="blackbackground roundedborders">
+          Black Forest Farmers' Market 2022
+        </h3>
+        <p class="blackbackground roundedborders">
+          Join us every Saturday at 9:00 a.m. in the Holsteiner Katenschinken
+          Shopping Center parking lot.
+          <a
+            href="https://www.5280.com/2022/05/what-you-need-to-know-about-the-2022-farmers-market-season/"
+            >More info ...</a
+          >
+        </p>
+      </section>
 
-          
- </body>
- </html>
+      <section class="greenbackground coloredborder" id="weather">
+        <h3>Weather Summary</h3>
+        <div id="weatherboxes">
+          <figure id="temperatureicon">
+            <img
+              src="https://openweathermap.org"
+              alt="Weather Icon"
+              id="weather-icon"
+              width="256"
+              height="256"
+            />
+          </figure>
+          <p class="temperaturetext"><span id="current-temp"></span>° F</p>
+          <figure class="weathertext twocol">
+            <figcaption></figcaption>
+          </figure>
+          <p class="temperaturetext">Wind Speed:</p>
+          <p class="windspeed temperaturetext"><span id="speed"></span> mph</p>
+          <p class="temperaturetext">Wind Chill:</p>
+          <p class="windchill temperaturetext">N/A</p>
+        </div>
+      </section>
+      <section class="greenbackground coloredborder" id="news">
+        <h3>News Release</h3>
+        <img
+          src="images/lazyload/placeholder.webp"
+          data-src="images/news.webp"
+          alt="Black Forest City Hall"
+          width="500"
+          height="484"
+        />
+        <p>
+          Gov. Caro Porcina will meet with the Black Forest Chamber of Commerce
+          to discuss recent legislation on July 28, 2022.
+        </p>
+      </section>
+      <section class="greenbackground coloredborder" id="join">
+        <h3 id="joinbutton"><a href="join.html">Join us!</a></h3>
+        <img
+          src="images/lazyload/placeholder2.webp"
+          data-src="images/join.webp"
+          alt="Business Owner Shaking Hands with CoC Rep"
+          width="450"
+          height="300"
+        />
+        <p>
+          Discover how to join the chamber of commerce and how it will benefit
+          your organization!
+        </p>
+      </section>
+      <section class="greenbackground coloredborder" id="spotlight"></section>
+    </main>
+
+    <footer class="blackbackground">
+      <picture class="logo">
+        <img
+          src="images/pig.webp"
+          alt="Black Forest Logo"
+          width="204"
+          height="132"
+        />
+      </picture>
+      <div class="footeraddress">
+        <h3>
+          Black Forest Chamber of Commerce<span
+            >1445 Market St., Black Forest, CO 80202</span
+          >
+        </h3>
+      </div>
+      <div class="footercontact">
+        <a href="info@blackforestchamber.org">info@blackforestchamber.org</a>
+        <p>303-534-8500</p>
+        <a href="https://maps.google.com"
+          ><img
+            src="images/googlemaps.png"
+            alt="Location link"
+            width="100"
+            height="100"
+          /><span>Location Map</span></a
+        >
+      </div>
+      <div id="footercopyright">
+        <p id="footertext"></p>
+        <p id="lastVisit"></p>
+        <p>
+          Weather service provided by
+          <a href="https://openweathermap.org">OpenWeatherMap</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/lastvisit.js"></script>
+    <script src="js/lazy.js"></script>
+    <script src="js/weatherapi.js"></script>
+    <script src="js/spotlight.js"></script>
+  </body>
+</html>
