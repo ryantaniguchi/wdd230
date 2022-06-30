@@ -83,7 +83,6 @@
 
     /* Join */
     .joinform {
-        grid-column: 1/6;
         max-width: 60rem;
     }
     

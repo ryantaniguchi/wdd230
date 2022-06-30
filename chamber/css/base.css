@@ -40,10 +40,6 @@ img {
     max-width: 90%;
     height: auto;
     margin: .5rem;
-}
-
-/* DUPLICATE ENTRY */
-img {
 	filter: blur(0);
 	transition: filter 1s;
 }
@@ -394,9 +390,10 @@ form label.top input:required:valid, textarea:valid, select:valid {
 /* Directory */
 
 .gridbuttons {
-    grid-column: 2/3;
     display: flex;
     justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .gridbuttons button {
@@ -405,13 +402,12 @@ form label.top input:required:valid, textarea:valid, select:valid {
 }
 
 #directoryheader {
-    grid-column: 1/4;
     padding: .5rem;
-    margin: 1rem;
+    margin: 1rem auto;
+    max-width: 800px;
 }
 
 .cards {
-    grid-column: 1/4;
     display: grid;
 }
 
