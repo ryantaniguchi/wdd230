@@ -372,7 +372,6 @@ form label.top input, form label.top select, textarea {
     color: #000000;
     background-color: #FFFFFF;
     width: 100%;
-    font-size: 1rem;
     padding: .75rem;
     display: block;
     border-radius: 4px;
@@ -470,7 +469,7 @@ form label.top input:required:valid, textarea:valid, select:valid {
     justify-content: space-between;
 }
 
-.lists h3, .lists p {
+.lists h3, .lists p, .lists a {
     font-size: 1rem;
 }
 

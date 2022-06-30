@@ -38,11 +38,6 @@
         grid-column: 1/4;
     }
 
-    /* Check if this is already done */
-    .navigation li a {
-        display: block;        
-    }
-
     /* Main */
 
     #hero {
@@ -62,10 +57,6 @@
         grid-row: 1 / 4;
         grid-template-columns: 1fr;
     }
-
-    #spotlight>section {
-        height: 100%;
-    }
         
     #join {
         grid-column: 1/2;
@@ -75,7 +66,6 @@
     #news {
         grid-column: 2/3;
         grid-row: 3/4;
-
     }
 
     #spotlight>section:nth-child(3) {
