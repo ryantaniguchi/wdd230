@@ -18,31 +18,31 @@ async function apiFetch(apiURL) {
       const data = await response.json();
       displayResults(data);
     } else {
-        throw Error(await response.text());
+      throw Error(await response.text());
     }
   } catch (error) {
-        console.log(error);
+    console.log(error);
   }
 }
 
-function  displayResults(weatherData) {
-    const t = weatherData.main.temp;
-    const s = weatherData.wind.speed;
+function displayResults(weatherData) {
+  const t = weatherData.main.temp;
+  const s = weatherData.wind.speed;
 
-    if ((t <= 50) && (s >= 3)) {
-        const f = 35.74 + (0.6215 * t) - (35.775 * Math.pow(s, 0.16)) + (0.4275 * t * Math.pow(s, 0.16));
-        windchill.textContent = `${f.toFixed(1)} °F`;
-    }    
+  if ((t <= 50) && (s >= 3)) {
+    const f = 35.74 + (0.6215 * t) - (35.775 * Math.pow(s, 0.16)) + (0.4275 * t * Math.pow(s, 0.16));
+    windchill.textContent = `${f.toFixed(1)} °F`;
+  }
 
-    currentTemp.innerHTML = `<strong>${t.toFixed(0)}</strong>`;
-    windSpeed.innerHTML = s;
+  currentTemp.innerHTML = `<strong>${t.toFixed(0)}</strong>`;
+  windSpeed.innerHTML = s;
 
-    const iconsrc = `images/weather/${weatherData.weather[0].icon}.png`;
-    const desc = toTitleCase(weatherData.weather[0].description);
+  const iconsrc = `images/weather/${weatherData.weather[0].icon}.png`;
+  const desc = toTitleCase(weatherData.weather[0].description);
 
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', desc);
-    captionDesc.textContent = desc;
+  weatherIcon.setAttribute('src', iconsrc);
+  weatherIcon.setAttribute('alt', desc);
+  captionDesc.textContent = desc;
 
 }
 
@@ -51,6 +51,3 @@ function toTitleCase(str) {
     return (word.charAt(0).toUpperCase() + word.slice(1));
   }).join(' ');
 }
-
-
-

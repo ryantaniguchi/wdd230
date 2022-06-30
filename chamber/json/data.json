@@ -4,7 +4,7 @@
             "name": "Enchanted Glade Books",
             "phone": "303-759-1117",
             "email": "info@enchantedgladebooks.com",
-            "website": "enchantedgladebodfdfdoks.com",
+            "website": "www.enchantedgladebooks.com",
             "image": "images/spotlight2.webp",
             "quote": "'Where the magic happens.'",
             "membership": "Gold"
@@ -13,7 +13,7 @@
             "name": "Black Forest Meat Market",
             "phone": "303-696-6146",
             "email": "info@bfmeats.com",
-            "website": "bfmeats.com",
+            "website": "www.bfmeats.com",
             "image": "images/spotlight1.webp",
             "quote": "'Supplying specialty meats to all of Colorado.'",
             "membership": "Gold"
@@ -22,7 +22,7 @@
             "name": "Pigs in a Blanket",
             "phone": "720-452-2487",
             "email": "support@pigsblanket.com",
-            "website": "pigsblanket.com",
+            "website": "www.pigsblanket.com",
             "quote": "'Because your stomach deserves better.'",
             "image": "images/spotlight3.webp",
             "membership": "Gold"
@@ -31,7 +31,7 @@
             "name": "Black Forest Construction",
             "phone": "720-482-1824",
             "email": "support@bfconstruct.com",
-            "website": "bfconstruction.com",
+            "website": "www.bfconstruction.com",
             "quote": "'Working to build a better Black Forest.'",
             "image": "images/silver1.jpg",
             "membership": "Silver"
@@ -40,7 +40,7 @@
             "name": "Porcine Electric",
             "phone": "720-533-2822",
             "email": "info@porcelectric.com",
-            "website": "porcinelectric.com",
+            "website": "www.porcinelectric.com",
             "quote": "'Lighting up your neightborhood.'",
             "image": "images/silver2.jpg",
             "membership": "Silver"
@@ -49,7 +49,7 @@
             "name": "Hampton Market",
             "phone": "303-921-2520",
             "email": "support@hamarket.com",
-            "website": "hamarket.com",
+            "website": "wwww.hamarket.com",
             "quote": "'Your friendly neighborhood market.'",
             "image": "images/silver3.jpg",
             "membership": "Silver"
@@ -58,7 +58,7 @@
             "name": "Forrest Law",
             "phone": "303-421-5821",
             "email": "support@forrestlaw.com",
-            "website": "forrestlaw.com",
+            "website": "www.forrestlaw.com",
             "quote": "'Bringing national prestige to your local issues.'",
             "image": "images/bronze1.jpg",
             "membership": "Bronze"
@@ -67,7 +67,7 @@
             "name": "Glendon Tax Consultants",
             "phone": "303-972-3523",
             "email": "info@glendontaxes.com",
-            "website": "glendontaxes.com",
+            "website": "www.glendontaxes.com",
             "quote": "'Because you shouldn't have to do taxes on your own.'",
             "image": "images/bronze2.jpg",
             "membership": "Bronze"
@@ -76,7 +76,7 @@
             "name": "Black Forest Thrift Store",
             "phone": "303-922-2152",
             "email": "help@bfthrift.com",
-            "website": "bfthrift.com",
+            "website": "www.bfthrift.com",
             "quote": "'Thrify prices, great value.'",
             "image": "images/np1.jpg",
             "membership": "NP"

@@ -1,4 +1,4 @@
-const requestURL = 'https://ryantaniguchi.github.io/wdd230/lesson9/json/data.json';
+const requestURL = 'json/data.json';
 const cards = document.querySelector(".cards");
 
 async function getAffiliates() {
@@ -17,15 +17,15 @@ function displayAffiliates(data) {
     let card = document.createElement('section');
     let h3 = document.createElement('h3');
     let phone = document.createElement('p');
-    let email = document.createElement('p');
-    let website = document.createElement('p');
+    let email = document.createElement('a');
+    let website = document.createElement('a');
     let image = document.createElement('img');
     let membership = document.createElement('p');
 
     h3.textContent = `${affiliate.name}`;
     phone.textContent = `${affiliate.phone}`;
-    email.textContent = `${affiliate.email}`;
-    website.textContent = `${affiliate.website}`;
+    email.innerHTML = `${affiliate.email}`;
+    website.innerHTML = `${affiliate.website}`;
     membership.textContent = `${affiliate.membership} Member`;
 
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
@@ -44,7 +44,7 @@ function displayAffiliates(data) {
 
     // Add/append the existing HTML div with the cards class with the section(card)
     document.querySelector('div.cards').appendChild(card);
-});
+  });
 }
 
 getAffiliates()
@@ -53,11 +53,11 @@ const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 
 gridbutton.addEventListener("click", () => {
-	cards.classList.add("grids");
-	cards.classList.remove("lists");
+  cards.classList.add("grids");
+  cards.classList.remove("lists");
 });
 
 listbutton.addEventListener("click", () => {
-	cards.classList.add("lists");
-	cards.classList.remove("grids");
+  cards.classList.add("lists");
+  cards.classList.remove("grids");
 });
