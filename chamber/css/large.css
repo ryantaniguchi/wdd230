@@ -2,7 +2,6 @@
 
     .maingrid {
         grid-template-columns: 1fr 2fr 1fr;
-        max-width: 1900px;
         margin: 0 auto;
     }
 
@@ -44,6 +43,8 @@
         display: block;        
     }
 
+    /* Main */
+
     #hero {
         height: 100%;
         grid-column: 2/3;
@@ -80,10 +81,6 @@
     #spotlight>section:nth-child(3) {
         display: block;
     }    
-
-    .active {
-        color: #8F8FFF;
-    }
 
     /* Contact */
     

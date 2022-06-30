@@ -13,7 +13,7 @@ async function getAffiliates() {
 }
 
 function randomSelect(data) {
-  const randomindex = Math.floor(Math.random()*data.length)
+  const randomindex = Math.floor(Math.random() * data.length)
   const spotlights = data[randomindex]
   // Removes the selected item so it is not selected twice
   data.splice(randomindex, 1)
@@ -21,10 +21,10 @@ function randomSelect(data) {
 }
 
 function selectAffiliates(data) {
-  const members = data.affiliates.filter(affiliate => 
+  const members = data.affiliates.filter(affiliate =>
     affiliate.membership == "Gold" || affiliate.membership == "Silver")
   let spotlightArray = [];
-  for (let i = 0; i <3; i++) {
+  for (let i = 0; i < 3; i++) {
     spotlightArray.push(randomSelect(members))
   }
   return spotlightArray
@@ -38,10 +38,12 @@ function displayAffiliates(data) {
     let phone = document.createElement('p');
     let email = document.createElement('p');
     let website = document.createElement('p');
+    let quote = document.createElement('p');
     let image = document.createElement('img');
     let membership = document.createElement('p');
 
     h3.textContent = `${affiliate.name}`;
+    quote.textContent = `${affiliate.quote}`;
     phone.textContent = `Phone: ${affiliate.phone}`;
     email.textContent = `Email: ${affiliate.email}`;
     website.textContent = `Website: ${affiliate.website}`;
@@ -53,8 +55,10 @@ function displayAffiliates(data) {
     image.setAttribute('loading', 'lazy');
 
     card.classList.add('coloredborder')
+    quote.classList.add('italics')
     card.appendChild(h3);
     card.appendChild(image);
+    card.appendChild(quote);
     card.appendChild(phone);
     card.appendChild(email);
     card.appendChild(website);
@@ -62,6 +66,6 @@ function displayAffiliates(data) {
 
     // Add/append the existing HTML div with the cards class with the section(card)
     document.querySelector('section#spotlight').appendChild(card);
-});
+  });
 }
 getAffiliates()

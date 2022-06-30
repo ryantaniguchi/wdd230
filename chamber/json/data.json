@@ -6,6 +6,7 @@
             "email": "info@enchantedgladebooks.com",
             "website": "enchantedgladebodfdfdoks.com",
             "image": "images/spotlight2.webp",
+            "quote": "'Where the magic happens.'",
             "membership": "Gold"
         },
         {
@@ -14,6 +15,7 @@
             "email": "info@bfmeats.com",
             "website": "bfmeats.com",
             "image": "images/spotlight1.webp",
+            "quote": "'Supplying specialty meats to all of Colorado.'",
             "membership": "Gold"
         },
         {
@@ -21,6 +23,7 @@
             "phone": "720-452-2487",
             "email": "support@pigsblanket.com",
             "website": "pigsblanket.com",
+            "quote": "'Because your stomach deserves better.'",
             "image": "images/spotlight3.webp",
             "membership": "Gold"
         },
@@ -29,6 +32,7 @@
             "phone": "720-482-1824",
             "email": "support@bfconstruct.com",
             "website": "bfconstruction.com",
+            "quote": "'Working to build a better Black Forest.'",
             "image": "images/silver1.jpg",
             "membership": "Silver"
         },
@@ -37,6 +41,7 @@
             "phone": "720-533-2822",
             "email": "info@porcelectric.com",
             "website": "porcinelectric.com",
+            "quote": "'Lighting up your neightborhood.'",
             "image": "images/silver2.jpg",
             "membership": "Silver"
         },
@@ -45,6 +50,7 @@
             "phone": "303-921-2520",
             "email": "support@hamarket.com",
             "website": "hamarket.com",
+            "quote": "'Your friendly neighborhood market.'",
             "image": "images/silver3.jpg",
             "membership": "Silver"
         },
@@ -53,6 +59,7 @@
             "phone": "303-421-5821",
             "email": "support@forrestlaw.com",
             "website": "forrestlaw.com",
+            "quote": "'Bringing national prestige to your local issues.'",
             "image": "images/bronze1.jpg",
             "membership": "Bronze"
         },
@@ -61,6 +68,7 @@
             "phone": "303-972-3523",
             "email": "info@glendontaxes.com",
             "website": "glendontaxes.com",
+            "quote": "'Because you shouldn't have to do taxes on your own.'",
             "image": "images/bronze2.jpg",
             "membership": "Bronze"
         },
@@ -69,6 +77,7 @@
             "phone": "303-922-2152",
             "email": "help@bfthrift.com",
             "website": "bfthrift.com",
+            "quote": "'Thrify prices, great value.'",
             "image": "images/np1.jpg",
             "membership": "NP"
         }

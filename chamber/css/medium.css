@@ -1,19 +1,19 @@
 @media only screen and (min-width: 35em) {
 
-
     header {
         display: grid;
         justify-content: inherit;
         align-items: center;
     }
 
+    h1 {
+        font-size: 2rem;
+    }
+
+    /* Multipage coding */
     
     .logo img {
         width: 150px;
-    }
-
-    h1 {
-        font-size: 2rem;
     }
 
     .social {
@@ -26,13 +26,9 @@
 
     .social img, .footercontact img {
         width: 40px;
-    }   
+    }
 
-    /* .navigation {
-        justify-content: right;
-        width: 125px;
-
-    } */
+    /* Main */
 
     .maingrid {
         grid-template-columns: 1fr 1fr 1fr;
@@ -112,7 +108,6 @@
     }    
 
     /* Contact */
-
     .contactjoin {
         padding: 1rem;
     }
