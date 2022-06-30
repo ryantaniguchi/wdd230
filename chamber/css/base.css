@@ -36,10 +36,6 @@ section>p {
     padding: .5rem;
 }
 
-picture {
-    align-self: center;
-}
-
 img {
     max-width: 90%;
     height: auto;
@@ -60,7 +56,6 @@ img[data-src] {
 
 .headings, .footerinfo {
     display: flex;
-    text-align: left;
     align-items: center;
 }
 
@@ -147,10 +142,6 @@ footer {
     justify-content: center;
 }
 
-footer>img {
-    margin: 0 auto;
-}
-
 footer h3 {
     margin: 0;
 }
@@ -192,7 +183,7 @@ a:hover, button:hover, input:hover, textarea:hover {
     font-weight: 700;
 }
 
-a:hover, button:hover {
+a:hover, button:hover, .required {
     color: #FAC000;
 }
 
@@ -208,10 +199,6 @@ a:hover, button:hover {
     font-style: italic;
 }
 
-.transparent {
-    opacity: 0.8;
-}
-
 .tworemfont {
     font-size: 2rem;
 }
@@ -224,11 +211,6 @@ a:hover, button:hover {
 .dismiss {
 	cursor: default;
 }
-
-/* 
-.active {
-    background-color: #3ACF3A;
-} */
 
 /* Main */
 
@@ -285,6 +267,7 @@ a:hover, button:hover {
     display: grid;
     text-align: right;
     font-size: 1.5rem;
+    padding: .5rem;
 }
 
 .weathertext {
@@ -356,7 +339,6 @@ fieldset {
 }
 
 form legend {
-    color: #FFFFFF;
     margin: 0 1rem;
     padding: 0 .5rem;
 }
@@ -364,7 +346,6 @@ form legend {
 form label.top {
     display: block;
     padding-bottom: 1rem;
-    color: #FFFFFF;
     font-size: .8rem;
 }
 
@@ -384,7 +365,6 @@ form label.top input, form label.top select {
 form label.sbs {
     display: block;
     padding: .75rem 0;
-    color: #FFFFFF;
 }
 
 form input.submitBtn {
@@ -402,10 +382,6 @@ form label.top input:required, textarea:required, select:required {
 
 form label.top input:required:valid, textarea:valid, select:valid {
     border-left: #3ACF3A solid 6px;
-}
-
-.required {
-    color: #FAC000;
 }
 
 /* Thanks */
@@ -441,7 +417,6 @@ form label.top input:required:valid, textarea:valid, select:valid {
 
 .cards .card {
     align-items: center;
-    background-color: #0D350D;
     margin: .5rem;
     padding: 1rem;
 }

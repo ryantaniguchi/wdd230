@@ -34,6 +34,7 @@ function displayAffiliates(data) {
     image.setAttribute('loading', 'lazy');
 
     card.classList.add('card')
+    card.classList.add('greenbackground')
     card.classList.add('coloredborder')
     card.appendChild(h3);
     card.appendChild(image);
