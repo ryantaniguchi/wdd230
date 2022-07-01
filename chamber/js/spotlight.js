@@ -65,7 +65,7 @@ function displayAffiliates(data) {
     card.appendChild(membership);
 
     // Add/append the existing HTML div with the cards class with the section(card)
-    document.querySelector('section#spotlight').appendChild(card);
+    document.querySelector('div#spotlight').appendChild(card);
   });
 }
 getAffiliates()
