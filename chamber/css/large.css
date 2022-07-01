@@ -42,8 +42,6 @@
         bottom: 100px;
     }
 
-    /* Main */
-
     #hero {
         height: 100%;
         grid-column: 2/3;
@@ -76,8 +74,6 @@
         display: block;
     }    
 
-    /* Contact */
-    
     .contactgrid {
         display: grid;
         gap: .75rem;

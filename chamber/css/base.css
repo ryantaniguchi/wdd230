@@ -48,8 +48,6 @@ img[data-src] {
 	filter: blur(0.5rem);
 }
 
-/* Multipage code */
-
 .headings, .footerinfo {
     display: flex;
     align-items: center;
@@ -148,8 +146,6 @@ footer h3 {
     padding: 1rem;
 }
 
-/* Style rules */
-
 .blackbackground {
     background-color: #000000;
     color: #FFFFFF;
@@ -208,8 +204,6 @@ a:hover, button:hover, .required {
 .dismiss {
 	cursor: default;
 }
-
-/* Main */
 
 .maingrid {
     display: grid;
@@ -278,7 +272,6 @@ a:hover, button:hover, .required {
     border-bottom: rgba(0,0,0,.4) ;
 }
 
-/* Discover */
 .stat {
     display: flex;
     align-items: center;
@@ -304,7 +297,6 @@ a:hover, button:hover, .required {
     padding: 1rem;
 }
 
-/* Join */
 form {
     padding: 1rem;
     margin: .5rem auto;
@@ -361,14 +353,11 @@ form label.top input:required:valid, textarea:valid, select:valid {
     border-left: #3ACF3A solid 6px;
 }
 
-/* Thanks */
 .thanks {
     padding: 2rem;
     max-width: 50rem;
     margin: .5rem auto;
 }    
-
-/* Directory */
 
 .gridbuttons {
     display: flex;
@@ -424,8 +413,6 @@ form label.top input:required:valid, textarea:valid, select:valid {
 .lists h3, .lists p, .lists a, #spotlight p {
     font-size: 1rem;
 }
-
-/* Contact */
 
 .contactgrid>div {
     padding: .5rem;

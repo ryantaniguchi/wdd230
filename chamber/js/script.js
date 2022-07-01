@@ -28,7 +28,6 @@ function closeFunction() {
     this.parentElement.style.display = 'none';
 }
 
-
 // Footer content
 const options = {
     year: "numeric"
