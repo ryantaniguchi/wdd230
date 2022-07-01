@@ -17,8 +17,8 @@ function displayAffiliates(data) {
     let card = document.createElement('section');
     let h3 = document.createElement('h3');
     let phone = document.createElement('p');
-    let email = document.createElement('a');
-    let website = document.createElement('a');
+    let email = document.createElement('p');
+    let website = document.createElement('p');
     let image = document.createElement('img');
     let membership = document.createElement('p');
 

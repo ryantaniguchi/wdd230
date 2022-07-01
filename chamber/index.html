@@ -86,20 +86,21 @@
 
     <main class="maingrid">
       <section class="greenbackground coloredborder" id="hero">
-        <picture class="heroimage twocol">
-          <source srcset="images/hero_large.webp" media="(min-width: 60em)" />
-          <source srcset="images/hero_medium.webp" media="(min-width: 40em)" />
-          <img
-            src="images/hero_small.webp"
-            alt="Overview Shot of Beautiful Black Forest"
-            width="1000"
-            height="609"
-          />
-        </picture>
         <h2 class="herotextoverlay blackbackground roundedborders">
           Welcome to Black Forest
         </h2>
-        <span class="roundedborders" id="herojoin"
+
+        <picture class="heroimage twocol">
+          <source srcset="images/hero_large.webp" media="(min-width: 70rem)" />
+          <source srcset="images/hero_medium.webp" media="(min-width: 40rem)" />
+          <img
+            src="images/hero_small.webp"
+            alt="Overview Shot of Beautiful Black Forest"
+            width="600"
+            height="365"
+          />
+        </picture>
+        <span class="roundedborders blackbackground" id="herojoin"
           ><a href="join.html">Join the Chamber</a></span
         >
       </section>
@@ -200,6 +201,11 @@
       </div>
       <div id="footercopyright">
         <p id="footertext"></p>
+        <p id="lastVisit"></p>
+        <p>
+          Weather service provided by
+          <a href="https://openweathermap.org">OpenWeatherMap</a>
+        </p>
       </div>
     </footer>
 

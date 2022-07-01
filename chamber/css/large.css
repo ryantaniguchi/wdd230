@@ -38,6 +38,10 @@
         grid-column: 1/4;
     }
 
+    #herojoin {
+        bottom: 100px;
+    }
+
     /* Main */
 
     #hero {

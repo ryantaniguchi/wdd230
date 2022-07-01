@@ -33,7 +33,7 @@ h3 {
 }
 
 section>p {
-    padding: .5rem;
+    padding-bottom: 1rem;
 }
 
 img {
@@ -90,6 +90,7 @@ nav {
     right: 5px;
     margin: 0 auto;
     max-width: 760px;
+    z-index: 2;
 }
 
 .navigation {
@@ -224,35 +225,20 @@ a:hover, button:hover, .required {
     justify-content: space-between;
 }
 
-#hero {
-    display: grid;
-    position: relative;
-    z-index: -1;
-}
-
-.heroimage {
-    grid-row: 1/3;
-}
-
-.herotextoverlay {
-    position: absolute;
-    top: 10px;
-    justify-self: center;
-}
-
-#herojoin {
-	background: #000000;
-	padding: 1rem;
-    position: absolute;
-    bottom: 31px;
-    justify-self: center;
-}
-
-#news {
+#hero, #news {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+}
+
+.herotextoverlay {
+    margin: 1rem;
+    justify-self: center;
+}
+
+#herojoin {
+    margin: 1rem;
 }
 
 #join {
@@ -284,10 +270,6 @@ a:hover, button:hover, .required {
     grid-template-columns: 1fr;
 }
 
-#spotlight>section {
-    padding: 1rem;
-}
-
 #spotlight>section:nth-child(3) {
     display: none;
 }
@@ -307,7 +289,6 @@ a:hover, button:hover, .required {
 .discover {
     padding: 1rem;
     display: grid;
-    z-index: -1;
 }
 
 .discover picture {
@@ -440,7 +421,7 @@ form label.top input:required:valid, textarea:valid, select:valid {
     justify-content: space-between;
 }
 
-.lists h3, .lists p, .lists a {
+.lists h3, .lists p, .lists a, #spotlight p {
     font-size: 1rem;
 }
 
