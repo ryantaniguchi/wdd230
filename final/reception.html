@@ -1,0 +1,141 @@
+<!-- REQUIREMENTS
+    Subpage of Services Page
+    Footer that includes:
+        - Other relevant info
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ryan Taniguchi: Final Project Reception Page</title>
+    <meta
+      name="description"
+      content="Reception page for Ryan Taniguchi's final project."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/base.css" />
+  </head>
+  <body>
+    <header class="sticky">
+      <div class="banner leftalign">
+        <picture class="logo">
+          <img
+            src="images/logo.png"
+            alt="Black Forest Logo"
+            width="49"
+            height="77"
+          />
+        </picture>
+        <h1>Temple<span class="displayblock">Inn & Suites</span></h1>
+      </div>
+      <nav>
+        <ul class="navigation">
+          <li class="hide">
+            <a class="tworemfont hide" href="#" onclick="toggleMenu()"
+              >&#9776;</a
+            >
+          </li>
+          <li class="hide"><a href="index.html">Home</a></li>
+          <li class="hide"><a href="temple.html">Temple</a></li>
+          <li class="hide"><a href="reservation.html">Reservation</a></li>
+          <li class="hide"><a href="services.html">Services</a></li>
+          <li class="hide active"><a href="#">Reception Subpage</a></li>
+          <li class="hide"><a href="missionary.html">Missionary Subpage</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <h2>Event Accomodations</h2>
+        <img
+          src="images/reception/wedding.webp"
+          alt="Wedding Table"
+          width="750"
+          height="500"
+        />
+        <p>
+          Temple Inn & Suites has a long history of providing event services for
+          our guests. We are happy to help you plan for every occasions,
+          including weddings, birthdays, corporate events, and other occasions.
+          We have a number of services that will help you to celebrate your
+          special day, including a wedding reception hall that we will happily
+          help to customize with a catering menu and kitchen access for food
+          preparation and service.
+        </p>
+        <h3>Food Services</h3>
+        <p>
+          Each Temple Inn & Suites location offers free continental breakfast,
+          as well as access to an in-house restaurant serving local foods and
+          drinks. We have stations throughout each Temple Inn & Suites servies
+          where food services can be offeered, and each of our locations works
+          closely with local food and drink vendors, providing additional
+          options for catering and other food services.
+        </p>
+        <h3>Setup</h3>
+        <p>
+          Our friendly and helpful staff are happy to assist with any
+          preparations that you big day may require, including providing
+          storage, coordinating parking, helping to direct guests, and helping
+          with setting up and removing decorations and equipment.
+        </p>
+      </div>
+    </main>
+    <footer>
+      <div class="templeaddress">
+        <p>
+          Temple Inn & Suites
+          <span>4800 Montgomery Ln #300</span>
+          <span>Bethesda, MD 20814</span>
+        </p>
+        <iframe
+          class="googlemap"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3101.4048391962765!2d-77.0977258!3d38.9832559!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0xceab47cd19a23a3b!2s4800%20Montgomery%20Ln%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1656363250028!5m2!1sen!2sus"
+          width="200"
+          height="200"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="social">
+        <p><a href="/contact.html">How can we help?</a></p>
+        <p>Call us toll-free: 240-595-2939</p>
+        <a href="https://facebook.com"
+          ><img
+            src="images/facebook.png"
+            alt="Facebook link"
+            width="48"
+            height="48"
+        /></a>
+        <a href="https://linkedin.com"
+          ><img
+            src="images/linkedin.png"
+            alt="Linkedin link"
+            width="48"
+            height="48"
+        /></a>
+        <a href="https://twitter.com"
+          ><img
+            src="images/twitter.png"
+            alt="Twitter link"
+            width="48"
+            height="48"
+        /></a>
+      </div>
+      <p class="twocolumns" id="currentyear"></p>
+      <p class="twocolumns" id="lastmodified"></p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/maintemple.js"></script>
+  </body>
+</html>

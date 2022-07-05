@@ -1,0 +1,165 @@
+<!-- REQUIREMENTS
+    Form that collects info
+        - Form validation
+    Footer that includes:
+        - Other relevant info
+-->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Ryan Taniguchi: Final Project Reservation Page</title> 
+     <meta name="description" content="Reservation page for Ryan Taniguchi's final project.">
+     <link rel="shortcut icon" href="images/favicon.ico" />
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">     
+     <link rel="stylesheet" href="css/normalize.css">
+     <link rel="stylesheet" href="css/base.css">
+ 
+  </head>
+ <body>
+  <header class="sticky">
+    <div class="banner leftalign">
+      <picture class="logo">
+        <img
+          src="images/logo.png"
+          alt="Black Forest Logo"
+          width="49"
+          height="77"
+        />
+      </picture>
+      <h1>Temple<span class="displayblock">Inn & Suites</span></h1>
+    </div>
+    <nav>
+      <ul class="navigation">
+        <li class="hide">
+          <a class="tworemfont hide" href="#" onclick="toggleMenu()"
+            >&#9776;</a
+          >
+        </li>
+        <li class="hide"><a href="index.html">Home</a></li>
+        <li class="hide"><a href="temple.html">Temple</a></li>
+        <li class="hide active"><a href="#">Reservation</a></li>
+        <li class="hide"><a href="services.html">Services</a></li>
+        <li class="hide"><a href="reception.html">Reception Subpage</a></li>
+        <li class="hide"><a href="missionary.html">Missionary Subpage</a></li>
+      </ul>
+    </nav>
+  </header>
+     <main>
+        <form class="coloredborder greenbackground joinform" method="get" action="thankyou.html">
+            <fieldset class="formgrid coloredborder">
+                <legend>Reservation Information</legend>
+                <!-- MAKE THIS REQUIRED, AND HAVE A DEFAULT OPTION THAT THEY HAVE TO CHOOSE SOMETHING ELSE FROM -->
+                <label class="top">Select a Location<span class="required">*</span><select name="temple" required>
+                    <option value="temple1">San Diego, California</option>
+                    <option value="temple2">Salt Lake City, Utah</option>
+                    <option value="temple3">Laie, Hawaii</option>
+                    <option value="temple4">Kensington, Maryland</option>
+                </select>
+                <label class="top">Date<span class="required">*</span><input type="date" id="reservation" name="reservation" required></label>
+            </fieldset>
+
+
+            <fieldset class="formgrid coloredborder">
+                <legend>Contact Information</legend>
+                <label class="top">First Name<span class="required">*</span> <input type="text" name="fname" placeholder="Jane" required></label>
+                <label class="top">Last Name<span class="required">*</span> <input type="text" name="lname" placeholder="Smith" required></label>
+                <label class="top">Email<span class="required">*</span> <input type="email" name="email" placeholder="support@templeinnsuite.com" required></label>
+                <label class="top">Phone<span class="required">*</span> <input type="tel" name="phone" placeholder="240-595-2939" required></label>
+                <label class="top">State and/or Country<span class="required">*</span> <input type="text" name="bname" placeholder="Maryland, United States" required></label>
+            </fieldset>
+
+            <fieldset class="coloredborder">
+                <legend>Comments or Special Accommodations</legend>
+                <label class="businessdescription">
+                <textarea name="description" required rows="5" placeholder="Please let us know anything we should be aware of."></textarea>
+                </label>
+            </fieldset>
+
+            <fieldset class="coloredborder">
+                <legend>Room Requirements</legend>
+                <div class="formgrid largetext">
+                    <p>Each room comes with complimentary amenities such as breakfast, access to the exercise room and indoor pool, 
+                        WiFi high-speed internet access and smart TVs, parking and temple shuttle access, and family history consultation 
+                        and family ordinance card service.</p> 
+                    <label class="sbs">How many rooms will you need? </span><select name="temple" required>
+                        <option value="roomnumber">1</option>
+                        <option value="roomnumber">2</option>
+                        <option value="roomnumber">3</option>
+                        <option value="roomnumber">4</option>
+                    </select>    
+                    <hr>
+                    <p>What type of accommodations will you require?</p>
+                    <label class="sbs"><input type="radio" name="room" value="single"> Single Room</label>
+                    <span class="italics">Comes with a single double-sized bed. Perfect for a single person or a couple.</span>
+                    <label class="sbs"><input type="radio" name="room" value="double"> Double Room</label>
+                    <span class="italics">A comfortable room with two double-beds. Perfect for a family on the go.</span>
+                    <label class="sbs"><input type="radio" name="room" value="triple"> Triple Room</label>
+                    <span class="italics">A luxurious room with three double-beds. Perfect for a small group to stay in.</span>
+                </div>
+                <label class="hidden"><input type="hidden" id="submitdate" name="submitdate"></label>
+            </fieldset>
+
+            <fieldset class="coloredborder">
+                <legend>Confirm and Apply</legend>
+                <label class="sbs"><input type="checkbox" id="agreeconditions" name="agreeconditions" required> I have read and agree to the conditions of membership for the Black Forest Chamber of Commerce.<span class="required">*</span></label>
+            </fieldset>
+    
+            <input type="submit" value="Reserve a Room" class="submitBtn blackbackground">
+    
+        </form>
+     </main>
+     <footer>
+        <div class="templeaddress">
+          <p>
+            Temple Inn & Suites
+            <span>4800 Montgomery Ln #300</span>
+            <span>Bethesda, MD 20814</span>
+          </p>
+          <iframe
+            class="googlemap"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3101.4048391962765!2d-77.0977258!3d38.9832559!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0xceab47cd19a23a3b!2s4800%20Montgomery%20Ln%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1656363250028!5m2!1sen!2sus"
+            width="200"
+            height="200"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="social">
+          <p><a href="/contact.html">How can we help?</a></p>
+          <p>Call us toll-free: 240-595-2939</p>
+          <a href="https://facebook.com"
+            ><img
+              src="images/facebook.png"
+              alt="Facebook link"
+              width="48"
+              height="48"
+          /></a>
+          <a href="https://linkedin.com"
+            ><img
+              src="images/linkedin.png"
+              alt="Linkedin link"
+              width="48"
+              height="48"
+          /></a>
+          <a href="https://twitter.com"
+            ><img
+              src="images/twitter.png"
+              alt="Twitter link"
+              width="48"
+              height="48"
+          /></a>
+        </div>
+        <p class="twocolumns" id="currentyear"></p>
+        <p class="twocolumns" id="lastmodified"></p>
+      </footer>
+      <script src="js/script.js"></script>
+      <script src="js/maintemple.js"></script>
+    </body>
+  </html>

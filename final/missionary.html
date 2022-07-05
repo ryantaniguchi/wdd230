@@ -1,0 +1,146 @@
+<!-- REQUIREMENTS
+    Subpage of Services Page
+    Footer that includes:
+        - Other relevant info
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ryan Taniguchi: Final Project Missionary Page</title>
+    <meta
+      name="description"
+      content="Missionary page for Ryan Taniguchi's final project."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/base.css" />
+  </head>
+  <body>
+    <header class="sticky">
+      <div class="banner leftalign">
+        <picture class="logo">
+          <img
+            src="images/logo.png"
+            alt="Black Forest Logo"
+            width="49"
+            height="77"
+          />
+        </picture>
+        <h1>Temple<span class="displayblock">Inn & Suites</span></h1>
+      </div>
+      <nav>
+        <ul class="navigation">
+          <li class="hide">
+            <a class="tworemfont hide" href="#" onclick="toggleMenu()"
+              >&#9776;</a
+            >
+          </li>
+          <li class="hide"><a href="index.html">Home</a></li>
+          <li class="hide"><a href="temple.html">Temple</a></li>
+          <li class="hide"><a href="reservation.html">Reservation</a></li>
+          <li class="hide"><a href="services.html">Services</a></li>
+          <li class="hide"><a href="reception.html">Reception Subpage</a></li>
+          <li class="hide active"><a href="#">Missionary Subpage</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <h2>Full-Time Missionaries</h2>
+        <img
+          src="images/missionary/missionaries.webp"
+          alt="Missionaries"
+          width="449"
+          height="600"
+        />
+        <p>
+          Temple Inn & Suites fully supports the work done by the Church of
+          Jesus Christ of Latter-Day Saints, both in their humanitarian efforts
+          and in their spiritual work to help our brothers and sisters, both
+          living and deceased.
+        </p>
+        <h3>Supporting Our Full-Time Missionaries</h3>
+        <p>
+          Each Temple Inn & Suites location provides free access to changing
+          rooms and bathroom facilties for temple patrons who may need to
+          prepare for or have recently finished a visit to the temple.
+        </p>
+        <p>
+          Each Temple Inn & Suites location has a family search center that
+          supports family search and ordinance work, allowing our guests to
+          conduct their important work from the comfort of one of our many
+          locations.
+        </p>
+        <h3>Providing for Temple Visitors</h3>
+        <p>
+          Each Temple Inn & Suites location has a playroom available for guests,
+          as well as short-term babysitting services for our younger guests.
+        </p>
+        <p>
+          Each Temple Inn & Suites location has at least one beautifully
+          decorated temple-history themed reception and sitting area for the use
+          of our guests.
+        </p>
+        <h3>Contact us</h3>
+        <p><a href="contact.html">Contact us</a> for more information</p>
+      </div>
+    </main>
+    <footer>
+      <div class="templeaddress">
+        <p>
+          Temple Inn & Suites
+          <span>4800 Montgomery Ln #300</span>
+          <span>Bethesda, MD 20814</span>
+        </p>
+        <iframe
+          class="googlemap"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3101.4048391962765!2d-77.0977258!3d38.9832559!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0xceab47cd19a23a3b!2s4800%20Montgomery%20Ln%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1656363250028!5m2!1sen!2sus"
+          width="200"
+          height="200"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="social">
+        <p><a href="/contact.html">How can we help?</a></p>
+        <p>Call us toll-free: 240-595-2939</p>
+        <a href="https://facebook.com"
+          ><img
+            src="images/facebook.png"
+            alt="Facebook link"
+            width="48"
+            height="48"
+        /></a>
+        <a href="https://linkedin.com"
+          ><img
+            src="images/linkedin.png"
+            alt="Linkedin link"
+            width="48"
+            height="48"
+        /></a>
+        <a href="https://twitter.com"
+          ><img
+            src="images/twitter.png"
+            alt="Twitter link"
+            width="48"
+            height="48"
+        /></a>
+      </div>
+      <p class="twocolumns" id="currentyear"></p>
+      <p class="twocolumns" id="lastmodified"></p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/maintemple.js"></script>
+  </body>
+</html>
