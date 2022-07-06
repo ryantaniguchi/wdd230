@@ -71,8 +71,8 @@ a:link, a:visited {
     color: #FFFFFF;
 }
 
-.silverbackground {
-    background-color: #C0C0C0;
+.brassbackground {
+    background-color: #B5A642;
 }
 
 /* CHANGE THIS */
@@ -86,7 +86,7 @@ a:link, a:visited {
 }
 
 .active {
-    background-color: #8C7853;
+    background-color: #b87333;
 }
 
 .tworemfont {
@@ -111,7 +111,7 @@ a:link, a:visited {
 nav {
     position: absolute;
     top: 5px;
-    right: 2px;
+    right: 2;
     margin: 0 auto;
     max-width: 760px;
     z-index: 2;
@@ -206,16 +206,16 @@ form input.submitBtn {
     align-items: center;
 }
 
-form label.top input:required, textarea:required {
+form label.top input:required, textarea:required, select:required {
     border-left: #ff0000 solid 6px;
 }
 
-form label.top input:required:valid, textarea:valid {
+form label.top input:required:valid, textarea:valid, select:valid {
     border-left: #3ACF3A solid 6px;
 }
 
 .required {
-    color: #FAC000;
+    color: #ff0000;
 }
 
 /* TEMPLE */
@@ -256,7 +256,7 @@ section{
 }
 
 /* LARGE VIEW */
-@media only screen and (min-width: 70em) {
+@media only screen and (min-width: 75em) {
     .sticky {
         position: fixed;
         top: 0;
