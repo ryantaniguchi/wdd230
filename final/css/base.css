@@ -31,9 +31,9 @@ header {
 }
 
 main {
-    background-color: #FFFFF0;
+    background-color: #FBFAFD;
 }
-
+/* FFFFF0 */
 div {
     padding: 1rem;
 }
@@ -67,12 +67,13 @@ a:link, a:visited {
     color: #000000;
 }
 
-.active a:link, .active a:visited {
+.bluebackground a:link, .bluebackground a:visited {
     color: #FFFFFF;
 }
 
-.brassbackground {
-    background-color: #B5A642;
+.bluebackground {
+    background-color: #000077;
+    color: #FFFFFF;
 }
 
 /* CHANGE THIS */
@@ -83,10 +84,6 @@ a:link, a:visited {
 
 .hide {
     display: none;
-}
-
-.active {
-    background-color: #b87333;
 }
 
 .tworemfont {
