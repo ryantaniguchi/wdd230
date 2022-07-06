@@ -4,6 +4,8 @@
     padding: 0;
 }
 
+
+
 body {
     font-family: 'Roboto Slab', serif;
     font-size: 16px;
@@ -23,6 +25,9 @@ header {
 .banner {
     display: flex;
     align-items: center;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 900px;
 }
 
 main {
@@ -58,6 +63,14 @@ footer {
 }
 
 /* Generic Classes */
+a:link, a:visited {
+    color: #000000;
+}
+
+.active a:link, .active a:visited {
+    color: #FFFFFF;
+}
+
 .silverbackground {
     background-color: #C0C0C0;
 }
@@ -73,7 +86,7 @@ footer {
 }
 
 .active {
-    background-color: #C0C0C0;
+    background-color: #8C7853;
 }
 
 .tworemfont {
@@ -98,6 +111,7 @@ footer {
 nav {
     position: absolute;
     top: 5px;
+    right: 2px;
     margin: 0 auto;
     max-width: 760px;
     z-index: 2;
@@ -136,7 +150,7 @@ nav {
 form {
     padding: 2rem;
     margin: 0 auto;
-    max-width: 1600px;
+    max-width: 1000px;
 }
 
 fieldset {
@@ -234,7 +248,6 @@ section{
 /* MEDIUM VIEW */
 @media only screen and (min-width: 35em) {
     header {
-        display: grid;
         justify-content: inherit;
         align-items: center;
         /* TESTING */
@@ -243,11 +256,12 @@ section{
 }
 
 /* LARGE VIEW */
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 70em) {
     .sticky {
         position: fixed;
         top: 0;
         width: 100%;
+        background-color: #ffd700;
     }
 
     .sticky + main {

@@ -89,6 +89,9 @@ function displayResults(weatherData) {
 
     image.setAttribute('src', `https://openweathermap.org/img/w/${time.weather[0].icon}.png`)
     image.setAttribute('alt', desc)
+    image.setAttribute('loading', 'lazy');
+    image.setAttribute('width', '50px');
+    image.setAttribute('height', '50px');
 
     card.classList.add('weathercard')
 
