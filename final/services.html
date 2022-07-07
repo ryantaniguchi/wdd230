@@ -91,22 +91,31 @@
       </div>
     </main>
     <footer>
-      <div class="templeaddress">
+      <div class="attributions">
+        <p class="twocolumns" id="currentyear"></p>
+        <p class="twocolumns" id="lastmodified"></p>
+        <p class="twocolumns">
+          Weather services provided by<a href="https://openweathermap.org/"
+            >OpenWeatherMap</a
+          >.
+        </p>
+      </div>
+
+      <div class="address">
         <p>
           Temple Inn & Suites
-          <span>4800 Montgomery Ln #300</span>
-          <span>Bethesda, MD 20814</span>
+          <span class="displayblock">4800 Montgomery Ln #300</span>
+          <span class="displayblock">Bethesda, MD 20814</span>
         </p>
-        <iframe
-          class="googlemap"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3101.4048391962765!2d-77.0977258!3d38.9832559!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0xceab47cd19a23a3b!2s4800%20Montgomery%20Ln%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1656363250028!5m2!1sen!2sus"
-          width="200"
-          height="200"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+        <a
+          href="https://www.google.com/maps/place/4800+Montgomery+Ln,+Bethesda,+MD+20814/@38.983252,-77.095532,15z/data=!4m5!3m4!1s0x89b7c97b6b3b5b43:0xceab47cd19a23a3b!8m2!3d38.9832518!4d-77.0955318?hl=en"
+          ><img
+            src="images/googlemaps.png"
+            alt="Google Maps link"
+            width="48"
+            height="48"
+          />
+        </a>
       </div>
       <div class="social">
         <p><a href="/contact.html">How can we help?</a></p>
@@ -133,9 +142,8 @@
             height="48"
         /></a>
       </div>
-      <p class="twocolumns" id="currentyear"></p>
-      <p class="twocolumns" id="lastmodified"></p>
     </footer>
+
     <script src="js/script.js"></script>
   </body>
 </html>
