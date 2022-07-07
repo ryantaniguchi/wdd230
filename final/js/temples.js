@@ -23,7 +23,7 @@ function displayTemples(data) {
 
     let services = document.createElement('p');
     let history = document.createElement('p');
-    let ordinances = document.createElement('img');
+    let ordinances = document.createElement('p');
     let session = document.createElement('p');
     let closure = document.createElement('p');
 

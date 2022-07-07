@@ -1,6 +1,6 @@
 // Add random temple to index.html page
 const requestURL = 'json/temples.json';
-const temples = document.querySelector(".temples");
+const temples = document.querySelector(".maintemple");
 const cards = document.querySelector('.cards');
 
 async function apiFetch() {
@@ -50,7 +50,7 @@ function displayTemples(data) {
   card.appendChild(history);
 
   // Add/append the existing HTML div with the cards class with the section(card)
-  document.querySelector('div.temples').appendChild(card);
+  document.querySelector('div.maintemple').appendChild(card);
   return city;
 };
 
