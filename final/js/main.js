@@ -7,8 +7,11 @@ async function apiFetch() {
   let response = await fetch(requestURL);
   if (response.ok) {
     let data = await response.json();
-    let city = displayTemples(data.temples);
-    const weatherURL = `https://api.openweathermap.org/data/2.5/forecast?id=${city}&units=imperial&appid=3af250634d071cb3f84c2c5c48e9d30a`
+    let coordinates = displayTemples(data.temples);
+    let latitude = coordinates[0];
+    let longitude = coordinates[1];
+    const weatherURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=minutely,hourly&units=imperial&appid=3af250634d071cb3f84c2c5c48e9d30a`
+    console.log(weatherURL)
     fetchWeather(weatherURL);
   } else {
     throw Error(response.statusText);
@@ -27,7 +30,8 @@ function displayTemples(data) {
   let image = document.createElement('img');
   let history = document.createElement('p');
 
-  let city = item.city;
+  let latitude = item.latitude;
+  let longitude = item.longitude;
 
   name.textContent = `${item.name}`;
   address.textContent = `Address: ${item.address}`;
@@ -51,7 +55,7 @@ function displayTemples(data) {
 
   // Add/append the existing HTML div with the cards class with the section(card)
   document.querySelector('div.maintemple').appendChild(card);
-  return city;
+  return [latitude, longitude];
 };
 
 async function fetchWeather(weatherURL) {
@@ -70,8 +74,8 @@ async function fetchWeather(weatherURL) {
 
 // Add weather to index.html page
 function displayResults(weatherData) {
-  console.log(weatherData)
-  weatherData.list.forEach(time => {
+  console.log(weatherData.daily)
+  weatherData.daily.forEach(time => {
     console.log(time)
     let card = document.createElement('section');
     let h2 = document.createElement('h2');
@@ -80,11 +84,15 @@ function displayResults(weatherData) {
     let image = document.createElement('img');
     let weather = document.createElement('p');
 
-    h2.innerHTML = weatherData.city.name;
+    const date = new Intl.DateTimeFormat("en-US", {
+      dateStyle: "full"
+    }).format(new Date(time.dt * 1000));
+
+    h2.innerHTML = date
 
     const desc = toTitleCase(time.weather[0].description);
-    temperature.textContent = `Temp: ${time.main.temp} °F`;
-    humidity.textContent = `Humidity: ${time.main.humidity}%`;
+    temperature.textContent = `Temp: ${time.temp.day} °F`;
+    humidity.textContent = `Humidity: ${time.humidity}%`;
     weather.textContent = desc
 
     image.setAttribute('src', `https://openweathermap.org/img/w/${time.weather[0].icon}.png`)
@@ -109,6 +117,10 @@ function toTitleCase(str) {
   return str.toLowerCase().split(' ').map(function (word) {
     return (word.charAt(0).toUpperCase() + word.slice(1));
   }).join(' ');
+}
+
+function getDate(date) {
+  return `${dateTime.getDate()}-${dateTime.getMonth() + 1}-${dateTime.getFullYear()}`
 }
 
 apiFetch()
