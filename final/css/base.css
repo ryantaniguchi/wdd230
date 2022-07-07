@@ -68,13 +68,18 @@ a:link, a:visited {
     text-decoration: none;    
 }
 
-.bluebackground a:link, .bluebackground a:visited {
-    color: #D9DADB;
+.blackbackground {
+    background-color: #000;
+    color: #FFF;
 }
 
 .bluebackground {
     background-color: #000077;
     color: #FFFFFF;
+}
+
+.bluebackground a:link, .bluebackground a:visited {
+    color: #D9DADB;
 }
 
 /* CHANGE THIS */
@@ -259,8 +264,12 @@ section{
 }
 
 .weathercard {
-    max-width: 300px;
+    max-width: 400px;
     margin: 1rem;
+}
+
+.weathercard p {
+    font-size: 1.5rem;
 }
 
 .temples img{

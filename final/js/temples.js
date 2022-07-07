@@ -42,8 +42,6 @@ function displayTemples(data) {
     image.setAttribute('alt', `Outside image of ${temple.name}`);
     image.setAttribute('loading', 'lazy');
 
-    // card.classList.add('card')
-    // card.classList.add('coloredborder')
     card.appendChild(name);
     card.appendChild(image);
     card.appendChild(address)

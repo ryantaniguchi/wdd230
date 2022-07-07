@@ -1,8 +1,8 @@
-// Add random temple to index.html page
 const requestURL = 'json/temples.json';
 const temples = document.querySelector(".maintemple");
 const cards = document.querySelector('.cards');
 
+// Calls functions to display temple data, then calls fetchWeather to pull weather data associated with that location
 async function apiFetch() {
   let response = await fetch(requestURL);
   if (response.ok) {
@@ -10,14 +10,17 @@ async function apiFetch() {
     let coordinates = displayTemples(data.temples);
     let latitude = coordinates[0];
     let longitude = coordinates[1];
+    // Creates weatherURL based on coordinates for the selected temple
     const weatherURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=minutely,hourly&units=imperial&appid=3af250634d071cb3f84c2c5c48e9d30a`
     console.log(weatherURL)
+    // Calls fetchWeather using weatherURL associated with temple location
     fetchWeather(weatherURL);
   } else {
     throw Error(response.statusText);
   }
 }
 
+// Displays random temple and associated data on the homepage
 function displayTemples(data) {
   // Create elements to add to the document
   const randomIndex = Math.floor(Math.random() * data.length);
@@ -58,6 +61,7 @@ function displayTemples(data) {
   return [latitude, longitude];
 };
 
+// Calls function to display weather forecasts based on provided coordinates
 async function fetchWeather(weatherURL) {
   try {
     const response = await fetch(weatherURL);
@@ -72,11 +76,10 @@ async function fetchWeather(weatherURL) {
   }
 }
 
-// Add weather to index.html page
+// Add weather forecasts to index.html page
 function displayResults(weatherData) {
-  console.log(weatherData.daily)
-  weatherData.daily.forEach(time => {
-    console.log(time)
+  for (let i = 0; i < 3; i++) {
+    let time = weatherData.daily[i];
     let card = document.createElement('section');
     let h2 = document.createElement('h2');
     let temperature = document.createElement('p');
@@ -88,7 +91,11 @@ function displayResults(weatherData) {
       dateStyle: "full"
     }).format(new Date(time.dt * 1000));
 
-    h2.innerHTML = date
+    if (i == 0) {
+      h2.textContent = `Today's Weather`;
+    } else {
+      h2.textContent = `Forecast for ${date}`;
+    }
 
     const desc = toTitleCase(time.weather[0].description);
     temperature.textContent = `Temp: ${time.temp.day} °F`;
@@ -104,31 +111,20 @@ function displayResults(weatherData) {
     card.classList.add('weathercard')
 
     card.appendChild(h2);
-    card.appendChild(temperature);
-    card.appendChild(humidity);
     card.appendChild(image)
     card.appendChild(weather)
+    card.appendChild(temperature);
+    card.appendChild(humidity);
 
     cards.appendChild(card);
-  });
+  };
 }
 
+// Capitalizes words in the weather description
 function toTitleCase(str) {
   return str.toLowerCase().split(' ').map(function (word) {
     return (word.charAt(0).toUpperCase() + word.slice(1));
   }).join(' ');
 }
 
-function getDate(date) {
-  return `${dateTime.getDate()}-${dateTime.getMonth() + 1}-${dateTime.getFullYear()}`
-}
-
 apiFetch()
-
-// INCOMPLETE WEATHER WARNING
-const dismiss = document.querySelector('.dismiss');
-dismiss.addEventListener('click', closeFunction);
-
-function closeFunction() {
-  this.parentElement.style.display = 'none';
-}

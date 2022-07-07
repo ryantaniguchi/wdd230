@@ -1,0 +1,23 @@
+{
+    "alert": {
+                "id": "2.49.0.0.428.0.LV.201201000201.46453_0",
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [[[-79.322,43.1293],[-79.7776,
+                    43.1723], [-79.322,43.1293]]]
+                }
+            },
+    "msg_type": "warning",
+    "categories": [ "Met"],
+    "urgency": "Future",
+    "severity": "Moderate",
+    "certainty": "Likely",
+    "start": 1606896000,
+    "end": 1606982400,
+    "sender": "AIRNow Program, US Environmental Protection Agency",
+    "language" : "En",
+    "event" : "Particle Pollution (2.5 microns) is forecast to reach 105 AQI - Unhealthy for Sensitive Groups on Wed 12/02/2020. Particle Pollution (2.5 microns) is forecast to reach  102 AQI - Unhealthy for Sensitive Groups on Thu 12/03/2020. ",
+    "headline" : "Air Quality Alert",
+    "description" : "Particle Pollution (2.5 microns) is forecast to reach 105 AQI - Unhealthy for Sensitive Groups on Wed 12/02/2020. Particle Pollution (2.5 microns) is forecast to reach 102 AQI - Unhealthy for Sensitive Groups on Thu 12/03/2020. ",
+    "instruction" : "Active children and adults, and people with lung disease, such as asthma, should reduce prolonged or heavy exertion outdoors"
+}
