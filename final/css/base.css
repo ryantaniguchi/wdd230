@@ -18,6 +18,7 @@ main, header, footer {
 
 header {
     background-color: #ffd700;
+    /*  #C5DBB6 */
     position: relative;
 }
 
@@ -25,7 +26,6 @@ header {
     display: flex;
     align-items: center;
     text-align: left;
-    margin: 0 auto;
     padding-top: 40px;
     max-width: 900px;
 }
