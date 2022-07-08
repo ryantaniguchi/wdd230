@@ -12,8 +12,7 @@ async function getAlerts() {
 }
 
 function displayAlerts(data) {
-    let card = document.createElement('section');
-    let headline = document.createElement('h3');
+    let headline = document.createElement('h2');
     let severity = document.createElement('p');
     let instruction = document.createElement('p');
     let sender = document.createElement('p');
