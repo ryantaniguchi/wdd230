@@ -4,16 +4,16 @@
     padding: 0;
 }
 
-main {
-    max-width: 1600px;
-    margin: 0 auto;
-}
-
 body {
     font-family: 'Roboto Slab', serif;
     font-size: 16px;
     text-align: center;
     color: #000000;
+}
+
+main, header, footer {
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 header {
@@ -63,6 +63,7 @@ footer {
 }
 
 /* Generic Classes */
+
 a:link, a:visited {
     color: #000000;
     text-decoration: none;    
@@ -137,7 +138,7 @@ nav {
     display: block;
     text-decoration: none;
     text-align: center;
-    padding-bottom: 5px;
+    padding: 2px;
 }
 
 /* Hamburger menu */
@@ -162,7 +163,7 @@ nav {
     margin: 0 auto;
 }
 
-.makereservation {
+.linkbutton {
     margin: 0 auto;
     padding: 10px;
     border-radius: 10px;
@@ -184,6 +185,7 @@ fieldset {
     margin: 1rem;
     border-radius: 10px;
     padding: .5rem 2%;
+    display: grid;
 }
 
 form p {
@@ -266,6 +268,7 @@ section{
 .weathercard {
     max-width: 400px;
     margin: 1rem;
+    padding: 1rem;
 }
 
 .weathercard p {
@@ -330,7 +333,12 @@ section{
 }
 
 /* LARGE VIEW */
-@media only screen and (min-width: 75em) {      
+@media only screen and (min-width: 90em) {      
+
+    nav {
+        right: 300px;
+    }    
+
     .templedata {
         display: grid;
     }
