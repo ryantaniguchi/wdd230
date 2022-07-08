@@ -174,6 +174,10 @@ nav {
     max-width: 1200px;
 }
 
+.maintemple img {
+    padding: 1rem;
+}
+
 /* RESERVATION */
 form {
     padding: 2rem;
@@ -345,10 +349,6 @@ section{
 
     .maintemple {
         grid-column: 1/3;
-    }
-
-    .maintemple img {
-        padding: 1rem;
     }
 
     .cards {
