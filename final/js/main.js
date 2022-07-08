@@ -26,7 +26,7 @@ function displayTemples(data) {
   const randomIndex = Math.floor(Math.random() * data.length);
   const item = data[randomIndex];
   let card = document.createElement('section');
-  let name = document.createElement('h3');
+  let name = document.createElement('h2');
   let address = document.createElement('p');
   let phone = document.createElement('p');
   let email = document.createElement('p');
@@ -79,7 +79,7 @@ function displayResults(weatherData) {
   for (let i = 0; i < 3; i++) {
     let time = weatherData.daily[i];
     let card = document.createElement('section');
-    let h2 = document.createElement('h2');
+    let h3 = document.createElement('h3');
     let temperature = document.createElement('p');
     let humidity = document.createElement('p');
     let image = document.createElement('img');
@@ -90,9 +90,9 @@ function displayResults(weatherData) {
     }).format(new Date(time.dt * 1000));
 
     if (i == 0) {
-      h2.textContent = `Today's Weather`;
+      h3.textContent = `Today's Weather`;
     } else {
-      h2.textContent = `Forecast for ${date}`;
+      h3.textContent = `Forecast for ${date}`;
     }
 
     const desc = toTitleCase(time.weather[0].description);
@@ -108,7 +108,7 @@ function displayResults(weatherData) {
 
     card.classList.add('weathercard')
 
-    card.appendChild(h2);
+    card.appendChild(h3);
     card.appendChild(image)
     card.appendChild(weather)
     card.appendChild(temperature);
