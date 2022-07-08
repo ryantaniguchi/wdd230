@@ -28,6 +28,7 @@ header {
     text-align: left;
     padding-top: 40px;
     max-width: 900px;
+    padding-left: 50px;
 }
 
 main {
@@ -336,7 +337,7 @@ section{
 @media only screen and (min-width: 90em) {      
 
     nav {
-        right: 300px;
+        right: 255px;
     }    
 
     .templedata {
