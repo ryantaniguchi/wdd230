@@ -17,7 +17,7 @@ main, header, footer {
 }
 
 header {
-    background-color: #ffd700;
+    background-color: #B7CBC0;
     /*  #C5DBB6 */
     position: relative;
 }
@@ -32,7 +32,8 @@ header {
 }
 
 main {
-    background-color: #FBFAFD;
+    background-color: #5D758A;
+    padding: 1rem;
 }
 /* FFFFF0 */
 div {
@@ -51,7 +52,7 @@ img {
 /* Footer */
 footer {
     padding: 1rem;
-    background-color: #ffd700;
+    background-color: #B7CBC0;
     display: grid;
 }
 
@@ -76,12 +77,12 @@ a:link, a:visited {
 }
 
 .bluebackground {
-    background-color: #000077;
+    background-color: #3B5C78;
     color: #FFFFFF;
 }
 
 .bluebackground a:link, .bluebackground a:visited {
-    color: #D9DADB;
+    color: #FFFFFF;
 }
 
 .dismiss {
@@ -144,8 +145,7 @@ nav {
 /* Hamburger menu */
 
 .responsive {
-    background-color: #ffd700;
-    opacity: 0.8;
+    background-color: #B7CBC0;
 }
 
 .responsive a {
@@ -266,7 +266,7 @@ section{
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    margin: 0 auto;
+    margin: auto;
 }
 
 .weathercard {
@@ -318,7 +318,7 @@ section{
         position: fixed;
         top: 0;
         width: 100%;
-        background-color: #ffd700;
+        background-color: #B7CBC0;
     }
 
     .sticky + main {
@@ -340,15 +340,11 @@ section{
 @media only screen and (min-width: 90em) {      
 
     nav {
-        right: 255px;
+        right: 270px;
     }    
 
-    .templedata {
-        display: grid;
-    }
-
     .maintemple {
-        grid-column: 1/3;
+        margin: auto;
     }
 
     .cards {
