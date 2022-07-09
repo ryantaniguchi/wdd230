@@ -76,7 +76,7 @@ async function fetchWeather(weatherURL) {
 
 // Add weather forecasts to index.html page
 function displayResults(weatherData) {
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < 4; i++) {
     let time = weatherData.daily[i];
     let card = document.createElement('section');
     let h3 = document.createElement('h3');
