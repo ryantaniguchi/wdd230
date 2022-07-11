@@ -59,64 +59,61 @@
      <main>
         <form method="get" action="thankyou.html">
             <fieldset>
-                <legend>Reservation Information</legend>
-                <label class="top">Select a Location<span class="required">*</span><select name="temple" required>
-                    <option value="temple0" selected disabled>Select a location</option>
+                <h2>Select Your Location and Dates of Stay</h2>
+                <label class="top"><select name="temple" required>
+                    <option value="temple0" selected disabled>Select a Hotel location</option>
                     <option value="temple1">San Diego, California</option>
                     <option value="temple2">Salt Lake City, Utah</option>
                     <option value="temple3">Laie, Hawaii</option>
                     <option value="temple4">Kensington, Maryland</option>
                 </select>
-                <label class="top">Date<span class="required">*</span><input type="date" id="reservation" name="reservation" required></label>
+                <label class="top">Check-In Date<input type="date" id="reservation" name="reservation" required></label>
+                <label class="top">Check-Out Date<input type="date" id="reservation" name="reservation" required></label>
             </fieldset>
 
-
-            <fieldset class="formgrid coloredborder">
-                <legend>Contact Information</legend>
-                <label class="top">Full Name<span class="required">*</span> <input type="text" name="fname" placeholder="Jane Smith" required></label>
-                <label class="top">Email<span class="required">*</span> <input type="email" name="email" placeholder="support@templeinnsuite.com" required></label>
-                <label class="top">Phone<span class="required">*</span> <input type="tel" name="phone" placeholder="240-595-2939" required></label>
-                <label class="top">State and/or Country<span class="required">*</span> <input type="text" name="bname" placeholder="Maryland, United States" required></label>
-            </fieldset>
-
-            <fieldset class="coloredborder">
-                <legend>Comments or Special Accommodations</legend>
-                <label class="businessdescription">
-                <textarea name="description" required rows="5" placeholder="Please let us know anything we should be aware of."></textarea>
-                </label>
-            </fieldset>
 
             <fieldset>
-                <legend>Room Requirements</legend>
-                <div class="formgrid">
+                <h2>Contact Information</h2>
+                <label class="top"><input type="text" name="fname" placeholder="Full Name" required></label>
+                <label class="top"><input type="email" name="email" placeholder="Email" required></label>
+                <label class="top"><input type="tel" name="phone" placeholder="Phone number" required></label>
+                <label class="top"><input type="text" name="bname" placeholder="State and/or Country" required></label>
+            </fieldset>
+            <fieldset>
+                <h2>Room Requirements</h2>
+                <div>
                     <p>Each room comes with complimentary amenities such as breakfast, access to the exercise room and indoor pool, 
                         WiFi high-speed internet access and smart TVs, parking and temple shuttle access, and family history consultation 
                         and family ordinance card service.</p> 
-                    <label class="sbs">How many rooms will you need?<span class="required">* </span><select name="temple" required>
+                    <label class="sbs">How many rooms will you need?<select name="temple" required>
                         <option value="roomnumber">1</option>
                         <option value="roomnumber">2</option>
                         <option value="roomnumber">3</option>
                         <option value="roomnumber">4</option>
                     </select>    
                     <hr>
-                    <p>What type of accommodations will you require?<span class="required">* </span></p>
+                    <p>What type of accommodations will you require?</p>
                     <label class="sbs"><input type="radio" name="room" value="single"> Single Room</label>
-                    <span class="italics">Comes with a single double-sized bed. Perfect for a single person or a couple.</span>
+                    <span class="italics">Comes with a single double-sized bed. Perfect for a single guest or a couple.</span>
                     <label class="sbs"><input type="radio" name="room" value="double"> Double Room</label>
-                    <span class="italics">A comfortable room with two double-beds. Perfect for a family on the go.</span>
+                    <span class="italics">A comfortable room with two double-beds that comfortably sleeps up to four guests. Perfect for a family on the go.</span>
                     <label class="sbs"><input type="radio" name="room" value="triple"> Triple Room</label>
-                    <span class="italics">A luxurious room with three double-beds. Perfect for a small group to stay in.</span>
+                    <span class="italics">A luxurious room with three double-beds that comfortably sleeps up to six guests. Perfect for a small group to stay in.</span>
                 </div>
+                <label>
+                  <textarea name="description" required rows="5" placeholder="Please list any special accommodations or requirements you might have."></textarea>
+                  </label>
+  
                 <label class="hidden"><input type="hidden" id="submitdate" name="submitdate"></label>
             </fieldset>
 
-            <fieldset class="coloredborder">
-                <legend>Confirm and Apply</legend>
-                <label class="sbs"><input type="checkbox" id="agreeconditions" name="agreeconditions" required> I have read and agree to the Temple Inn & Suites hotel accomodations terms and conditions.<span class="required">*</span></label>
-            </fieldset>
-    
-            <input type="submit" value="Reserve a Room" class="submitBtn blackbackground">
-    
+            <fieldset>
+                <h2>Confirm and Apply</h2>
+                <p>Please read the following and click the checkbox to indicate your agreement:</p>
+                <label class="sbs"><input type="checkbox" id="agreeconditions" name="agreeconditions" required> I have read and agree to the Temple Inn & Suites hotel accomodations terms and conditions of service.<span class="required">*</span></label>
+                <label class="sbs"><input type="checkbox" id="agreeconditions" name="agreeconditions" required> I understand that communications, including changes to my itinerary, may be communicated to me via email, and that I am responsible to read and respond to any such communications.<span class="required">*</span></label>
+                <input type="submit" value="Reserve a Room" class="reserve">
+              </fieldset>
         </form>
      </main>
      <footer>

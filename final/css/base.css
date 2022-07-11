@@ -200,6 +200,8 @@ form p {
 form legend {
     margin: 0 1rem;
     padding: 0 .5rem;
+    text-align: center;
+    font-size: 2rem;
 }
 
 form label.top input, form label.top select, textarea {
@@ -209,18 +211,21 @@ form label.top input, form label.top select, textarea {
     border-radius: 10px;
 }
 
-form label.sbs {
+form label {
     display: block;
     padding-top: .75rem;
     text-align: left;
 }
 
-form input.submitBtn {
+form input.reserve {
     border: none;
     background-color: #3B5C78;
+    color: #FFF;
     border-radius: 10px;
     padding: 1rem;
-    align-items: center;
+    display: block;
+    margin: 1.0em auto;
+    text-align: center;
 }
 
 .required {

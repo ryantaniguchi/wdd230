@@ -81,25 +81,20 @@
         method="get"
         action="thankyou.html"
       >
-        <fieldset class="formgrid coloredborder">
-          <legend>Contact Information</legend>
+        <fieldset>
+          <h2>Contact Information</h2>
           <label class="top"
-            >Full Name<span class="required">*</span>
-            <input type="text" name="fname" placeholder="Jane Smith" required
+            >
+            <input type="text" name="fname" placeholder="Full Name" required
           /></label>
-          <label class="top"
-            >Email<span class="required">*</span>
+          <label class="top">
             <input
               type="email"
               name="email"
-              placeholder="support@templeinnsuite.com"
+              placeholder="Email address"
               required
           /></label>
-        </fieldset>
-
-        <fieldset class="coloredborder">
-          <legend>Comments or Questions</legend>
-            <label class="sbs morespace">Category<span class="required">*</span>:  </span><select name="commentcategory" required>
+             <label class="sbs morespace">Category<span class="required">*</span>:  </span><select name="commentcategory" required>
               <option value="noreason"selected disabled>Please select a category</option>
               <option value="receptionreason">Reception Services</option>
               <option value="missionaryreason">Missionary Services</option>
@@ -115,13 +110,14 @@
               placeholder="How can we help?"
             ></textarea>
           </label>
-        </fieldset>
 
-        <input
+          <input
           type="submit"
           value="Send Your Comment"
-          class="submitBtn blackbackground"
+          class="reserve"
         />
+
+        </fieldset>
       </form>
     </main>
     <footer>
