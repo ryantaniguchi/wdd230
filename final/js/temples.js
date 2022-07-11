@@ -14,7 +14,7 @@ async function getTemples() {
 function displayTemples(data) {
   // Create elements to add to the document
   data.temples.forEach(temple => {
-    let card = document.createElement('section');
+    let card = document.createElement('div');
     let name = document.createElement('h3');
     let address = document.createElement('p');
     let phone = document.createElement('p');
@@ -72,6 +72,8 @@ function displayTemples(data) {
     card.appendChild(ordinances);
     card.appendChild(session);
     card.appendChild(closure);
+    card.classList.add('templecard')
+
 
     // Add/append the existing HTML div with the cards class with the section(card)
     document.querySelector('div.temples').appendChild(card);

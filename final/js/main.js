@@ -25,7 +25,7 @@ function displayTemples(data) {
   // Create elements to add to the document
   const randomIndex = Math.floor(Math.random() * data.length);
   const item = data[randomIndex];
-  let card = document.createElement('section');
+  let card = document.createElement('div');
   let name = document.createElement('h2');
   let address = document.createElement('p');
   let phone = document.createElement('p');
@@ -40,7 +40,7 @@ function displayTemples(data) {
   address.textContent = `Address: ${item.address}`;
   phone.textContent = `Phone: ${item.phone}`;
   email.textContent = `Email: ${item.email}`;
-  history.textContent = `History: ${item.history}`;
+  history.textContent = `History: ${item.longhistory}`;
 
   // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
   image.setAttribute('src', item.image);
@@ -53,6 +53,7 @@ function displayTemples(data) {
   card.appendChild(phone);
   card.appendChild(email);
   card.appendChild(history);
+  card.classList.add('templecard')
 
   // Add/append the existing HTML div with the cards class with the section(card)
   document.querySelector('div.maintemple').appendChild(card);
@@ -100,11 +101,11 @@ function displayResults(weatherData) {
     humidity.textContent = `Humidity: ${time.humidity}%`;
     weather.textContent = desc
 
-    image.setAttribute('src', `https://openweathermap.org/img/w/${time.weather[0].icon}.png`)
+    image.setAttribute('src', `images/weather/${time.weather[0].icon}.png`)
     image.setAttribute('alt', desc)
     image.setAttribute('loading', 'lazy');
-    image.setAttribute('width', '50px');
-    image.setAttribute('height', '50px');
+    image.setAttribute('width', '128px');
+    image.setAttribute('height', '128px');
 
     card.classList.add('weathercard')
 

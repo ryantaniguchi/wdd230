@@ -7,10 +7,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ryan Taniguchi: Final Project Reservation Page</title>
+    <title>Contact Temple Inn & Suites</title>
     <meta
       name="description"
-      content="Reservation page for Ryan Taniguchi's final project."
+      content="Contact the friendly staff at Temple Inn & Suites with any questions or comments you might have."
     />
     <link rel="shortcut icon" href="images/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,7 +28,7 @@
         <picture class="logo">
           <img
             src="images/logo.png"
-            alt="Black Forest Logo"
+            alt="Temple Inn & Suites Logo"
             width="49"
             height="77"
           />
@@ -60,26 +60,32 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <h2>How can we help?</h2>
-      <p>
-        Please let us know any questions, comments, or concerns that we can help
-        to address.
-      </p>
+    <main class="doublegrid">
+      <div class="welcome twocolumns">
+        <h2>How can we help?</h2>
+        <p>
+          Please let us know any questions, thoughts, or concerns that we can help
+          to address. Leave a comment and you will receive a prompt reply from one of our friendly Temple Inn & Suites staff members.
+        </p>  
+      </div>
+      <picture class="hide reveal">
+        <img
+            src="images/contact/room.webp"
+            alt="Hotel Room"
+            width="620"
+            height="556"
+          />
+      </picture>
       <form
-        class="coloredborder greenbackground joinform"
+        class="expandcolumns"
         method="get"
         action="thankyou.html"
       >
         <fieldset class="formgrid coloredborder">
           <legend>Contact Information</legend>
           <label class="top"
-            >First Name<span class="required">*</span>
-            <input type="text" name="fname" placeholder="Jane" required
-          /></label>
-          <label class="top"
-            >Last Name<span class="required">*</span>
-            <input type="text" name="lname" placeholder="Smith" required
+            >Full Name<span class="required">*</span>
+            <input type="text" name="fname" placeholder="Jane Smith" required
           /></label>
           <label class="top"
             >Email<span class="required">*</span>
@@ -93,7 +99,15 @@
 
         <fieldset class="coloredborder">
           <legend>Comments or Questions</legend>
-          <label class="businessdescription">
+            <label class="sbs morespace">Category<span class="required">*</span>:  </span><select name="commentcategory" required>
+              <option value="noreason"selected disabled>Please select a category</option>
+              <option value="receptionreason">Reception Services</option>
+              <option value="missionaryreason">Missionary Services</option>
+              <option value="generalreason">General Inquiries</option>
+            </select>    
+            <hr>
+
+          <label class="commentarea">
             <textarea
               name="description"
               required
