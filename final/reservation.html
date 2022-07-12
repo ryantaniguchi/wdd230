@@ -5,119 +5,216 @@
         - Other relevant info
 -->
 
- <!DOCTYPE html>
- <html lang="en">
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Temple Inn & Suites Reservations</title> 
-     <meta name="description" content="Make a reservation with Temple Inn & Suites and allow us to provide you with the experience of a lifetime.">
-     <link rel="shortcut icon" href="images/favicon.ico" />
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">     
-     <link rel="stylesheet" href="css/normalize.css">
-     <link rel="stylesheet" href="css/base.css">
- 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temple Inn & Suites Reservations</title>
+    <meta
+      name="description"
+      content="Make a reservation with Temple Inn & Suites and allow us to provide you with the experience of a lifetime."
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/base.css" />
   </head>
- <body>
-  <header class="menu">
-    <div class="banner">
-      <picture class="logo">
-        <img
-          src="images/logo.png"
-          alt="Temple Inn & Suites logo"
-          width="49"
-          height="77"
-        />
-      </picture>
-      <h1>
-        Temple Inn & Suites<span class="displayblock"
-          >"Serving is an act of love."</span
-        >
-      </h1>
-    </div>
-  <nav class="sticky">
-    <ul class="navigation">
-        <li class="hide">
-          <a class="tworemfont hide" href="#" onclick="toggleMenu()"
-            >&#9776;</a
+  <body>
+    <header class="menu">
+      <div class="banner">
+        <picture class="logo">
+          <img
+            src="images/logo.png"
+            alt="Temple Inn & Suites logo"
+            width="49"
+            height="77"
+          />
+        </picture>
+        <h1>
+          Temple Inn & Suites<span class="displayblock"
+            >"Serving is an act of love."</span
           >
-        </li>
-        <li class="hide"><a href="index.html">Home</a></li>
-        <li class="hide"><a href="temple.html">Temple</a></li>
-        <li class="hide bluebackground"><a href="#">Reservation</a></li>
-        <li class="hide"><a href="services.html">Services</a></li>
-        <li class="hide"><a href="reception.html">Reception Services</a></li>
-        <li class="hide">
-          <a href="missionary.html">Missionary Services</a>
-        </li>
-      <li class="hide"><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
-  </header>
-     <main>
-        <form method="get" action="thankyou.html">
-            <fieldset>
-                <h2>Select Your Location and Dates of Stay</h2>
-                <label class="top">Hotel Location<select name="temple" required>
-                    <option value="temple0" selected disabled>Select a Hotel location</option>
-                    <option value="temple1">San Diego, California</option>
-                    <option value="temple2">Salt Lake City, Utah</option>
-                    <option value="temple3">Laie, Hawaii</option>
-                    <option value="temple4">Kensington, Maryland</option>
-                </select>
-                <label class="top">Check-In Date<input type="date" id="reservation" name="reservation" required></label>
-                <label class="top">Check-Out Date<input type="date" id="reservation" name="reservation" required></label>
-            </fieldset>
+        </h1>
+      </div>
+      <nav class="sticky">
+        <ul class="navigation">
+          <li class="hide">
+            <a class="tworemfont hide" href="#" onclick="toggleMenu()"
+              >&#9776;</a
+            >
+          </li>
+          <li class="hide"><a href="index.html">Home</a></li>
+          <li class="hide"><a href="temple.html">Temple</a></li>
+          <li class="hide bluebackground"><a href="#">Reservation</a></li>
+          <li class="hide"><a href="services.html">Services</a></li>
+          <li class="hide"><a href="reception.html">Reception Services</a></li>
+          <li class="hide">
+            <a href="missionary.html">Missionary Services</a>
+          </li>
+          <li class="hide"><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form method="get" action="thankyou.html">
+        <fieldset>
+          <h2>Select Your Location and Dates of Stay</h2>
+          <label class="top"
+            >Hotel Location<select name="temple" required>
+              <option value="" selected disabled>
+                Select a Hotel location
+              </option>
+              <option value="temple1">San Diego, California</option>
+              <option value="temple2">Salt Lake City, Utah</option>
+              <option value="temple3">Laie, Hawaii</option>
+              <option value="temple4">Kensington, Maryland</option>
+            </select></label
+          >
+          <label class="top"
+            >Check-In Date<input
+              type="date"
+              id="reservationstart"
+              name="reservationstart"
+              required
+          /></label>
+          <label class="top"
+            >Check-Out Date<input
+              type="date"
+              id="reservationend"
+              name="reservationend"
+              required
+          /></label>
+        </fieldset>
 
+        <fieldset>
+          <h2>Contact Information</h2>
+          <label class="top"
+            >Full Name:
+            <input
+              type="text"
+              name="fname"
+              placeholder="Susan Granger"
+              required
+          /></label>
+          <label class="top"
+            >Email Address:
+            <input
+              type="email"
+              name="email"
+              placeholder="sgranger@templeinnsuites.com"
+              required
+          /></label>
+          <label class="top"
+            >Phone Number:
+            <input type="tel" name="phone" placeholder="240-595-2939" required
+          /></label>
+          <label class="top"
+            >State and/or Country<input
+              type="text"
+              name="bname"
+              placeholder="Maryland, USA"
+              required
+          /></label>
+        </fieldset>
+        <fieldset>
+          <h2>Room Requirements</h2>
+          <div>
+            <p>
+              Each room comes with complimentary amenities such as breakfast,
+              access to the exercise room and indoor pool, WiFi high-speed
+              internet access and smart TVs, parking and temple shuttle access,
+              and family history consultation and family ordinance card service.
+            </p>
+            <label class="sbs"
+              >How many rooms will you need?<select name="temple" required>
+                <option value="" selected disabled>Select a number</option>
+                <option value="roomnumber">1</option>
+                <option value="roomnumber">2</option>
+                <option value="roomnumber">3</option>
+                <option value="roomnumber">4</option>
+              </select></label
+            >
+            <hr />
+            <p>What type of accommodations will you require?</p>
+            <label class="sbs"
+              ><input type="radio" name="room" value="single" /> Single
+              Room</label
+            >
+            <p class="italics">
+              Comes with a single double-sized bed. Perfect for a single guest
+              or a couple.
+            </p>
+            <label class="sbs"
+              ><input type="radio" name="room" value="double" /> Double
+              Room</label
+            >
+            <p class="italics">
+              A comfortable room with two double-beds that comfortably sleeps up
+              to four guests. Perfect for a family on the go.
+            </p>
+            <label class="sbs"
+              ><input type="radio" name="room" value="triple" /> Triple
+              Room</label
+            >
+            <p class="italics">
+              A luxurious room with three double-beds that comfortably sleeps up
+              to six guests. Perfect for a small group to stay in.
+            </p>
+          </div>
+          <label
+            >Special Accomodations We Can Assist With:
+            <textarea
+              name="description"
+              required
+              rows="5"
+              placeholder="Please list any special accommodations or requirements you might have."
+            ></textarea>
+          </label>
 
-            <fieldset>
-                <h2>Contact Information</h2>
-                <label class="top">Full Name: <input type="text" name="fname" placeholder="Susan Granger" required></label>
-                <label class="top">Email Address: <input type="email" name="email" placeholder="sgranger@templeinnsuites.com" required></label>
-                <label class="top">Phone Number: <input type="tel" name="phone" placeholder="240-595-2939" required></label>
-                <label class="top">State and/or Country<input type="text" name="bname" placeholder="Maryland, USA" required></label>
-            </fieldset>
-            <fieldset>
-                <h2>Room Requirements</h2>
-                <div>
-                    <p>Each room comes with complimentary amenities such as breakfast, access to the exercise room and indoor pool, 
-                        WiFi high-speed internet access and smart TVs, parking and temple shuttle access, and family history consultation 
-                        and family ordinance card service.</p> 
-                    <label class="sbs">How many rooms will you need?<select name="temple" required>
-                        <option value="roomnumber">1</option>
-                        <option value="roomnumber">2</option>
-                        <option value="roomnumber">3</option>
-                        <option value="roomnumber">4</option>
-                    </select>    
-                    <hr>
-                    <p>What type of accommodations will you require?</p>
-                    <label class="sbs"><input type="radio" name="room" value="single"> Single Room</label>
-                    <span class="italics">Comes with a single double-sized bed. Perfect for a single guest or a couple.</span>
-                    <label class="sbs"><input type="radio" name="room" value="double"> Double Room</label>
-                    <span class="italics">A comfortable room with two double-beds that comfortably sleeps up to four guests. Perfect for a family on the go.</span>
-                    <label class="sbs"><input type="radio" name="room" value="triple"> Triple Room</label>
-                    <span class="italics">A luxurious room with three double-beds that comfortably sleeps up to six guests. Perfect for a small group to stay in.</span>
-                </div>
-                <label>
-                  <textarea name="description" required rows="5" placeholder="Please list any special accommodations or requirements you might have."></textarea>
-                  </label>
-  
-                <label class="hidden"><input type="hidden" id="submitdate" name="submitdate"></label>
-            </fieldset>
+          <label class="hidden"
+            ><input type="hidden" id="submitdate" name="submitdate"
+          /></label>
+        </fieldset>
 
-            <fieldset>
-                <h2>Confirm and Apply</h2>
-                <p>Please read the following and click the checkbox to indicate your agreement:</p>
-                <label class="sbs"><input type="checkbox" id="agreeconditions" name="agreeconditions" required> I have read and agree to the Temple Inn & Suites hotel accomodations terms and conditions of service.</label>
-                <label class="sbs"><input type="checkbox" id="agreeconditions" name="agreeconditions" required> I understand that communications, including changes to my itinerary, may be communicated to me via email, and that I am responsible to read and respond to any such communications.</label>
-                <input type="submit" value="Reserve a Room" class="reserve">
-              </fieldset>
-        </form>
-     </main>
+        <fieldset>
+          <h2>Confirm and Apply</h2>
+          <p>
+            Please read the following and click the checkbox to indicate your
+            agreement:
+          </p>
+          <label class="sbs"
+            ><input
+              type="checkbox"
+              id="agreeconditions"
+              name="agreeconditions"
+              required
+            />
+            I have read and agree to the Temple Inn & Suites hotel accomodations
+            terms and conditions of service.</label
+          >
+          <label class="sbs"
+            ><input
+              type="checkbox"
+              id="agreecontact"
+              name="agreecontact"
+              required
+            />
+            I understand that communications, including changes to my itinerary,
+            may be communicated to me via email, and that I am responsible to
+            read and respond to any such communications.</label
+          >
+          <input type="submit" value="Reserve a Room" class="reserve" />
+        </fieldset>
+      </form>
+    </main>
 
-     <footer>
+    <footer>
       <div class="attributions">
         <p class="twocolumns" id="currentyear"></p>
         <p>
@@ -175,7 +272,7 @@
         /></a>
       </div>
     </footer>
- 
-      <script src="js/script.js"></script>
-    </body>
-  </html>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

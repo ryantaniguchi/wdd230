@@ -99,7 +99,7 @@
           <label class="sbs morespace"
             >Category:
             <select name="commentcategory" required>
-              <option value="noreason" selected disabled>
+              <option value="" selected disabled>
                 Please select a category
               </option>
               <option value="receptionreason">Reception Services</option>
@@ -118,6 +118,9 @@
               placeholder="Please let us know of any comments, questions, or concerns that we can assist with."
             ></textarea>
           </label>
+          <label class="hidden"
+            ><input type="hidden" id="submitted" name="submitted"
+          /></label>
 
           <input type="submit" value="Send Your Comment" class="reserve" />
         </fieldset>
@@ -183,5 +186,6 @@
       </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/form.js"></script>
   </body>
 </html>

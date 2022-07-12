@@ -117,6 +117,7 @@ a:hover, button:hover, input:hover, textarea:hover {
 
 .italics {
     font-style: italic;
+    text-align: left;
 }
 /* Menu */
 
