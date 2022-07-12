@@ -16,7 +16,6 @@ function displayAlerts(data) {
     let severity = document.createElement('p');
     let instruction = document.createElement('p');
     let sender = document.createElement('p');
-    let dismiss = document.createElement('span');
 
     headline.textContent = `${data.headline}`;
     severity.textContent = `Severity: ${data.severity}`;
@@ -32,8 +31,6 @@ function displayAlerts(data) {
 
 getAlerts()
 
-
-// INCOMPLETE WEATHER WARNING
 const dismiss = document.querySelector('.dismiss');
 dismiss.addEventListener('click', closeFunction);
 

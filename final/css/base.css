@@ -35,7 +35,7 @@ main {
     background-color: #5D758A;
     padding: 1rem;
 }
-/* FFFFF0 */
+
 div {
     padding: 1rem;
 }
@@ -63,8 +63,6 @@ footer {
 .displayblock {
     display: block;
 }
-
-/* Generic Classes */
 
 a:link, a:visited {
     color: #000000;
@@ -145,8 +143,6 @@ nav {
     margin: 4px;
 }
 
-/* Hamburger menu */
-
 .responsive {
     background-color: #B7CBC0;
 }
@@ -159,7 +155,6 @@ nav {
     display: block;
 }
 
-/* INDEX */
 .welcome {
     max-width: 1000px;
     background-color: #C0C0C0;
@@ -181,7 +176,6 @@ nav {
     padding: 1rem;
 }
 
-/* RESERVATION */
 form {
     padding: 2rem;
     max-width: 1000px;
@@ -229,7 +223,6 @@ form input.reserve {
     text-align: center;
 }
 
-/* TEMPLE */
 .temples {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -267,7 +260,6 @@ section, .templecard, .servicesdiv, .servicessubdiv {
     margin: 1rem;
 }
 
-/* SERVICES */
 .servicesdiv {
     margin: 1rem auto;
     max-width: 900px;
