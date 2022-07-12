@@ -12,7 +12,6 @@ async function apiFetch() {
     let longitude = coordinates[1];
     // Creates weatherURL based on coordinates for the selected temple
     const weatherURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=minutely,hourly&units=imperial&appid=3af250634d071cb3f84c2c5c48e9d30a`
-    console.log(weatherURL)
     // Calls fetchWeather using weatherURL associated with temple location
     fetchWeather(weatherURL);
   } else {
