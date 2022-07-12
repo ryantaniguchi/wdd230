@@ -1,0 +1,41 @@
+@media only screen and (min-width: 90em) {      
+
+    nav {
+        right: 270px;
+    }    
+
+    .maintemple {
+        margin: auto;
+    }
+
+    .cards {
+        grid-column: 4;
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .social {
+        grid-column: 1/2;
+        grid-row: 1;
+    }
+
+    .attributions {
+        grid-column: 2/3;
+        grid-row: 1;
+    }
+
+    .address {
+        grid-column: 3/4;
+    }
+    
+    .expandcolumns {
+        grid-column: 2/3;
+    }
+
+    .reveal {
+        display: block;
+        align-items: center;
+    }
+}
