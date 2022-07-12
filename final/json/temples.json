@@ -10,8 +10,8 @@
             "latitude": "32.866389",
             "longitude": "-117.228778",
             "services": "The temple provides clothing rental and has a distribution service nearby. There are no cafeteria services available, but the nearby Temple Inn & Suites has a 24 hour cafe.",
-            "history": "Announced on April 7, 1984, ground was not broken until February 27, 1988. It was finally dedicated on April 25, 1993.",
-            "longhistory": "The San Diego Temple was announced on April 17, 1984, although ground was not broken until February 27, 1988. It was dedicated on April 25, 1993 by President Gordon B. Hinkley. It is the 47th temple constructed and the 45th operating temple of the Church of Jesus Christ of Latter-day Saints.",
+            "history": "Announced on April 7, 1984, ground was not broken until February 27, 1988. It was dedicated on April 25, 1993.",
+            "longhistory": "The San Diego Temple was announced on April 17, 1984, and ground was broken on February 27, 1988. It was dedicated on April 25, 1993 by President Gordon B. Hinkley. It is the 47th temple constructed and the 45th operating temple of the Church of Jesus Christ of Latter-day Saints.",
             "ordinanceschedule": "By appointment",
             "sessionschedule": "TBD",
             "templeclosureschedule": ["1 October",
@@ -28,12 +28,12 @@
             "image": "images/temples/saltlake.webp",
             "latitude": "40.770556",
             "longitude": "-111.8925",
-            "services": "Currently closed for rennovation",
+            "services": "Currently closed for renovation",
             "history": "The fourth temple built in Utah, the Salt Lake temple was announced on July 28, 1847 and dedicated by President Wilford Woodruff. It was the first temple to have a standing angel Moroni temple. It was dedicated between April 6-24 1893.",
-            "longhistory": "The fourth temple built in Utah, the Salt Lake temple was announced on July 28, 1847 and dedicated by President Wilford Woodruff. It was the first temple to have a standing angel Moroni temple. It was dedicated between April 6-24 1893. The temple is the location of weekly meetings of the First Presidency and the Quorum of the Twelve Apostles.",
-            "ordinanceschedule": "Currently closed for rennovation",
-            "sessionschedule": "Currently closed for rennovation",
-            "templeclosureschedule": "Currently closed for rennovation"
+            "longhistory": "The fourth temple built in Utah, the Salt Lake temple was announced on July 28, 1847 and dedicated by President Wilford Woodruff. It was the first temple to have a standing angel Moroni on the steeple of the temple. It was dedicated between April 6-24 1893. The temple is the location of weekly meetings of the First Presidency and the Quorum of the Twelve Apostles.",
+            "ordinanceschedule": "Currently closed for renovation",
+            "sessionschedule": "Currently closed for renovation",
+            "templeclosureschedule": "Currently closed for renovation"
         },
         {
             "name": "Laie Temple",
@@ -65,11 +65,11 @@
             "latitude": "39.014079",
             "longitude": "-77.065624",
             "services": "The temple provides clothing rental and has a distribution service nearby. There are no cafeteria services available, but the nearby Temple Inn & Suites has a 24 hour cafe.",
-            "history": "Announced on November 15, 1968, groundbreaking occurred on December 7, 1968. The temple was finally dedicated on November 19, 1974.",
+            "history": "Announced on November 15, 1968, groundbreaking occurred on December 7, 1968. The temple was dedicated on November 19, 1974.",
             "longhistory": "The Washington D.C. Temple was announced on November 15, 1968 and groundbreaking began on December 7, 1968. It is the 18th temple constructed, and the 16th operating temple. The temple was dedicated on November 19, 1974.",
-            "ordinanceschedule": "Currently closed for rennovation",
-            "sessionschedule": "Currently closed for rennovation",
-            "templeclosureschedule": "Currently closed for rennovation"
+            "ordinanceschedule": "Currently closed for renovation",
+            "sessionschedule": "Currently closed for renovation",
+            "templeclosureschedule": "Currently closed for renovation"
         }
     ]
 } 
