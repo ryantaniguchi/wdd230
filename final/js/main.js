@@ -36,7 +36,7 @@ function displayTemples(data) {
   let latitude = item.latitude;
   let longitude = item.longitude;
 
-  name.textContent = `${item.name}`;
+  name.textContent = `Spotlighted Temple: ${item.name}`;
   address.textContent = `Address: ${item.address}`;
   phone.textContent = `Phone: ${item.phone}`;
   email.textContent = `Email: ${item.email}`;
@@ -97,7 +97,7 @@ function displayResults(weatherData) {
     }
 
     const desc = toTitleCase(time.weather[0].description);
-    temperature.textContent = `Temp: ${time.temp.day} °F`;
+    temperature.textContent = `Temp: ${time.temp.day.toFixed(0)} °F`;
     humidity.textContent = `Humidity: ${time.humidity}%`;
     weather.textContent = desc
 

@@ -12,8 +12,8 @@
             "services": "The temple provides clothing rental and has a distribution service nearby. There are no cafeteria services available, but the nearby Temple Inn & Suites has a 24 hour cafe.",
             "history": "Announced on April 7, 1984, ground was not broken until February 27, 1988. It was dedicated on April 25, 1993.",
             "longhistory": "The San Diego Temple was announced on April 17, 1984, and ground was broken on February 27, 1988. It was dedicated on April 25, 1993 by President Gordon B. Hinkley. It is the 47th temple constructed and the 45th operating temple of the Church of Jesus Christ of Latter-day Saints.",
-            "ordinanceschedule": "By appointment",
-            "sessionschedule": "TBD",
+            "ordinanceschedule": "Appointments are required for members to receive their own ordinances. Call or email the temple to schedule this type of appointment.",
+            "sessionschedule": "Temple sessions are scheduled in two hour blocks. Sessions are scheduled at 10AM, noon, and 2PM Monday through Saturday.",
             "templeclosureschedule": ["1 October",
                 " 23 November-24 November",
                 " 24 December",
@@ -28,11 +28,11 @@
             "image": "images/temples/saltlake.webp",
             "latitude": "40.770556",
             "longitude": "-111.8925",
-            "services": "Currently closed for renovation",
+            "services": "Additional services are currently paused while renovations are being conducted",
             "history": "The fourth temple built in Utah, the Salt Lake temple was announced on July 28, 1847 and dedicated by President Wilford Woodruff. It was the first temple to have a standing angel Moroni temple. It was dedicated between April 6-24 1893.",
             "longhistory": "The fourth temple built in Utah, the Salt Lake temple was announced on July 28, 1847 and dedicated by President Wilford Woodruff. It was the first temple to have a standing angel Moroni on the steeple of the temple. It was dedicated between April 6-24 1893. The temple is the location of weekly meetings of the First Presidency and the Quorum of the Twelve Apostles.",
-            "ordinanceschedule": "Currently closed for renovation",
-            "sessionschedule": "Currently closed for renovation",
+            "ordinanceschedule": "Ordinance services are currently paused while renovations are being conducted",
+            "sessionschedule": "Session services are currently paused while renovations are being conducted",
             "templeclosureschedule": "Currently closed for renovation"
         },
         {
@@ -47,13 +47,14 @@
             "services": "The temple provides clothing rental and has a distribution service nearby. There are no cafeteria services available, but the nearby Temple Inn & Suites has a 24 hour cafe.",
             "history": "Announced on October 3, 1915. Groundbreaking began on February 8, 1916, and the temple was dedicated on November 27, 1919. The temple was rededicated on June 13, 1978, and then again on November 21, 2010.",
             "longhistory": "The Laie Hawaii Temple was announced on October 3, 1915, and ground was broken on February 8, 1916. The temple was dedicated by President Heber J. Grant on November 27, 1919. It is the first temple built outside the continental United States, the oldest to operate outside of Utah, and the fifth-oldest temple in operation.",
-            "ordinanceschedule": "By appointment",
-            "sessionschedule": "TBD",
-            "templeclosureschedule": ["Saturday, 1 October 2022",
+            "ordinanceschedule": "Appointments are required for members to receive their own ordinances. Call or email the temple to schedule this type of appointment.",
+            "sessionschedule": "Temple sessions are scheduled in two hour blocks. Sessions are scheduled at 10AM, noon, and 2PM Monday through Saturday.",
+            "templeclosureschedule": ["Saturday, 30 October 2022 (Limited Operations)",
+                " Saturday, 1 October 2022",
+                " Thursday, 24 November 2022",
+                " Friday, 23 December 2022 (Limited Operations)",
                 " Saturday, 24 December 2022 - Monday, 26 December 2022",
-                " Sunday, 1 January 2023",
-                " Monday, 3 July 2023 - Monday, 17 July 2023",
-                " Thursday, 23 November 2023"]
+                " Sunday, 1 January 2023"]
         },
         {
             "name": "Washington D.C. Temple",
@@ -64,12 +65,12 @@
             "image": "images/temples/washingtondc.webp",
             "latitude": "39.014079",
             "longitude": "-77.065624",
-            "services": "The temple provides clothing rental and has a distribution service nearby. There are no cafeteria services available, but the nearby Temple Inn & Suites has a 24 hour cafe.",
+            "services": "Additional services are currently paused while renovations are being conducted",
             "history": "Announced on November 15, 1968, groundbreaking occurred on December 7, 1968. The temple was dedicated on November 19, 1974.",
             "longhistory": "The Washington D.C. Temple was announced on November 15, 1968 and groundbreaking began on December 7, 1968. It is the 18th temple constructed, and the 16th operating temple. The temple was dedicated on November 19, 1974.",
-            "ordinanceschedule": "Currently closed for renovation",
-            "sessionschedule": "Currently closed for renovation",
-            "templeclosureschedule": "Currently closed for renovation"
+            "ordinanceschedule": "Ordinance services are currently paused while renovations are being conducted",
+            "sessionschedule": "Session services are currently paused while renovations are being conducted",
+            "templeclosureschedule": "The temple will be dedicated on August 14, 2022, and open for patrons on August 30, 2022."
         }
     ]
 } 

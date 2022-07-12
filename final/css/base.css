@@ -166,7 +166,7 @@ nav {
 }
 
 .linkbutton {
-    margin: 0 auto;
+    margin: 1rem auto;
     padding: 10px;
     border-radius: 10px;
     max-width: 250px;
@@ -226,10 +226,6 @@ form input.reserve {
     display: block;
     margin: 1.0em auto;
     text-align: center;
-}
-
-.required {
-    color: #ff0000;
 }
 
 /* TEMPLE */

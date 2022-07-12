@@ -64,70 +64,80 @@
       <div class="welcome twocolumns">
         <h2>How can we help?</h2>
         <p>
-          Please let us know any questions, thoughts, or concerns that we can help
-          to address. Leave a comment and you will receive a prompt reply from one of our friendly Temple Inn & Suites staff members.
-        </p>  
+          Please let us know any questions, thoughts, or concerns that we can
+          help to address. Leave a comment and you will receive a prompt reply
+          from one of our friendly Temple Inn & Suites staff members.
+        </p>
       </div>
       <picture class="hide reveal">
         <img
-            src="images/contact/room.webp"
-            alt="Hotel Room"
-            width="620"
-            height="556"
-          />
+          src="images/contact/room.webp"
+          alt="Hotel Room"
+          width="620"
+          height="556"
+        />
       </picture>
-      <form
-        class="expandcolumns"
-        method="get"
-        action="thankyou.html"
-      >
+      <form class="expandcolumns" method="get" action="thankyou.html">
         <fieldset>
           <h2>Contact Information</h2>
           <label class="top"
-            >
-            <input type="text" name="fname" placeholder="Full Name" required
+            >Full Name:
+            <input
+              type="text"
+              name="fname"
+              placeholder="Susan Granger"
+              required
           /></label>
-          <label class="top">
+          <label class="top"
+            >Email Address:
             <input
               type="email"
               name="email"
-              placeholder="Email address"
+              placeholder="sgranger@templeinnsuites.com"
               required
           /></label>
-             <label class="sbs morespace">Category<span class="required">*</span>:  </span><select name="commentcategory" required>
-              <option value="noreason"selected disabled>Please select a category</option>
+          <label class="sbs morespace"
+            >Category:
+            <select name="commentcategory" required>
+              <option value="noreason" selected disabled>
+                Please select a category
+              </option>
               <option value="receptionreason">Reception Services</option>
               <option value="missionaryreason">Missionary Services</option>
               <option value="generalreason">General Inquiries</option>
-            </select>    
-            <hr>
+            </select></label
+          >
+          <hr />
 
-          <label class="commentarea">
+          <label class="commentarea"
+            >How Can We Help?
             <textarea
               name="description"
               required
               rows="5"
-              placeholder="How can we help?"
+              placeholder="Please let us know of any comments, questions, or concerns that we can assist with."
             ></textarea>
           </label>
 
-          <input
-          type="submit"
-          value="Send Your Comment"
-          class="reserve"
-        />
-
+          <input type="submit" value="Send Your Comment" class="reserve" />
         </fieldset>
       </form>
     </main>
+
     <footer>
       <div class="attributions">
-        <p id="currentyear"></p>
+        <p class="twocolumns" id="currentyear"></p>
         <p>
+          Temple information provided by the
+          <a href="https://www.churchofjesuschrist.org/temples/list?lang=eng"
+            >Church of Jesus Christ of Latter-day Saints</a
+          >.
+        </p>
+        <p class="twocolumns">
           Weather services provided by
           <a href="https://openweathermap.org/">OpenWeatherMap</a>.
         </p>
-        <p id="lastmodified"></p>
+        <p class="twocolumns" id="lastmodified"></p>
       </div>
 
       <div class="address">

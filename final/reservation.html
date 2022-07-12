@@ -60,7 +60,7 @@
         <form method="get" action="thankyou.html">
             <fieldset>
                 <h2>Select Your Location and Dates of Stay</h2>
-                <label class="top"><select name="temple" required>
+                <label class="top">Hotel Location<select name="temple" required>
                     <option value="temple0" selected disabled>Select a Hotel location</option>
                     <option value="temple1">San Diego, California</option>
                     <option value="temple2">Salt Lake City, Utah</option>
@@ -74,10 +74,10 @@
 
             <fieldset>
                 <h2>Contact Information</h2>
-                <label class="top"><input type="text" name="fname" placeholder="Full Name" required></label>
-                <label class="top"><input type="email" name="email" placeholder="Email" required></label>
-                <label class="top"><input type="tel" name="phone" placeholder="Phone number" required></label>
-                <label class="top"><input type="text" name="bname" placeholder="State and/or Country" required></label>
+                <label class="top">Full Name: <input type="text" name="fname" placeholder="Susan Granger" required></label>
+                <label class="top">Email Address: <input type="email" name="email" placeholder="sgranger@templeinnsuites.com" required></label>
+                <label class="top">Phone Number: <input type="tel" name="phone" placeholder="240-595-2939" required></label>
+                <label class="top">State and/or Country<input type="text" name="bname" placeholder="Maryland, USA" required></label>
             </fieldset>
             <fieldset>
                 <h2>Room Requirements</h2>
@@ -110,65 +110,71 @@
             <fieldset>
                 <h2>Confirm and Apply</h2>
                 <p>Please read the following and click the checkbox to indicate your agreement:</p>
-                <label class="sbs"><input type="checkbox" id="agreeconditions" name="agreeconditions" required> I have read and agree to the Temple Inn & Suites hotel accomodations terms and conditions of service.<span class="required">*</span></label>
-                <label class="sbs"><input type="checkbox" id="agreeconditions" name="agreeconditions" required> I understand that communications, including changes to my itinerary, may be communicated to me via email, and that I am responsible to read and respond to any such communications.<span class="required">*</span></label>
+                <label class="sbs"><input type="checkbox" id="agreeconditions" name="agreeconditions" required> I have read and agree to the Temple Inn & Suites hotel accomodations terms and conditions of service.</label>
+                <label class="sbs"><input type="checkbox" id="agreeconditions" name="agreeconditions" required> I understand that communications, including changes to my itinerary, may be communicated to me via email, and that I am responsible to read and respond to any such communications.</label>
                 <input type="submit" value="Reserve a Room" class="reserve">
               </fieldset>
         </form>
      </main>
+
      <footer>
-       <div class="attributions">
-         <p class="twocolumns" id="currentyear"></p>
-         <p class="twocolumns" id="lastmodified"></p>
-         <p class="twocolumns">
-           Weather services provided by<a href="https://openweathermap.org/"
-             >OpenWeatherMap</a
-           >.
-         </p>
-       </div>
- 
-       <div class="address">
-         <p>
-           Temple Inn & Suites
-           <span class="displayblock">4800 Montgomery Ln #300</span>
-           <span class="displayblock">Bethesda, MD 20814</span>
-         </p>
-         <a
-           href="https://www.google.com/maps/place/4800+Montgomery+Ln,+Bethesda,+MD+20814/@38.983252,-77.095532,15z/data=!4m5!3m4!1s0x89b7c97b6b3b5b43:0xceab47cd19a23a3b!8m2!3d38.9832518!4d-77.0955318?hl=en"
-           ><img
-             src="images/googlemaps.png"
-             alt="Google Maps link"
-             width="48"
-             height="48"
-           />
-         </a>
-       </div>
-       <div class="social">
-         <p><a href="/contact.html">How can we help?</a></p>
-         <p>Call us toll-free: 240-595-2939</p>
-         <a href="https://facebook.com"
-           ><img
-             src="images/facebook.png"
-             alt="Facebook link"
-             width="48"
-             height="48"
-         /></a>
-         <a href="https://linkedin.com"
-           ><img
-             src="images/linkedin.png"
-             alt="Linkedin link"
-             width="48"
-             height="48"
-         /></a>
-         <a href="https://twitter.com"
-           ><img
-             src="images/twitter.png"
-             alt="Twitter link"
-             width="48"
-             height="48"
-         /></a>
-       </div>
-     </footer>
+      <div class="attributions">
+        <p class="twocolumns" id="currentyear"></p>
+        <p>
+          Temple information provided by the
+          <a href="https://www.churchofjesuschrist.org/temples/list?lang=eng"
+            >Church of Jesus Christ of Latter-day Saints</a
+          >.
+        </p>
+        <p class="twocolumns">
+          Weather services provided by
+          <a href="https://openweathermap.org/">OpenWeatherMap</a>.
+        </p>
+        <p class="twocolumns" id="lastmodified"></p>
+      </div>
+
+      <div class="address">
+        <p>
+          Temple Inn & Suites
+          <span class="displayblock">4800 Montgomery Ln #300</span>
+          <span class="displayblock">Bethesda, MD 20814</span>
+        </p>
+        <a
+          href="https://www.google.com/maps/place/4800+Montgomery+Ln,+Bethesda,+MD+20814/@38.983252,-77.095532,15z/data=!4m5!3m4!1s0x89b7c97b6b3b5b43:0xceab47cd19a23a3b!8m2!3d38.9832518!4d-77.0955318?hl=en"
+          ><img
+            src="images/googlemaps.png"
+            alt="Google Maps link"
+            width="48"
+            height="48"
+          />
+        </a>
+      </div>
+      <div class="social">
+        <p><a href="/contact.html">How can we help?</a></p>
+        <p>Call us toll-free: 240-595-2939</p>
+        <a href="https://facebook.com"
+          ><img
+            src="images/facebook.png"
+            alt="Facebook link"
+            width="48"
+            height="48"
+        /></a>
+        <a href="https://linkedin.com"
+          ><img
+            src="images/linkedin.png"
+            alt="Linkedin link"
+            width="48"
+            height="48"
+        /></a>
+        <a href="https://twitter.com"
+          ><img
+            src="images/twitter.png"
+            alt="Twitter link"
+            width="48"
+            height="48"
+        /></a>
+      </div>
+    </footer>
  
       <script src="js/script.js"></script>
     </body>
