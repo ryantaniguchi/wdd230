@@ -18,7 +18,6 @@ main, header, footer {
 
 header {
     background-color: #B7CBC0;
-    /*  #C5DBB6 */
     position: relative;
 }
 
@@ -49,7 +48,6 @@ img {
     height: auto;
 }
 
-/* Footer */
 footer {
     padding: 1rem;
     background-color: #B7CBC0;
@@ -83,8 +81,11 @@ a:link, a:visited {
     color: #FFFFFF;
 }
 
+.dismiss, button {
+    cursor: pointer;
+}
+
 .dismiss {
-	cursor: pointer;
     display: inline;
 }
 
@@ -117,7 +118,6 @@ a:hover, button:hover, input:hover, textarea:hover {
     font-style: italic;
     text-align: left;
 }
-/* Menu */
 
 nav {
     position: absolute;
